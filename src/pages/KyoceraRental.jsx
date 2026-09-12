@@ -170,6 +170,25 @@ const KyoceraRental = () => {
       <Header />
 
       <main className="pt-28 lg:pt-32">
+        {/* ────── БАННЕР: всё забронировано ────── */}
+        <div className="container mx-auto px-4 mb-6" data-testid="reserved-banner">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 rounded-2xl border border-amber-300/70 bg-gradient-to-r from-amber-50 to-orange-50 px-5 py-4 shadow-sm">
+            <div className="flex-shrink-0 inline-flex items-center justify-center w-11 h-11 rounded-xl bg-amber-100 border border-amber-200">
+              <Calendar className="w-5 h-5 text-amber-600" />
+            </div>
+            <div className="flex-1">
+              <p className="text-[15px] sm:text-[16px] font-semibold text-amber-900 leading-snug">
+                Все аппараты уже забронированы
+              </p>
+              <p className="text-[14px] text-amber-800/90 leading-relaxed mt-0.5">
+                Текущая партия Kyocera ECOSYS M2035dn полностью распределена под продажу и аренду.
+                Ждём новую партию — приём заявок на продажу и аренду возобновится в конце сентября.
+                Оставьте заявку сейчас, и мы свяжемся с вами, как только техника поступит.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* ────── HERO ────── */}
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 -z-10">
@@ -182,9 +201,9 @@ const KyoceraRental = () => {
 
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center pt-2 pb-12">
               <div className="space-y-6">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-50 border border-red-200/60 text-red-700 text-[13px] font-semibold">
-                  <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
-                  Осталось 40 штук — успейте забронировать
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200/60 text-amber-700 text-[13px] font-semibold">
+                  <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                  Партия забронирована — новая в конце сентября
                 </div>
 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
