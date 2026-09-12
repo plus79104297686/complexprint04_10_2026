@@ -65,6 +65,22 @@
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+
+            // Consent Mode: запрещаем рекламное хранилище и рекламные сигналы.
+            // Именно они заставляют gtag слать пинг на googleads.g.doubleclick.net,
+            // который недоступен из РФ и подвешивает вкладку в ожидании ответа.
+            // analytics_storage оставляем 'granted' — обычная аналитика GA работает как раньше.
+            gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'ad_personalization': 'denied',
+                'ad_user_data': 'denied',
+                'analytics_storage': 'granted'
+            });
+
+            // Легаси-флаги (дублируют запрет для старых конфигураций), ставим до config.
+            gtag('set', 'allow_google_signals', false);
+            gtag('set', 'allow_ad_personalization_signals', false);
+
             gtag('js', new Date());
             gtag('config', 'G-CQHCL9ZBS8');
         </script>
