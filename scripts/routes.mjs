@@ -58,6 +58,41 @@ export const ROUTES = [
   // ─── Аналитика ────────────────────────────────────────────────────────────
   { path: "/analytics", priority: 0.85, changefreq: "weekly" },
   {
+    path: "/analytics/servisnyj-centr-kyocera-taskalfa-remont-toner-kamni",
+    priority: 0.8,
+    changefreq: "monthly",
+    images: [
+      {
+        loc: "https://complexprint.ru/images/analytics/taskalfa-cover.jpg",
+        title:
+          "Тонерные камни, или почему ваш TASKalfa скрипит как карета перед балом",
+      },
+    ],
+  },
+  {
+    path: "/analytics/pochemu-kyocera-lyubyat-v-rossii-a-v-evrope-net",
+    priority: 0.8,
+    changefreq: "monthly",
+    images: [
+      {
+        loc: "https://complexprint.ru/images/analytics/kyocera-cover.jpg",
+        title: "Почему Kyocera любят в России, а в Европе - не очень: разбор",
+      },
+    ],
+  },
+  {
+    path: "/analytics/fz-152-i-printer-shtraf-personalnye-dannye",
+    priority: 0.8,
+    changefreq: "monthly",
+    images: [
+      {
+        loc: "https://complexprint.ru/images/analytics/fz152-shtraf.jpg",
+        title:
+          "ФЗ-152 и принтер: как ваш МФУ превращается в 500-тысячный штраф",
+      },
+    ],
+  },
+  {
     path: "/analytics/kitajskij-printer-sedaet-byudzhet-pantum-skrytye-rashody",
     priority: 0.8,
     changefreq: "monthly",

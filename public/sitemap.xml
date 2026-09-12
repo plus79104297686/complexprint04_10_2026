@@ -5,14 +5,14 @@
 
   <url>
     <loc>https://complexprint.ru/</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/arenda-kyocera-m2035dn</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -23,133 +23,210 @@
 
   <url>
     <loc>https://complexprint.ru/komputery-i-komplektuyushchie</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/abonentskoe-obsluzhivanie</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/razovyy-remont</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/mps-autsorsing-pechati</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/pokopiynoe-obsluzhivanie</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/ceny</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/remont-printerov-hp</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/remont-printerov-canon</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/remont-printerov-kyocera</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/remont-printerov-ricoh</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/remont-printerov-konica-minolta</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/remont-printerov-xerox</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/faq</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/print-defects-guide</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/printer-error-guide</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/printer-selection</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/rayony-moskvy</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/analytics</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
+    <loc>https://complexprint.ru/analytics/servisnyj-centr-kyocera-taskalfa-remont-toner-kamni</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://complexprint.ru/images/analytics/taskalfa-cover.jpg</image:loc>
+      <image:title>Тонерные камни, или почему ваш TASKalfa скрипит как карета перед балом</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://complexprint.ru/analytics/pochemu-kyocera-lyubyat-v-rossii-a-v-evrope-net</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://complexprint.ru/images/analytics/kyocera-cover.jpg</image:loc>
+      <image:title>Почему Kyocera любят в России, а в Европе - не очень: разбор</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://complexprint.ru/analytics/fz-152-i-printer-shtraf-personalnye-dannye</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://complexprint.ru/images/analytics/fz152-shtraf.jpg</image:loc>
+      <image:title>ФЗ-152 и принтер: как ваш МФУ превращается в 500-тысячный штраф</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://complexprint.ru/analytics/kitajskij-printer-sedaet-byudzhet-pantum-skrytye-rashody</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://complexprint.ru/images/analytics/pantum-cover.jpg</image:loc>
+      <image:title>Как китайский принтер съедает бюджет офиса: скрытые расходы Pantum</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://complexprint.ru/analytics/vyezdnoe-obsluzhivanie-printerov-bez-prostoev</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://complexprint.ru/images/analytics/vyezd-remont-ofis.jpg</image:loc>
+      <image:title>Выездное обслуживание принтеров: как организовать без простоев в работе офиса</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://complexprint.ru/analytics/skolko-stoit-soderzhat-park-printerov-tco</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://complexprint.ru/images/analytics/tco-cover-infographic.png</image:loc>
+      <image:title>Сколько стоит содержать парк принтеров в офисе: полный расчёт TCO</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://complexprint.ru/analytics/moskovskiy-ofis-pereplachivaet-za-pechat-7-oshibok</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://complexprint.ru/images/analytics/msk-cover.jpg</image:loc>
+      <image:title>Почему ваш московский офис переплачивает за печать: 7 ошибок</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://complexprint.ru/analytics/rezinovye-ubijcy-printery-tajvan</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -160,7 +237,7 @@
 
   <url>
     <loc>https://complexprint.ru/analytics/pochemu-vash-printer-umiraet</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -171,7 +248,7 @@
 
   <url>
     <loc>https://complexprint.ru/analytics/kak-kitajskij-printer-sel-rynok</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -182,42 +259,42 @@
 
   <url>
     <loc>https://complexprint.ru/video</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/about-us</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/contacts</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/reviews</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/user-agreement</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>
   </url>
 
   <url>
     <loc>https://complexprint.ru/terms-of-service</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>
   </url>
