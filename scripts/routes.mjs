@@ -58,6 +58,18 @@ export const ROUTES = [
   // ─── Аналитика ────────────────────────────────────────────────────────────
   { path: "/analytics", priority: 0.85, changefreq: "weekly" },
   {
+    path: "/analytics/printer-dlya-yuridicheskoj-firmy-nagruzka-dupleks-zashchita",
+    priority: 0.8,
+    changefreq: "monthly",
+    images: [
+      {
+        loc: "https://complexprint.ru/images/analytics/yurfirma-cover.jpg",
+        title:
+          "Принтер для юридической фирмы в России: высокая нагрузка, дуплекс, защита документов",
+      },
+    ],
+  },
+  {
     path: "/analytics/servisnyj-centr-kyocera-taskalfa-remont-toner-kamni",
     priority: 0.8,
     changefreq: "monthly",
