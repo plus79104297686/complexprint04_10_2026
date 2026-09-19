@@ -94,7 +94,7 @@ export default function MpsService() {
       <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-indigo-50 pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-6xl">
           {/* Hero */}
-          <section className="mb-12 bg-gradient-to-br from-indigo-600 to-blue-700 rounded-3xl p-8 lg:p-12 shadow-2xl text-white">
+          <section className="mb-12 bg-gradient-to-br from-indigo-600 to-brand-700 rounded-3xl p-8 lg:p-12 shadow-2xl text-white">
             <div className="flex items-center gap-3 mb-4">
               <Printer className="w-8 h-8" />
               <span className="uppercase tracking-wider text-sm font-semibold opacity-90">
@@ -315,7 +315,7 @@ export default function MpsService() {
           </section>
 
           {/* Print-X credentials */}
-          <section className="mb-12 bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl p-8 shadow-lg border border-indigo-100">
+          <section className="mb-12 bg-gradient-to-br from-indigo-50 to-brand-50 rounded-2xl p-8 shadow-lg border border-indigo-100">
             <div className="text-center mb-8">
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
                 Принт-Икс доверенное решение для российского бизнеса
@@ -327,7 +327,7 @@ export default function MpsService() {
 
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-2xl p-6 shadow-md border border-indigo-100 text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-indigo-100 to-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-indigo-100 to-brand-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <ShieldCheck className="w-8 h-8 text-indigo-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -341,8 +341,8 @@ export default function MpsService() {
               </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-md border border-indigo-100 text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-gradient-to-br from-brand-100 to-brand-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-brand-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Сертификация ФСТЭК
@@ -355,8 +355,8 @@ export default function MpsService() {
               </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-md border border-indigo-100 text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-cyan-100 to-teal-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-cyan-600" />
+                <div className="w-16 h-16 bg-gradient-to-br from-brand-100 to-teal-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-brand-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Сертифицированный инженер
@@ -384,13 +384,13 @@ export default function MpsService() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
-                  icon: <BarChart3 className="w-7 h-7 text-blue-600" />,
+                  icon: <BarChart3 className="w-7 h-7 text-brand-600" />,
                   title: "Автоматический учёт",
                   desc: "Каждое задание фиксируется: пользователь, отдел, устройство, количество страниц, цвет/чёрно-белый режим. Детальная аналитика в реальном времени.",
                   color: "blue",
                 },
                 {
-                  icon: <Lock className="w-7 h-7 text-purple-600" />,
+                  icon: <Lock className="w-7 h-7 text-brand-600" />,
                   title: "Безопасная печать",
                   desc: "Документ выходит из принтера только после авторизации пользователя по карте доступа, PIN-коду или QR-коду. Конфиденциальность гарантирована.",
                   color: "purple",
@@ -402,7 +402,7 @@ export default function MpsService() {
                   color: "indigo",
                 },
                 {
-                  icon: <Fingerprint className="w-7 h-7 text-pink-600" />,
+                  icon: <Fingerprint className="w-7 h-7 text-signal-600" />,
                   title: "Авторизация и доступ",
                   desc: "Интеграция с Active Directory и LDAP. Настройка прав доступа к устройствам, копированию и сканированию для разных групп сотрудников.",
                   color: "pink",
@@ -437,7 +437,7 @@ export default function MpsService() {
           </section>
 
           {/* TIMELINE: implementation */}
-          <section className="mb-12 bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl p-8 shadow-lg border border-indigo-100">
+          <section className="mb-12 bg-gradient-to-br from-indigo-50 to-brand-50 rounded-2xl p-8 shadow-lg border border-indigo-100">
             <div className="text-center mb-8">
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
                 От заявки до полного контроля 7 дней
@@ -525,10 +525,10 @@ export default function MpsService() {
           </section>
 
           {/* Who it's for */}
-          <section className="mb-12 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg border border-blue-100">
+          <section className="mb-12 bg-gradient-to-br from-brand-50 to-indigo-50 rounded-2xl p-8 shadow-lg border border-brand-100">
             <div className="flex items-start gap-4 mb-4">
-              <div className="bg-blue-100 p-3 rounded-xl">
-                <Building2 className="w-7 h-7 text-blue-600" />
+              <div className="bg-brand-100 p-3 rounded-xl">
+                <Building2 className="w-7 h-7 text-brand-600" />
               </div>
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
                 Кому подходит аутсорсинг печати MPS
@@ -554,8 +554,8 @@ export default function MpsService() {
           {/* Security section */}
           <section className="mb-12 bg-white rounded-2xl p-8 shadow-lg">
             <div className="flex items-start gap-4 mb-4">
-              <div className="bg-purple-100 p-3 rounded-xl">
-                <Shield className="w-7 h-7 text-purple-600" />
+              <div className="bg-brand-100 p-3 rounded-xl">
+                <Shield className="w-7 h-7 text-brand-600" />
               </div>
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
                 Безопасность печати как стандарт, а не опция
@@ -603,7 +603,7 @@ export default function MpsService() {
                 <div className="text-sm opacity-90">затрат на печать</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                <div className="text-3xl font-bold text-purple-300">0</div>
+                <div className="text-3xl font-bold text-brand-300">0</div>
                 <div className="text-sm opacity-90">инцидентов утечек</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
@@ -655,7 +655,7 @@ export default function MpsService() {
                   <tr className="border-b-2 border-gray-200">
                     <th className="py-4 px-4 text-gray-500 font-semibold text-sm">Параметр</th>
                     <th className="py-4 px-4 text-red-600 font-bold">Разовый ремонт</th>
-                    <th className="py-4 px-4 text-purple-600 font-bold">Абонентка</th>
+                    <th className="py-4 px-4 text-brand-600 font-bold">Абонентка</th>
                     <th className="py-4 px-4 text-indigo-600 font-bold">MPS</th>
                   </tr>
                 </thead>
@@ -682,7 +682,7 @@ export default function MpsService() {
           </section>
 
           {/* Conclusion */}
-          <section className="mb-12 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 shadow-lg border border-indigo-100">
+          <section className="mb-12 bg-gradient-to-br from-indigo-50 to-brand-50 rounded-2xl p-8 shadow-lg border border-indigo-100">
             <p className="text-lg text-gray-800 leading-relaxed mb-4">
               Аутсорсинг печати MPS это не просто ещё одна услуга в списке. 
               Это переход от неуправляемых расходов к полному контролю, от 
@@ -696,7 +696,7 @@ export default function MpsService() {
           </section>
 
           {/* CTA */}
-          <section className="bg-gradient-to-br from-indigo-600 to-blue-700 rounded-2xl p-8 lg:p-10 text-white text-center shadow-2xl">
+          <section className="bg-gradient-to-br from-indigo-600 to-brand-700 rounded-2xl p-8 lg:p-10 text-white text-center shadow-2xl">
             <Printer className="w-12 h-12 mx-auto mb-4 opacity-90" />
             <h2 className="text-2xl lg:text-3xl font-bold mb-4">
               Хотите узнать, сколько реально стоит печать в вашем офисе?

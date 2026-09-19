@@ -94,7 +94,7 @@ export default function XeroxRepair() {
           </p>
 
           {/* Callout */}
-          <section className="mb-10 rounded-2xl border border-blue-200 bg-gradient-to-br from-blue-50 to-indigo-50 p-6">
+          <section className="mb-10 rounded-2xl border border-brand-200 bg-gradient-to-br from-brand-50 to-indigo-50 p-6">
             <h2 className="text-2xl font-semibold mb-3">Частые проблемы Xerox — быстрое решение</h2>
             <ul className="list-disc list-inside space-y-2 text-gray-800">
               <li><strong>Замятия бумаги</strong> — восстановление тракта подачи, замена роликов захвата/отделения, регулировка датчиков.</li>
@@ -119,10 +119,10 @@ export default function XeroxRepair() {
             </ul>
           </section>
 
-          <section className="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl p-6 text-white">
+          <section className="bg-gradient-to-r from-brand-500 to-indigo-600 rounded-2xl p-6 text-white">
             <h3 className="text-xl font-semibold mb-2">Нужна помощь сейчас?</h3>
             <div className="flex flex-col sm:flex-row gap-3">
-              <button onClick={goRepairForm} className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200">
+              <button onClick={goRepairForm} className="bg-white text-brand-600 px-6 py-3 rounded-lg font-semibold hover:bg-brand-50 transition-colors duration-200">
                 Заказать ремонт
               </button>
               <a href="tel:+79911857289" className="bg-white/20 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/30 transition-colors duration-200 text-center">

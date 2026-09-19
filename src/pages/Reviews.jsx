@@ -108,7 +108,7 @@ const Reviews = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50">
+    <div className="min-h-screen bg-gradient-to-br from-brand-50 via-white to-brand-50">
       <Helmet>
         <title>Отзывы клиентов | Комплекс Принт — Ремонт принтеров в Москве</title>
         <meta name="description" content="Отзывы клиентов о ремонте принтеров в сервисном центре Комплекс Принт. Реальные отзывы от крупных компаний: Криогенмаш, Азиатско-Тихоокеанский Банк, Соколов и других. Рейтинг 4.9 из 5." />
@@ -213,11 +213,11 @@ const Reviews = () => {
               <div className="text-gray-600">Средний рейтинг</div>
             </div>
             <div className="text-center bg-white rounded-2xl p-6 shadow-lg">
-              <div className="text-4xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">99%</div>
+              <div className="text-4xl font-bold bg-gradient-to-r from-signal-500 to-brand-600 bg-clip-text text-transparent">99%</div>
               <div className="text-gray-600">Рекомендуют нас</div>
             </div>
             <div className="text-center bg-white rounded-2xl p-6 shadow-lg">
-              <div className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-cyan-600 bg-clip-text text-transparent">10+</div>
+              <div className="text-4xl font-bold bg-gradient-to-r from-brand-500 to-brand-600 bg-clip-text text-transparent">10+</div>
               <div className="text-gray-600">Лет на рынке</div>
             </div>
           </div>

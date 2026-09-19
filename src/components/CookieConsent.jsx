@@ -91,13 +91,13 @@ const CookieConsent = () => {
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
           <div className="p-4 sm:p-6">
             <div className="flex items-start gap-4">
-              <div className="hidden sm:flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex-shrink-0">
+              <div className="hidden sm:flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-signal-500 to-brand-600 flex-shrink-0">
                 <Cookie className="w-6 h-6 text-white" />
               </div>
 
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-2">
-                  <Cookie className="w-5 h-5 text-pink-500 sm:hidden" />
+                  <Cookie className="w-5 h-5 text-signal-500 sm:hidden" />
                   <h3 className="text-lg font-semibold text-gray-900">
                     Мы используем файлы cookie
                   </h3>
@@ -109,7 +109,7 @@ const CookieConsent = () => {
                   {!isExpanded && (
                     <button
                       onClick={() => setIsExpanded(true)}
-                      className="text-pink-500 hover:text-pink-600 font-medium ml-1 underline underline-offset-2"
+                      className="text-signal-500 hover:text-signal-600 font-medium ml-1 underline underline-offset-2"
                     >
                       Подробнее
                     </button>
@@ -126,7 +126,7 @@ const CookieConsent = () => {
                       </div>
                     </div>
                     <div className="flex items-start gap-2">
-                      <Cookie className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                      <Cookie className="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium text-gray-800">Аналитические cookie</p>
                         <p>
@@ -137,7 +137,7 @@ const CookieConsent = () => {
                     </div>
                     <p className="text-xs text-gray-500 pt-2 border-t border-gray-200">
                       Продолжая использовать сайт, вы соглашаетесь с{" "}
-                      <a href="/user-agreement" className="text-pink-500 hover:underline">
+                      <a href="/user-agreement" className="text-signal-500 hover:underline">
                         политикой конфиденциальности
                       </a>{" "}
                       в соответствии с ФЗ-152 «О персональных данных».
@@ -164,7 +164,7 @@ const CookieConsent = () => {
             <div className="flex flex-col sm:flex-row gap-3 mt-4 sm:mt-6">
               <button
                 onClick={acceptAll}
-                className="flex-1 sm:flex-none px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-medium rounded-xl hover:from-pink-600 hover:to-purple-700 transition-all duration-200 shadow-lg shadow-pink-500/25 hover:shadow-pink-500/40"
+                className="flex-1 sm:flex-none px-6 py-3 bg-gradient-to-r from-signal-500 to-brand-600 text-white font-medium rounded-xl hover:from-signal-600 hover:to-brand-700 transition-all duration-200 shadow-lg shadow-signal-500/25 hover:shadow-signal-500/40"
               >
                 Принять все
               </button>

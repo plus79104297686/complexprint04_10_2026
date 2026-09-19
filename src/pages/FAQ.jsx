@@ -128,7 +128,7 @@ const FAQ = () => {
         {/* Hero Section */}
         <header className="text-center mb-12">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Часто задаваемые <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">вопросы</span>
+            Часто задаваемые <span className="bg-gradient-to-r from-signal-500 to-brand-600 bg-clip-text text-transparent">вопросы</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ответы на популярные вопросы о ремонте и обслуживании принтеров в Москве
@@ -136,42 +136,42 @@ const FAQ = () => {
         </header>
 
         {/* HowTo Section */}
-        <section className="mb-16 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
+        <section className="mb-16 bg-gradient-to-br from-brand-50 to-indigo-50 rounded-2xl p-8 border border-brand-100">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-            <Phone className="w-6 h-6 mr-3 text-blue-600" />
+            <Phone className="w-6 h-6 mr-3 text-brand-600" />
             Как вызвать мастера по ремонту принтеров
           </h2>
           <ol className="space-y-4">
             <li className="flex">
-              <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-4">1</span>
+              <span className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold mr-4">1</span>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Свяжитесь с нами</h3>
-                <p className="text-gray-700">Позвоните по телефону <a href="tel:+79911857289" className="text-blue-600 hover:underline font-semibold">+7 (991) 185-72-89</a> или оставьте заявку на сайте через форму обратной связи</p>
+                <p className="text-gray-700">Позвоните по телефону <a href="tel:+79911857289" className="text-brand-600 hover:underline font-semibold">+7 (991) 185-72-89</a> или оставьте заявку на сайте через форму обратной связи</p>
               </div>
             </li>
             <li className="flex">
-              <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-4">2</span>
+              <span className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold mr-4">2</span>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Опишите проблему</h3>
                 <p className="text-gray-700">Расскажите о проблеме с принтером: модель, бренд, симптомы неисправности. Укажите бренд (HP, Canon, Kyocera и др.) и симптомы (полосы, замятие бумаги, ошибки)</p>
               </div>
             </li>
             <li className="flex">
-              <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-4">3</span>
+              <span className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold mr-4">3</span>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Согласуйте время визита</h3>
                 <p className="text-gray-700">Выберите удобное время. Выезд возможен в день обращения, работаем с 9:00 до 21:00 ежедневно</p>
               </div>
             </li>
             <li className="flex">
-              <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-4">4</span>
+              <span className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold mr-4">4</span>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Диагностика на месте</h3>
                 <p className="text-gray-700">Мастер приедет, проведет диагностику и озвучит стоимость. Диагностика от 1500₽ (входит в стоимость ремонта)</p>
               </div>
             </li>
             <li className="flex">
-              <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-4">5</span>
+              <span className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold mr-4">5</span>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Ремонт с гарантией</h3>
                 <p className="text-gray-700">После согласия выполним ремонт с оригинальными запчастями. Гарантия 6 месяцев. Оплата после проверки работоспособности</p>
@@ -183,7 +183,7 @@ const FAQ = () => {
         {/* FAQ Sections */}
         {faqs.map((category, categoryIndex) => (
           <section key={categoryIndex} className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-pink-200">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-200">
               {category.category}
             </h2>
             <div className="space-y-4">
@@ -205,7 +205,7 @@ const FAQ = () => {
                         {faq.question}
                       </h3>
                       {isOpen ? (
-                        <ChevronUp className="w-5 h-5 text-pink-600 flex-shrink-0" />
+                        <ChevronUp className="w-5 h-5 text-signal-600 flex-shrink-0" />
                       ) : (
                         <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
                       )}
@@ -224,13 +224,13 @@ const FAQ = () => {
         ))}
 
         {/* Contact CTA */}
-        <section className="mt-16 bg-gradient-to-br from-pink-500 to-purple-600 rounded-2xl p-8 text-white text-center">
+        <section className="mt-16 bg-gradient-to-br from-signal-500 to-brand-600 rounded-2xl p-8 text-white text-center">
           <h2 className="text-3xl font-bold mb-4">Не нашли ответ на свой вопрос?</h2>
           <p className="text-lg mb-6 opacity-95">Свяжитесь с нами, и мы поможем решить вашу проблему</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
               href="tel:+79911857289"
-              className="inline-flex items-center bg-white text-pink-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-200"
+              className="inline-flex items-center bg-white text-signal-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-200"
             >
               <Phone className="w-5 h-5 mr-2" />
               +7 (991) 185-72-89

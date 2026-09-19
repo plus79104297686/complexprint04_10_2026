@@ -9,7 +9,7 @@ const CompanyDetailsModal = ({ isOpen, onClose }) => {
         {/* Header с крестиком */}
         <div className="flex justify-between items-center pb-4 border-b border-gray-200">
           <h2 className="text-lg font-bold text-gray-900 flex items-center space-x-2">
-            <Building2 className="w-5 h-5 text-pink-500" />
+            <Building2 className="w-5 h-5 text-signal-500" />
             <span>Реквизиты компании</span>
           </h2>
           <button
@@ -22,9 +22,9 @@ const CompanyDetailsModal = ({ isOpen, onClose }) => {
         
         <div className="space-y-4 py-2">
           {/* Основная информация о компании */}
-          <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-lg p-4">
+          <div className="bg-gradient-to-br from-brand-50 to-brand-50 rounded-lg p-4">
             <h3 className="text-sm font-semibold text-gray-900 mb-3 flex items-center">
-              <Building2 className="w-4 h-4 text-pink-500 mr-2" />
+              <Building2 className="w-4 h-4 text-signal-500 mr-2" />
               Основные сведения
             </h3>
             <div className="space-y-2">
@@ -52,7 +52,7 @@ const CompanyDetailsModal = ({ isOpen, onClose }) => {
           {/* Адреса */}
           <div className="bg-white border border-gray-200 rounded-lg p-4">
             <h3 className="text-sm font-semibold text-gray-900 mb-3 flex items-center">
-              <MapPin className="w-4 h-4 text-purple-500 mr-2" />
+              <MapPin className="w-4 h-4 text-brand-500 mr-2" />
               Адреса
             </h3>
             <div className="space-y-3">
@@ -72,9 +72,9 @@ const CompanyDetailsModal = ({ isOpen, onClose }) => {
           </div>
 
           {/* Банковские реквизиты */}
-          <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-4">
+          <div className="bg-gradient-to-br from-brand-50 to-brand-50 rounded-lg p-4">
             <h3 className="text-sm font-semibold text-gray-900 mb-3 flex items-center">
-              <CreditCard className="w-4 h-4 text-purple-500 mr-2" />
+              <CreditCard className="w-4 h-4 text-brand-500 mr-2" />
               Банковские реквизиты
             </h3>
             <div className="space-y-2">
@@ -125,7 +125,7 @@ const CompanyDetailsModal = ({ isOpen, onClose }) => {
                   alert('Реквизиты скопированы в буфер обмена');
                 });
               }}
-              className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 transform hover:scale-105"
+              className="bg-gradient-to-r from-signal-500 to-brand-600 hover:from-signal-600 hover:to-brand-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 transform hover:scale-105"
             >
               Скопировать реквизиты
             </button>

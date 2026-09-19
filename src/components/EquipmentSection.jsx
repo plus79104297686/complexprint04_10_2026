@@ -57,18 +57,18 @@ const EquipmentSection = () => {
     <section id="equipment" className="py-20 lg:py-24 bg-white relative overflow-hidden">
       {/* Фоновые элементы */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 -right-20 w-72 h-72 bg-gradient-to-br from-blue-400/8 to-cyan-400/8 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 -left-20 w-72 h-72 bg-gradient-to-tr from-cyan-400/8 to-blue-400/8 rounded-full blur-3xl" />
+        <div className="absolute top-20 -right-20 w-72 h-72 bg-gradient-to-br from-brand-400/8 to-brand-400/8 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 -left-20 w-72 h-72 bg-gradient-to-tr from-brand-400/8 to-brand-400/8 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200/60 font-semibold px-4 py-1">
+          <Badge className="mb-4 bg-brand-50 text-brand-700 hover:bg-brand-100 border border-brand-200/60 font-semibold px-4 py-1">
             Оборудование, которое мы обслуживаем
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
             Ремонт принтеров любых брендов
-            <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent block lg:inline lg:ml-3">
+            <span className="bg-gradient-to-r from-brand-600 to-brand-500 bg-clip-text text-transparent block lg:inline lg:ml-3">
               с гарантией качества
             </span>
           </h2>
@@ -90,9 +90,9 @@ const EquipmentSection = () => {
                 return (
                   <div
                     key={idx}
-                    className="group flex items-center gap-4 bg-white rounded-2xl p-5 border border-slate-100 shadow-[0_4px_20px_-8px_rgba(2,6,23,0.06)] hover:shadow-[0_12px_40px_-12px_rgba(2,6,23,0.12)] hover:-translate-y-1 hover:border-blue-200 transition-all duration-300"
+                    className="group flex items-center gap-4 bg-white rounded-2xl p-5 border border-slate-100 shadow-[0_4px_20px_-8px_rgba(2,6,23,0.06)] hover:shadow-[0_12px_40px_-12px_rgba(2,6,23,0.12)] hover:-translate-y-1 hover:border-brand-200 transition-all duration-300"
                   >
-                    <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center shadow-[0_4px_12px_-4px_rgba(37,99,235,0.4)] group-hover:scale-110 transition-transform duration-300">
+                    <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-brand-600 to-brand-500 flex items-center justify-center shadow-[0_4px_12px_-4px_rgba(13,30,45,0.4)] group-hover:scale-110 transition-transform duration-300">
                       <Icon className="w-6 h-6 text-white" strokeWidth={2.25} />
                     </div>
                     <p className="text-left text-[15px] font-semibold text-slate-800 leading-snug">
@@ -108,7 +108,7 @@ const EquipmentSection = () => {
           <div className="text-center">
             <a 
               href="/printer-selection" 
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-semibold rounded-full transform hover:-translate-y-0.5 transition-all duration-300 shadow-[0_8px_24px_-8px_rgba(37,99,235,0.6)] hover:shadow-[0_12px_28px_-8px_rgba(37,99,235,0.7)]"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 text-white font-semibold rounded-full transform hover:-translate-y-0.5 transition-all duration-300 shadow-[0_8px_24px_-8px_rgba(13,30,45,0.6)] hover:shadow-[0_12px_28px_-8px_rgba(13,30,45,0.7)]"
             >
               <Printer className="w-5 h-5" />
               Выбери печатающего помошника
@@ -139,7 +139,7 @@ const EquipmentSection = () => {
                   </div>
                 </div>
                 <div className="p-4">
-                  <Badge className="bg-gradient-to-r from-blue-50 to-cyan-50 text-blue-700 border border-blue-100 hover:from-blue-100 hover:to-cyan-100 font-medium">
+                  <Badge className="bg-gradient-to-r from-brand-50 to-brand-50 text-brand-700 border border-brand-100 hover:from-brand-100 hover:to-brand-100 font-medium">
                     {equipment.brand}
                   </Badge>
                 </div>
@@ -167,7 +167,7 @@ const EquipmentSection = () => {
                       className="max-h-14 max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   ) : (
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full flex items-center justify-center shadow-[0_4px_12px_-4px_rgba(37,99,235,0.4)]">
+                    <div className="w-12 h-12 bg-gradient-to-br from-brand-600 to-brand-500 rounded-full flex items-center justify-center shadow-[0_4px_12px_-4px_rgba(13,30,45,0.4)]">
                       <span className="text-white font-bold text-lg">{brand.charAt(0)}</span>
                     </div>
                   )}
@@ -183,8 +183,8 @@ const EquipmentSection = () => {
           <h3 className="text-2xl font-bold text-slate-900 mb-8">Типы оборудования, которое мы обслуживаем</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {equipmentTypes.map((type, index) => (
-              <div key={index} className="bg-gradient-to-br from-blue-50/80 to-cyan-50/80 rounded-2xl p-8 text-center hover:shadow-[0_12px_40px_-12px_rgba(2,6,23,0.12)] transition-all duration-300 hover:-translate-y-1 border border-blue-100/50">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-[0_8px_24px_-8px_rgba(37,99,235,0.4)]">
+              <div key={index} className="bg-gradient-to-br from-brand-50/80 to-brand-50/80 rounded-2xl p-8 text-center hover:shadow-[0_12px_40px_-12px_rgba(2,6,23,0.12)] transition-all duration-300 hover:-translate-y-1 border border-brand-100/50">
+                <div className="w-16 h-16 bg-gradient-to-br from-brand-600 to-brand-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-[0_8px_24px_-8px_rgba(13,30,45,0.4)]">
                   <Printer className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold text-slate-900 mb-2">{type}</h4>

@@ -45,7 +45,7 @@ const PrinterSelection = () => {
               <div className="mb-8">
                 <button
                   onClick={handleBackToHome}
-                  className="inline-flex items-center text-purple-600 hover:text-purple-800 font-medium mb-4"
+                  className="inline-flex items-center text-brand-600 hover:text-brand-800 font-medium mb-4"
                 >
                   ← Вернуться на главную
                 </button>
@@ -56,12 +56,12 @@ const PrinterSelection = () => {
 
               {/* Заголовок */}
               <div className="text-center mb-16">
-                <Badge className="mb-4 bg-purple-100 text-purple-700 hover:bg-purple-200">
+                <Badge className="mb-4 bg-brand-100 text-brand-700 hover:bg-brand-200">
                   Выбор печатающего оборудования
                 </Badge>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                   Современные принтеры и МФУ 
-                  <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent block lg:inline lg:ml-4">
+                  <span className="bg-gradient-to-r from-signal-500 to-brand-600 bg-clip-text text-transparent block lg:inline lg:ml-4">
                     для любых задач
                   </span>
                 </h1>
@@ -93,7 +93,7 @@ const PrinterSelection = () => {
               {/* Дополнительная информация */}
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-signal-500 to-brand-600 rounded-full flex items-center justify-center mb-4">
                     <span className="text-white text-2xl">🛠️</span>
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -106,7 +106,7 @@ const PrinterSelection = () => {
                 </div>
 
                 <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-signal-500 to-brand-600 rounded-full flex items-center justify-center mb-4">
                     <span className="text-white text-2xl">📞</span>
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -128,14 +128,14 @@ const PrinterSelection = () => {
               <div className="mb-8">
                 <button
                   onClick={handleBackToCategories}
-                  className="inline-flex items-center text-purple-600 hover:text-purple-800 font-medium mb-4"
+                  className="inline-flex items-center text-brand-600 hover:text-brand-800 font-medium mb-4"
                 >
                   ← Вернуться к категориям
                 </button>
                 <nav className="text-sm text-gray-600">
                   <span>Главная</span> / 
                   <span> Выбор принтера</span> / 
-                  <span className="text-purple-600"> {currentCategory?.name}</span>
+                  <span className="text-brand-600"> {currentCategory?.name}</span>
                 </nav>
               </div>
 

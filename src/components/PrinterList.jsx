@@ -62,7 +62,7 @@ const PrinterList = ({ printers, categoryName }) => {
                 onClick={() => setSelectedBrand('all')}
                 className={`px-4 py-2 rounded-lg font-medium transition-all ${
                   selectedBrand === 'all'
-                    ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white'
+                    ? 'bg-gradient-to-r from-signal-500 to-brand-600 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -76,7 +76,7 @@ const PrinterList = ({ printers, categoryName }) => {
                     onClick={() => setSelectedBrand(brand)}
                     className={`px-4 py-2 rounded-lg font-medium transition-all ${
                       selectedBrand === brand
-                        ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white'
+                        ? 'bg-gradient-to-r from-signal-500 to-brand-600 text-white'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                     }`}
                   >
@@ -95,7 +95,7 @@ const PrinterList = ({ printers, categoryName }) => {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-transparent"
             >
               <option value="price">Цене (по возрастанию)</option>
               <option value="speed">Скорости печати (по убыванию)</option>
@@ -111,7 +111,7 @@ const PrinterList = ({ printers, categoryName }) => {
             <div className="text-sm text-gray-600">
               Показано {sortedPrinters.length} из {printers.length} принтеров
               {selectedBrand !== 'all' && (
-                <Badge className="ml-2 bg-gradient-to-r from-pink-100 to-purple-100 text-pink-700">
+                <Badge className="ml-2 bg-gradient-to-r from-brand-100 to-brand-100 text-signal-700">
                   {selectedBrand}
                 </Badge>
               )}
@@ -119,7 +119,7 @@ const PrinterList = ({ printers, categoryName }) => {
             {selectedBrand !== 'all' && (
               <button
                 onClick={() => setSelectedBrand('all')}
-                className="text-sm text-purple-600 hover:text-purple-800 font-medium"
+                className="text-sm text-brand-600 hover:text-brand-800 font-medium"
               >
                 Сбросить фильтр
               </button>
@@ -137,7 +137,7 @@ const PrinterList = ({ printers, categoryName }) => {
 
       {/* Информация внизу */}
       {sortedPrinters.length > 0 && (
-        <div className="mt-12 p-6 bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl border border-pink-100">
+        <div className="mt-12 p-6 bg-gradient-to-br from-brand-50 to-brand-50 rounded-2xl border border-brand-100">
           <div className="text-center">
             <h4 className="text-lg font-semibold text-gray-900 mb-2">
               Нужна консультация?
@@ -147,7 +147,7 @@ const PrinterList = ({ printers, categoryName }) => {
             </p>
             <a
               href="tel:+79911857289"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-purple-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-signal-500 to-brand-600 text-white font-semibold rounded-lg hover:from-signal-600 hover:to-brand-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               📞 Связаться с нами
             </a>

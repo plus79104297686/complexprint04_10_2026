@@ -67,33 +67,33 @@ const Header = () => {
   };
 
   const navItemBase =
-    "relative flex items-center gap-1 font-montserrat font-semibold text-[15px] text-slate-700 hover:text-blue-600 transition-colors duration-200 focus:outline-none whitespace-nowrap " +
-    "after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-blue-500 after:to-cyan-400 after:transition-all after:duration-300 hover:after:w-full";
+    "relative flex items-center gap-1 font-montserrat font-semibold text-[15px] text-slate-700 hover:text-brand-600 transition-colors duration-200 focus:outline-none whitespace-nowrap " +
+    "after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-brand-500 after:to-brand-400 after:transition-all after:duration-300 hover:after:w-full";
 
   const dropdownItemCls =
-    "cursor-pointer font-montserrat font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-600 focus:bg-blue-50 focus:text-blue-600 rounded-md transition-colors duration-150";
+    "cursor-pointer font-montserrat font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600 focus:bg-brand-50 focus:text-brand-600 rounded-md transition-colors duration-150";
 
   return (
     <>
       {/* TOP INFO BAR */}
       <div
-        className={`hidden lg:block fixed top-0 left-0 right-0 z-50 overflow-hidden bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white transition-[max-height,opacity] duration-300 ease-out ${
+        className={`hidden lg:block fixed top-0 left-0 right-0 z-50 overflow-hidden bg-gradient-to-r from-slate-900 via-brand-900 to-slate-900 text-white transition-[max-height,opacity] duration-300 ease-out ${
           isScrolled ? 'max-h-0 opacity-0' : 'max-h-12 opacity-100'
         }`}
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-10 text-[13px]">
             <div className="flex items-center gap-6">
-              <a href="tel:+79911857289" className="flex items-center gap-2 text-slate-200 hover:text-cyan-300 transition-colors duration-200">
-                <Phone size={14} className="text-cyan-400" />
+              <a href="tel:+79911857289" className="flex items-center gap-2 text-slate-200 hover:text-brand-300 transition-colors duration-200">
+                <Phone size={14} className="text-brand-400" />
                 <span className="font-medium">+7 (991) 185-72-89</span>
               </a>
-              <a href="mailto:info@complexprint.ru" className="hidden xl:flex items-center gap-2 text-slate-200 hover:text-cyan-300 transition-colors duration-200">
-                <Mail size={14} className="text-cyan-400" />
+              <a href="mailto:info@complexprint.ru" className="hidden xl:flex items-center gap-2 text-slate-200 hover:text-brand-300 transition-colors duration-200">
+                <Mail size={14} className="text-brand-400" />
                 <span>info@complexprint.ru</span>
               </a>
               <div className="hidden xl:flex items-center gap-2 text-slate-300">
-                <Clock size={14} className="text-cyan-400" />
+                <Clock size={14} className="text-brand-400" />
                 <span>Пн–Пт 9:00–19:00</span>
               </div>
             </div>
@@ -126,15 +126,15 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center gap-3 cursor-pointer group" onClick={goHome}>
               <div className="relative">
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 blur-md opacity-40 group-hover:opacity-70 transition-opacity duration-300" />
-                <div className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-blue-600 via-blue-500 to-cyan-400 flex items-center justify-center shadow-lg ring-1 ring-white/40 group-hover:scale-105 transition-transform duration-300">
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-brand-500 to-brand-400 blur-md opacity-40 group-hover:opacity-70 transition-opacity duration-300" />
+                <div className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-brand-600 via-brand-500 to-brand-400 flex items-center justify-center shadow-lg ring-1 ring-white/40 group-hover:scale-105 transition-transform duration-300">
                   <span className="text-white font-extrabold text-[17px] tracking-tight drop-shadow-[0_1px_2px_rgba(0,0,0,0.25)]">CP</span>
                   <span className="absolute inset-x-1 top-1 h-2 rounded-md bg-white/30 blur-[1px]" />
                 </div>
               </div>
               <div className="leading-tight">
                 <div  className="text-[17px] lg:text-[19px] font-bold text-slate-900 tracking-tight">
-                  Комплекс<span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent"> Принт</span>
+                  Комплекс<span className="bg-gradient-to-r from-brand-600 to-brand-500 bg-clip-text text-transparent"> Принт</span>
                 </div>
                 <p className="text-[11px] text-slate-500 hidden xl:block tracking-wide">Профессиональное обслуживание оборудования</p>
               </div>
@@ -192,20 +192,20 @@ const Header = () => {
 
             {/* Right block: Phone + CTA */}
             <div className="hidden lg:flex items-center gap-4">
-              <a href="tel:+79911857289" className="group flex items-center gap-2.5 px-3 py-1.5 rounded-full border border-slate-200 hover:border-blue-300 hover:bg-blue-50/50 transition-all duration-200">
-                <span className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+              <a href="tel:+79911857289" className="group flex items-center gap-2.5 px-3 py-1.5 rounded-full border border-slate-200 hover:border-brand-300 hover:bg-brand-50/50 transition-all duration-200">
+                <span className="w-8 h-8 rounded-full bg-gradient-to-br from-brand-500 to-brand-400 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
                   <Phone size={14} className="text-white" />
                 </span>
-                <span className="font-semibold text-[14px] text-slate-800 group-hover:text-blue-700 transition-colors">+7 (991) 185-72-89</span>
+                <span className="font-semibold text-[14px] text-slate-800 group-hover:text-brand-700 transition-colors">+7 (991) 185-72-89</span>
               </a>
-              <Button onClick={() => { openRepairModal(); setIsMenuOpen(false); }} data-testid="header-cta-repair-request" className="relative bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white px-5 py-2 rounded-full font-semibold tracking-tight shadow-[0_8px_24px_-8px_rgba(37,99,235,0.6)] hover:shadow-[0_12px_28px_-8px_rgba(37,99,235,0.7)] transition-all duration-300 hover:-translate-y-0.5">
+              <Button onClick={() => { openRepairModal(); setIsMenuOpen(false); }} data-testid="header-cta-repair-request" className="relative bg-signal-500 hover:bg-signal-600 text-brand-900 px-5 py-2 rounded-full font-semibold tracking-tight shadow-[0_8px_24px_-8px_rgba(13,30,45,0.6)] hover:shadow-[0_12px_28px_-8px_rgba(13,30,45,0.7)] transition-all duration-300 hover:-translate-y-0.5">
                 Заявка на ремонт
               </Button>
             </div>
 
             {/* Mobile: phone icon + Menu Button */}
             <div className="lg:hidden flex items-center gap-1">
-              <a href="tel:+79911857289" aria-label="Позвонить" className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center shadow-md hover:scale-105 transition-transform">
+              <a href="tel:+79911857289" aria-label="Позвонить" className="w-10 h-10 rounded-full bg-gradient-to-br from-brand-500 to-brand-400 flex items-center justify-center shadow-md hover:scale-105 transition-transform">
                 <Phone size={16} className="text-white" />
               </a>
               <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 rounded-lg hover:bg-slate-100 transition-colors duration-200 z-50 text-slate-800" aria-label="Меню">
@@ -214,7 +214,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-blue-500/40 to-transparent" />
+        <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-brand-500/40 to-transparent" />
       </header>
 
       {/* MOBILE NAVIGATION */}
@@ -225,12 +225,12 @@ const Header = () => {
             <nav className="flex flex-col py-2 pb-8">
               {/* CTA сверху */}
               <div className="px-4 pt-3 pb-4 border-b border-slate-100">
-                <Button onClick={() => { openRepairModal(); setIsMenuOpen(false); }} data-testid="header-mobile-cta-repair-request" className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white py-2.5 rounded-full font-semibold shadow-md">
+                <Button onClick={() => { openRepairModal(); setIsMenuOpen(false); }} data-testid="header-mobile-cta-repair-request" className="w-full bg-signal-500 hover:bg-signal-600 text-brand-900 py-2.5 rounded-full font-semibold shadow-md">
                   Заявка на ремонт
                 </Button>
                 <div className="flex items-center justify-between mt-3 text-sm text-slate-600">
-                  <a href="tel:+79911857289" className="flex items-center gap-2 hover:text-blue-600">
-                    <Phone size={15} className="text-blue-500" />
+                  <a href="tel:+79911857289" className="flex items-center gap-2 hover:text-brand-600">
+                    <Phone size={15} className="text-brand-500" />
                     +7 (991) 185-72-89
                   </a>
                   <div className="flex items-center gap-2">
@@ -246,44 +246,44 @@ const Header = () => {
 
               {/* О нас */}
               <div className="px-4 py-2 text-[11px] font-semibold text-slate-400 uppercase tracking-wider">О нас</div>
-              <button onClick={() => goToPage('/about-us')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">О нас</button>
-              <button onClick={() => goToPage('/reviews')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Отзывы о нас</button>
-              <button onClick={() => goToPage('/video')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Видео наших работ</button>
-              <button onClick={() => { window.open('https://dzen.ru/complexprint', '_blank', 'noopener'); setIsMenuOpen(false); }} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Наш блог на Дзен</button>
+              <button onClick={() => goToPage('/about-us')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">О нас</button>
+              <button onClick={() => goToPage('/reviews')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Отзывы о нас</button>
+              <button onClick={() => goToPage('/video')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Видео наших работ</button>
+              <button onClick={() => { window.open('https://dzen.ru/complexprint', '_blank', 'noopener'); setIsMenuOpen(false); }} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Наш блог на Дзен</button>
 
-              <button onClick={() => goToPage('/analytics')} className="px-4 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Аналитика</button>
+              <button onClick={() => goToPage('/analytics')} className="px-4 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Аналитика</button>
 
               {/* Справочники */}
               <div className="px-4 py-2 text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Справочники</div>
-              <button onClick={() => goToPage('/ceny')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Цены</button>
-              <button onClick={() => goToPage('/faq')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">FAQ</button>
-              <button onClick={() => goToPage('/print-defects-guide')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Справочник дефектов</button>
-              <button onClick={() => goToPage('/printer-error-guide')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Гид по Ошибкам</button>
+              <button onClick={() => goToPage('/ceny')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Цены</button>
+              <button onClick={() => goToPage('/faq')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">FAQ</button>
+              <button onClick={() => goToPage('/print-defects-guide')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Справочник дефектов</button>
+              <button onClick={() => goToPage('/printer-error-guide')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Гид по Ошибкам</button>
 
-              <button onClick={() => scrollToSection('equipment')} className="px-4 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Оборудование</button>
+              <button onClick={() => scrollToSection('equipment')} className="px-4 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Оборудование</button>
 
               {/* Услуги — МОБИЛЬНЫЕ */}
               <div className="px-4 py-2 text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Услуги</div>
-              <button onClick={() => goToPage('/arenda-kyocera-m2035dn')} className="px-6 py-3 text-left font-montserrat font-semibold text-blue-600 hover:bg-blue-50 transition-colors duration-200">Аренда МФУ Kyocera M2035dn</button>
-              <button onClick={() => goToPage('/komputery-i-komplektuyushchie')} className="px-6 py-3 text-left font-montserrat font-semibold text-blue-600 hover:bg-blue-50 transition-colors duration-200">Компьютеры и комплектующие</button>
-              <button onClick={() => goToPage('/remont-printerov-xerox')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Ремонт Xerox</button>
-              <button onClick={() => goToPage('/remont-printerov-hp')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Ремонт HP</button>
-              <button onClick={() => goToPage('/remont-printerov-canon')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Ремонт Canon</button>
-              <button onClick={() => goToPage('/remont-printerov-ricoh')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Ремонт Ricoh</button>
-              <button onClick={() => goToPage('/remont-printerov-konica-minolta')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Ремонт Konica Minolta</button>
-              <button onClick={() => goToPage('/remont-printerov-kyocera')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Ремонт Kyocera</button>
-              <button onClick={() => goToPage('/abonentskoe-obsluzhivanie')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Абонентское обслуживание</button>
-              <button onClick={() => goToPage('/razovyy-remont')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Разовый ремонт</button>
-              <button onClick={() => goToPage('/mps-autsorsing-pechati')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Аутсорсинг печати</button>
-              <button onClick={() => goToPage('/pokopiynoe-obsluzhivanie')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Покопийное обслуживание</button>
+              <button onClick={() => goToPage('/arenda-kyocera-m2035dn')} className="px-6 py-3 text-left font-montserrat font-semibold text-brand-600 hover:bg-brand-50 transition-colors duration-200">Аренда МФУ Kyocera M2035dn</button>
+              <button onClick={() => goToPage('/komputery-i-komplektuyushchie')} className="px-6 py-3 text-left font-montserrat font-semibold text-brand-600 hover:bg-brand-50 transition-colors duration-200">Компьютеры и комплектующие</button>
+              <button onClick={() => goToPage('/remont-printerov-xerox')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Ремонт Xerox</button>
+              <button onClick={() => goToPage('/remont-printerov-hp')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Ремонт HP</button>
+              <button onClick={() => goToPage('/remont-printerov-canon')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Ремонт Canon</button>
+              <button onClick={() => goToPage('/remont-printerov-ricoh')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Ремонт Ricoh</button>
+              <button onClick={() => goToPage('/remont-printerov-konica-minolta')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Ремонт Konica Minolta</button>
+              <button onClick={() => goToPage('/remont-printerov-kyocera')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Ремонт Kyocera</button>
+              <button onClick={() => goToPage('/abonentskoe-obsluzhivanie')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Абонентское обслуживание</button>
+              <button onClick={() => goToPage('/razovyy-remont')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Разовый ремонт</button>
+              <button onClick={() => goToPage('/mps-autsorsing-pechati')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Аутсорсинг печати</button>
+              <button onClick={() => goToPage('/pokopiynoe-obsluzhivanie')} className="px-6 py-3 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Покопийное обслуживание</button>
 
-              <button onClick={() => goToPage('/contacts')} className="px-4 py-3 mt-1 text-left font-montserrat font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200">Контакты</button>
+              <button onClick={() => goToPage('/contacts')} className="px-4 py-3 mt-1 text-left font-montserrat font-semibold text-slate-800 hover:bg-brand-50 hover:text-brand-600 transition-colors duration-200">Контакты</button>
 
               <div className="px-4 py-3 mt-2 border-t border-slate-100 flex items-center gap-3 text-[12px] text-slate-500">
-                <Clock size={14} className="text-blue-500" />
+                <Clock size={14} className="text-brand-500" />
                 <span>Пн–Пт 9:00–19:00</span>
                 <span className="text-slate-300">•</span>
-                <Mail size={14} className="text-blue-500" />
+                <Mail size={14} className="text-brand-500" />
                 <span>info@complexprint.ru</span>
               </div>
             </nav>

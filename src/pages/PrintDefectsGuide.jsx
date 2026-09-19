@@ -57,7 +57,7 @@ const PrintDefectsGuide = () => {
             <div className="mb-8">
               <button
                 onClick={() => navigate('/')}
-                className="inline-flex items-center text-purple-600 hover:text-purple-800 font-medium mb-4"
+                className="inline-flex items-center text-brand-600 hover:text-brand-800 font-medium mb-4"
               >
                 ← Вернуться на главную
               </button>
@@ -68,12 +68,12 @@ const PrintDefectsGuide = () => {
 
             {/* Заголовок */}
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-purple-100 text-purple-700 hover:bg-purple-200">
+              <Badge className="mb-4 bg-brand-100 text-brand-700 hover:bg-brand-200">
                 Визуальный справочник
               </Badge>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Справочник дефектов печати
-                <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent block lg:inline lg:ml-4">
+                <span className="bg-gradient-to-r from-signal-500 to-brand-600 bg-clip-text text-transparent block lg:inline lg:ml-4">
                   с фотографиями
                 </span>
               </h1>
@@ -100,7 +100,7 @@ const PrintDefectsGuide = () => {
                           onClick={() => setSelectedProblemType(type)}
                           className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                             selectedProblemType === type
-                              ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg'
+                              ? 'bg-gradient-to-r from-signal-500 to-brand-600 text-white shadow-lg'
                               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                           }`}
                         >
@@ -122,7 +122,7 @@ const PrintDefectsGuide = () => {
                           onClick={() => setSelectedManifestation(type)}
                           className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                             selectedManifestation === type
-                              ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg'
+                              ? 'bg-gradient-to-r from-signal-500 to-brand-600 text-white shadow-lg'
                               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                           }`}
                         >
@@ -134,7 +134,7 @@ const PrintDefectsGuide = () => {
                 </div>
 
                 <div className="mt-4 text-center text-sm text-gray-600">
-                  Найдено дефектов: <span className="font-semibold text-purple-600">{filteredDefects.length}</span>
+                  Найдено дефектов: <span className="font-semibold text-brand-600">{filteredDefects.length}</span>
                 </div>
               </div>
             </div>
@@ -163,7 +163,7 @@ const PrintDefectsGuide = () => {
                         </div>
                         {/* Бэдж типа проблемы */}
                         <div className="absolute top-3 right-3">
-                          <Badge className="bg-white/90 text-purple-700 backdrop-blur-sm">
+                          <Badge className="bg-white/90 text-brand-700 backdrop-blur-sm">
                             {defect.problemType}
                           </Badge>
                         </div>
@@ -177,13 +177,13 @@ const PrintDefectsGuide = () => {
 
                         {/* Внешние признаки */}
                         <div className="mb-4">
-                          <h4 className="text-sm font-semibold text-purple-700 mb-2">
+                          <h4 className="text-sm font-semibold text-brand-700 mb-2">
                             Внешние признаки:
                           </h4>
                           <ul className="space-y-1">
                             {defect.symptoms.map((symptom, index) => (
                               <li key={index} className="text-sm text-gray-700 flex items-start">
-                                <span className="text-pink-500 mr-2">•</span>
+                                <span className="text-signal-500 mr-2">•</span>
                                 <span>{symptom}</span>
                               </li>
                             ))}
@@ -192,7 +192,7 @@ const PrintDefectsGuide = () => {
 
                         {/* Вероятная причина */}
                         <div className="mb-4">
-                          <h4 className="text-sm font-semibold text-purple-700 mb-2">
+                          <h4 className="text-sm font-semibold text-brand-700 mb-2">
                             Вероятная причина:
                           </h4>
                           <p className="text-sm text-gray-700">
@@ -202,7 +202,7 @@ const PrintDefectsGuide = () => {
 
                         {/* Решение */}
                         <div className="mb-6">
-                          <h4 className="text-sm font-semibold text-purple-700 mb-2">
+                          <h4 className="text-sm font-semibold text-brand-700 mb-2">
                             Решение:
                           </h4>
                           <ul className="space-y-1">
@@ -218,7 +218,7 @@ const PrintDefectsGuide = () => {
                         {/* Кнопка срочного ремонта */}
                         <Button
                           onClick={scrollToRepairForm}
-                          className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold py-2 rounded-xl transition-all duration-300"
+                          className="w-full bg-gradient-to-r from-signal-500 to-brand-600 hover:from-signal-600 hover:to-brand-700 text-white font-semibold py-2 rounded-xl transition-all duration-300"
                         >
                           Срочный ремонт →
                         </Button>
@@ -243,7 +243,7 @@ const PrintDefectsGuide = () => {
                       setSelectedProblemType("Все проблемы");
                       setSelectedManifestation("Все проявления");
                     }}
-                    className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white"
+                    className="bg-gradient-to-r from-signal-500 to-brand-600 hover:from-signal-600 hover:to-brand-700 text-white"
                   >
                     Сбросить фильтры
                   </Button>
@@ -253,7 +253,7 @@ const PrintDefectsGuide = () => {
 
             {/* Call to Action */}
             <div className="max-w-4xl mx-auto mt-16">
-              <div className="bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl p-8 text-center text-white shadow-2xl">
+              <div className="bg-gradient-to-r from-signal-500 to-brand-600 rounded-2xl p-8 text-center text-white shadow-2xl">
                 <h2 className="text-3xl font-bold mb-4">
                   Не можете определить проблему?
                 </h2>
@@ -262,7 +262,7 @@ const PrintDefectsGuide = () => {
                 </p>
                 <Button
                   onClick={scrollToRepairForm}
-                  className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+                  className="bg-white text-brand-600 hover:bg-gray-100 font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
                 >
                   Заказать диагностику
                 </Button>
@@ -278,7 +278,7 @@ const PrintDefectsGuide = () => {
                 
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-lg font-semibold text-purple-700 mb-2">
+                    <h3 className="text-lg font-semibold text-brand-700 mb-2">
                       Почему принтер печатает полосами?
                     </h3>
                     <p className="text-gray-700">
@@ -289,7 +289,7 @@ const PrintDefectsGuide = () => {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-purple-700 mb-2">
+                    <h3 className="text-lg font-semibold text-brand-700 mb-2">
                       Что делать если осыпается тонер?
                     </h3>
                     <p className="text-gray-700">
@@ -300,7 +300,7 @@ const PrintDefectsGuide = () => {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-purple-700 mb-2">
+                    <h3 className="text-lg font-semibold text-brand-700 mb-2">
                       Ремонт термоузла HP - когда необходим?
                     </h3>
                     <p className="text-gray-700">
@@ -311,7 +311,7 @@ const PrintDefectsGuide = () => {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-purple-700 mb-2">
+                    <h3 className="text-lg font-semibold text-brand-700 mb-2">
                       Вертикальные полосы на печати Brother - причины и решение
                     </h3>
                     <p className="text-gray-700">

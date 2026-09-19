@@ -145,7 +145,7 @@ const Video = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50/40">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-brand-50/40">
       <Helmet>
         <title>Видео работ — ремонт принтеров с выезда | Комплекс Принт</title>
         <meta
@@ -261,17 +261,17 @@ const Video = () => {
 
           {/* CTA */}
           <div className="max-w-4xl mx-auto">
-            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white p-8 md:p-12 shadow-[0_20px_60px_-20px_rgba(15,23,42,0.6)]">
-              <div className="absolute -top-32 -right-32 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl" />
-              <div className="absolute -bottom-32 -left-32 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl" />
+            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-brand-900 to-slate-900 text-white p-8 md:p-12 shadow-[0_20px_60px_-20px_rgba(15,23,42,0.6)]">
+              <div className="absolute -top-32 -right-32 w-72 h-72 bg-brand-500/20 rounded-full blur-3xl" />
+              <div className="absolute -bottom-32 -left-32 w-72 h-72 bg-brand-500/20 rounded-full blur-3xl" />
               <div className="relative text-center">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 mb-5 shadow-lg">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-500 to-brand-400 mb-5 shadow-lg">
                   <Wrench className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold mb-4 leading-snug">
                   Хотите такой же результат для своего принтера?
                 </h3>
-                <p className="text-blue-100 text-[16px] md:text-[17px] leading-relaxed mb-8 max-w-2xl mx-auto">
+                <p className="text-brand-100 text-[16px] md:text-[17px] leading-relaxed mb-8 max-w-2xl mx-auto">
                   Оставьте заявку — инженер приедет в день обращения, проведёт бесплатную
                   диагностику и покажет реальное состояние вашей техники.
                 </p>
@@ -279,7 +279,7 @@ const Video = () => {
                   <Button
                     onClick={openRepairModal}
                     data-testid="video-cta-request"
-                    className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white font-semibold px-8 py-3.5 rounded-full shadow-[0_10px_30px_-8px_rgba(59,130,246,0.7)] transition-all"
+                    className="w-full sm:w-auto bg-gradient-to-r from-brand-500 to-brand-400 hover:from-brand-600 hover:to-brand-500 text-white font-semibold px-8 py-3.5 rounded-full shadow-[0_10px_30px_-8px_rgba(13,30,45,0.7)] transition-all"
                   >
                     Оставить заявку
                   </Button>

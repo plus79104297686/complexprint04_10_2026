@@ -92,9 +92,9 @@ const PromoPopup = () => {
 
         <div className="grid md:grid-cols-2">
           {/* Left: Image */}
-          <div className="relative bg-gradient-to-br from-blue-600 via-blue-500 to-cyan-500 p-8 md:p-10 flex items-center justify-center overflow-hidden min-h-[260px] md:min-h-full">
+          <div className="relative bg-gradient-to-br from-brand-600 via-brand-500 to-brand-500 p-8 md:p-10 flex items-center justify-center overflow-hidden min-h-[260px] md:min-h-full">
             <div className="absolute -top-16 -right-16 w-56 h-56 bg-white/10 rounded-full blur-2xl" />
-            <div className="absolute -bottom-16 -left-16 w-56 h-56 bg-cyan-300/20 rounded-full blur-2xl" />
+            <div className="absolute -bottom-16 -left-16 w-56 h-56 bg-brand-300/20 rounded-full blur-2xl" />
 
             {/* Discount badge */}
             <div className="absolute top-4 left-4 z-10 bg-red-500 text-white px-3 py-1.5 rounded-full text-[12px] font-bold shadow-lg flex items-center gap-1.5">
@@ -112,7 +112,7 @@ const PromoPopup = () => {
           </div>
 
           {/* Right: Content */}
-          <div className="p-6 sm:p-8 md:p-10 bg-gradient-to-br from-white to-blue-50/40">
+          <div className="p-6 sm:p-8 md:p-10 bg-gradient-to-br from-white to-brand-50/40">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-red-500 to-orange-500 text-white text-[12px] font-bold mb-4 shadow-sm">
               <Flame size={12} />
               АКЦИЯ
@@ -123,7 +123,7 @@ const PromoPopup = () => {
               className="text-2xl sm:text-3xl font-bold text-slate-900 leading-tight tracking-tight"
             >
               Аренда принтеров{' '}
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand-600 to-brand-500 bg-clip-text text-transparent">
                 от 2 000 ₽/мес.
               </span>
             </h2>
@@ -149,10 +149,10 @@ const PromoPopup = () => {
             </ul>
 
             {/* Price block */}
-            <div className="mt-5 p-4 rounded-2xl bg-gradient-to-br from-blue-50 to-cyan-50/50 border border-blue-100">
+            <div className="mt-5 p-4 rounded-2xl bg-gradient-to-br from-brand-50 to-brand-50/50 border border-brand-100">
               <div className="flex items-baseline gap-3 flex-wrap">
                 <span className="text-slate-400 line-through text-[16px]">4 500 ₽</span>
-                <span className="text-3xl font-extrabold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+                <span className="text-3xl font-extrabold bg-gradient-to-r from-brand-600 to-brand-500 bg-clip-text text-transparent">
                   3 500 ₽<span className="text-base text-slate-600 font-medium">/мес.</span>
                 </span>
               </div>
@@ -170,7 +170,7 @@ const PromoPopup = () => {
               <button
                 onClick={handleCta}
                 data-testid="promo-popup-cta"
-                className="flex-1 inline-flex items-center justify-center gap-2 whitespace-nowrap bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white px-5 py-3 rounded-full text-[15px] font-semibold shadow-[0_8px_24px_-8px_rgba(37,99,235,0.6)] hover:shadow-[0_12px_28px_-8px_rgba(37,99,235,0.7)] transition-all duration-300 hover:-translate-y-0.5 group"
+                className="flex-1 inline-flex items-center justify-center gap-2 whitespace-nowrap bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 text-white px-5 py-3 rounded-full text-[15px] font-semibold shadow-[0_8px_24px_-8px_rgba(13,30,45,0.6)] hover:shadow-[0_12px_28px_-8px_rgba(13,30,45,0.7)] transition-all duration-300 hover:-translate-y-0.5 group"
               >
                 Забронировать
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />

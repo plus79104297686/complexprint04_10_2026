@@ -27,8 +27,8 @@ const ServicesSection = () => {
         "Рекомендации по оптимизации оборудования"
       ],
       icon: HeartHandshake,
-      color: "from-blue-600 to-cyan-500",
-      bgColor: "from-blue-50 to-cyan-50"
+      color: "from-brand-600 to-brand-500",
+      bgColor: "from-brand-50 to-brand-50"
     },
     {
       id: 2,
@@ -47,8 +47,8 @@ const ServicesSection = () => {
         "Контроль качества после ремонта"
       ],
       icon: Wrench,
-      color: "from-cyan-500 to-blue-600",
-      bgColor: "from-cyan-50 to-blue-50"
+      color: "from-brand-500 to-brand-600",
+      bgColor: "from-brand-50 to-brand-50"
     },
     {
       id: 3,
@@ -67,8 +67,8 @@ const ServicesSection = () => {
         "Интеграция с Active Directory и существующей IT-инфраструктурой"
       ],
       icon: Printer,
-      color: "from-indigo-600 to-blue-700",
-      bgColor: "from-indigo-50 to-blue-50"
+      color: "from-indigo-600 to-brand-700",
+      bgColor: "from-indigo-50 to-brand-50"
     },
     {
       id: 4,
@@ -111,21 +111,21 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 lg:py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-white relative overflow-hidden">
+    <section id="services" className="py-20 lg:py-24 bg-gradient-to-br from-slate-50 via-brand-50/30 to-white relative overflow-hidden">
       {/* Фоновые элементы */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 -right-20 w-72 h-72 bg-gradient-to-br from-blue-400/10 to-cyan-400/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 -left-20 w-72 h-72 bg-gradient-to-tr from-cyan-400/10 to-blue-400/10 rounded-full blur-3xl" />
+        <div className="absolute top-20 -right-20 w-72 h-72 bg-gradient-to-br from-brand-400/10 to-brand-400/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 -left-20 w-72 h-72 bg-gradient-to-tr from-brand-400/10 to-brand-400/10 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200/60 font-semibold px-4 py-1">
+          <Badge className="mb-4 bg-brand-50 text-brand-700 hover:bg-brand-100 border border-brand-200/60 font-semibold px-4 py-1">
             Наши услуги
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
             Выберите идеальный
-            <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent block lg:inline lg:ml-3">
+            <span className="bg-gradient-to-r from-brand-600 to-brand-500 bg-clip-text text-transparent block lg:inline lg:ml-3">
               тарифный план
             </span>
           </h2>
@@ -141,11 +141,11 @@ const ServicesSection = () => {
             return (
               <Card key={service.id} className={`relative overflow-hidden transition-all duration-300 hover:shadow-[0_20px_60px_-15px_rgba(2,6,23,0.12)] hover:-translate-y-2 border-slate-100 h-full flex flex-col ${
                 service.popular 
-                  ? 'ring-2 ring-blue-500 shadow-[0_12px_40px_-12px_rgba(37,99,235,0.15)]' 
+                  ? 'ring-2 ring-brand-500 shadow-[0_12px_40px_-12px_rgba(13,30,45,0.15)]' 
                   : 'hover:shadow-[0_12px_40px_-12px_rgba(2,6,23,0.08)]'
               }`}>
                 {service.popular && (
-                  <div className="absolute top-0 right-0 bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-5 py-2.5 rounded-bl-2xl shadow-[0_4px_12px_-4px_rgba(37,99,235,0.4)]">
+                  <div className="absolute top-0 right-0 bg-gradient-to-r from-brand-600 to-brand-500 text-white px-5 py-2.5 rounded-bl-2xl shadow-[0_4px_12px_-4px_rgba(13,30,45,0.4)]">
                     <span className="text-[13px] font-semibold flex items-center gap-1.5">
                       <Zap size={14} className="fill-white" />
                       Самый популярный
@@ -154,7 +154,7 @@ const ServicesSection = () => {
                 )}
                 
                 <CardHeader className="pb-4 pt-8">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-5 shadow-[0_8px_24px_-8px_rgba(37,99,235,0.4)]`}>
+                  <div className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-5 shadow-[0_8px_24px_-8px_rgba(13,30,45,0.4)]`}>
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   <CardTitle className="text-2xl font-bold text-slate-900">{service.title}</CardTitle>
@@ -162,7 +162,7 @@ const ServicesSection = () => {
                   {service.learnMoreUrl && (
                     <Link
                       to={service.learnMoreUrl}
-                      className="inline-flex items-center gap-1.5 mt-3 text-blue-600 hover:text-cyan-600 font-semibold transition-colors group/link text-[15px]"
+                      className="inline-flex items-center gap-1.5 mt-3 text-brand-600 hover:text-brand-600 font-semibold transition-colors group/link text-[15px]"
                     >
                       <span className="underline underline-offset-2">{service.learnMoreText}</span>
                       <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
@@ -186,7 +186,7 @@ const ServicesSection = () => {
                   <Button 
                     onClick={openRepairModal}
                     data-testid={`services-cta-${service.id}`}
-                    className="w-full py-3 text-[16px] font-semibold rounded-full transition-all duration-300 hover:-translate-y-0.5 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white shadow-[0_8px_24px_-8px_rgba(37,99,235,0.6)] hover:shadow-[0_12px_28px_-8px_rgba(37,99,235,0.7)]"
+                    className="w-full py-3 text-[16px] font-semibold rounded-full transition-all duration-300 hover:-translate-y-0.5 bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 text-white shadow-[0_8px_24px_-8px_rgba(13,30,45,0.6)] hover:shadow-[0_12px_28px_-8px_rgba(13,30,45,0.7)]"
                     variant="default"
                   >
                     {service.id === 1 ? 'Оформить абонемент' : 'Заказать ремонт'}
@@ -203,8 +203,8 @@ const ServicesSection = () => {
             const IconComponent = advantage.icon;
             return (
               <div key={index} className="text-center group">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300 shadow-[0_8px_24px_-8px_rgba(37,99,235,0.1)] border border-blue-100/50">
-                  <IconComponent className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-gradient-to-br from-brand-50 to-brand-50 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300 shadow-[0_8px_24px_-8px_rgba(13,30,45,0.1)] border border-brand-100/50">
+                  <IconComponent className="w-8 h-8 text-brand-600" />
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">{advantage.title}</h3>
                 <p className="text-slate-600 text-[15px] leading-relaxed">{advantage.description}</p>

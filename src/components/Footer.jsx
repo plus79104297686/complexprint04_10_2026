@@ -26,17 +26,17 @@ const Footer = () => {
   };
 
   // Единые стили с Header
-  const linkBase = "text-slate-300 hover:text-cyan-300 transition-colors duration-200 text-left flex items-center gap-1 group";
+  const linkBase = "text-slate-300 hover:text-brand-300 transition-colors duration-200 text-left flex items-center gap-1 group";
   
   const sectionTitle = "text-[13px] font-semibold text-slate-400 uppercase tracking-wider mb-4";
 
   return (
     <footer className="relative bg-slate-900 text-white overflow-hidden">
       {/* Фоновый градиент */}
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-blue-950/30 to-slate-900" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-brand-900/30 to-slate-900" />
       
       {/* Декоративная полоска сверху */}
-      <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-blue-500/40 to-transparent" />
+      <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-brand-500/40 to-transparent" />
 
       <div className="relative container mx-auto px-4 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10">
@@ -46,8 +46,8 @@ const Footer = () => {
             {/* Логотип как в Header */}
             <div className="flex items-center gap-3 mb-6 cursor-pointer group" onClick={() => go('/')}>
               <div className="relative">
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 blur-md opacity-40 group-hover:opacity-70 transition-opacity duration-300" />
-                <div className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-blue-600 via-blue-500 to-cyan-400 flex items-center justify-center shadow-lg ring-1 ring-white/40 group-hover:scale-105 transition-transform duration-300">
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-brand-500 to-brand-400 blur-md opacity-40 group-hover:opacity-70 transition-opacity duration-300" />
+                <div className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-brand-600 via-brand-500 to-brand-400 flex items-center justify-center shadow-lg ring-1 ring-white/40 group-hover:scale-105 transition-transform duration-300">
                   <span className="text-white font-extrabold text-[17px] tracking-tight drop-shadow-[0_1px_2px_rgba(0,0,0,0.25)]">
                     CP
                   </span>
@@ -56,7 +56,7 @@ const Footer = () => {
               </div>
               <div className="leading-tight">
                 <h3 className="text-[17px] lg:text-[19px] font-bold text-white tracking-tight">
-                  Комплекс<span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"> Принт</span>
+                  Комплекс<span className="bg-gradient-to-r from-brand-400 to-brand-400 bg-clip-text text-transparent"> Принт</span>
                 </h3>
                 <p className="text-[11px] text-slate-400 hidden sm:block tracking-wide">
                   Профессиональное обслуживание оборудования
@@ -71,29 +71,29 @@ const Footer = () => {
             {/* Контакты с иконками в стиле Header */}
             <div className="space-y-3">
               <a href={`tel:${companyInfo.phone.replace(/\D/g, '')}`} className="flex items-center gap-3 group">
-                <span className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+                <span className="w-8 h-8 rounded-full bg-gradient-to-br from-brand-500 to-brand-400 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
                   <Phone size={14} className="text-white" />
                 </span>
-                <span className="text-slate-300 group-hover:text-cyan-300 transition-colors font-medium">{companyInfo.phone}</span>
+                <span className="text-slate-300 group-hover:text-brand-300 transition-colors font-medium">{companyInfo.phone}</span>
               </a>
               
               <a href={`mailto:${companyInfo.email}`} className="flex items-center gap-3 group">
-                <span className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
-                  <Mail size={14} className="text-cyan-400" />
+                <span className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-brand-500/20 transition-colors">
+                  <Mail size={14} className="text-brand-400" />
                 </span>
-                <span className="text-slate-300 group-hover:text-cyan-300 transition-colors">{companyInfo.email}</span>
+                <span className="text-slate-300 group-hover:text-brand-300 transition-colors">{companyInfo.email}</span>
               </a>
               
               <div className="flex items-center gap-3">
                 <span className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
-                  <MapPin size={14} className="text-cyan-400" />
+                  <MapPin size={14} className="text-brand-400" />
                 </span>
                 <span className="text-slate-300">{companyInfo.address}</span>
               </div>
               
               <div className="flex items-center gap-3">
                 <span className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
-                  <Clock size={14} className="text-cyan-400" />
+                  <Clock size={14} className="text-brand-400" />
                 </span>
                 <span className="text-slate-300">Пн–Пт 9:00–19:00</span>
               </div>
@@ -139,7 +139,7 @@ const Footer = () => {
               <button onClick={() => scrollToSection('home')} className={linkBase}>
                 <span>Главная</span>
               </button>
-              <button onClick={() => scrollToSection('services')} className={linkBase}>
+              <button onClick={() => scrollToSection('tasks')} className={linkBase}>
                 <span>Услуги</span>
               </button>
               <button onClick={() => scrollToSection('equipment')} className={linkBase}>
@@ -166,7 +166,7 @@ const Footer = () => {
               <button onClick={() => go('/contacts')} className={linkBase}>
                 <span>Контакты</span>
               </button>
-              <button onClick={openRepairModal} data-testid="footer-cta-repair-request" className={linkBase + " text-cyan-300 font-medium"}>
+              <button onClick={openRepairModal} data-testid="footer-cta-repair-request" className={linkBase + " text-brand-300 font-medium"}>
                 <span>Заявка на ремонт</span>
                 <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
               </button>
@@ -188,24 +188,24 @@ const Footer = () => {
                 <button
                   key={brand.path}
                   onClick={() => go(brand.path)}
-                  className="text-slate-300 hover:text-cyan-300 transition-colors duration-200 text-left text-[14px] flex items-center gap-1 group"
+                  className="text-slate-300 hover:text-brand-300 transition-colors duration-200 text-left text-[14px] flex items-center gap-1 group"
                 >
-                  <span className="w-1 h-1 rounded-full bg-blue-500/60 group-hover:bg-cyan-400 transition-colors" />
+                  <span className="w-1 h-1 rounded-full bg-brand-500/60 group-hover:bg-brand-400 transition-colors" />
                   {brand.name}
                 </button>
               ))}
-              <button onClick={() => go('/rayony-moskvy')} className="text-slate-300 hover:text-cyan-300 transition-colors duration-200 text-left text-[14px] col-span-2 flex items-center gap-1 group">
-                <span className="w-1 h-1 rounded-full bg-blue-500/60 group-hover:bg-cyan-400 transition-colors" />
+              <button onClick={() => go('/rayony-moskvy')} className="text-slate-300 hover:text-brand-300 transition-colors duration-200 text-left text-[14px] col-span-2 flex items-center gap-1 group">
+                <span className="w-1 h-1 rounded-full bg-brand-500/60 group-hover:bg-brand-400 transition-colors" />
                 Районы Москвы
               </button>
             </nav>
 
             {/* CTA в футере */}
-            <div className="mt-6 p-4 rounded-xl bg-gradient-to-br from-blue-600/20 to-cyan-500/20 border border-blue-500/20 backdrop-blur-sm">
+            <div className="mt-6 p-4 rounded-xl bg-gradient-to-br from-brand-600/20 to-brand-500/20 border border-brand-500/20 backdrop-blur-sm">
               <p className="text-[13px] text-slate-300 mb-3">Нужна консультация?</p>
               <button
                 onClick={() => { openRepairModal(); }}
-                className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white py-2 rounded-full font-semibold text-[13px] shadow-[0_8px_24px_-8px_rgba(37,99,235,0.6)] hover:shadow-[0_12px_28px_-8px_rgba(37,99,235,0.7)] transition-all duration-300 hover:-translate-y-0.5"
+                className="w-full bg-signal-500 hover:bg-signal-600 text-brand-900 py-2 rounded-full font-semibold text-[13px] shadow-[0_8px_24px_-8px_rgba(13,30,45,0.6)] hover:shadow-[0_12px_28px_-8px_rgba(13,30,45,0.7)] transition-all duration-300 hover:-translate-y-0.5"
               >
                 Заявка на ремонт
               </button>
@@ -220,14 +220,14 @@ const Footer = () => {
               © 2025 Комплекс Принт. Все права защищены.
             </p>
             <div className="flex flex-wrap gap-x-6 gap-y-2">
-              <button onClick={() => go('/contacts')} className="text-slate-400 text-[13px] hover:text-cyan-300 transition-colors duration-200 text-left">
+              <button onClick={() => go('/contacts')} className="text-slate-400 text-[13px] hover:text-brand-300 transition-colors duration-200 text-left">
                 Контакты
               </button>
               <span className="text-slate-400 text-[13px]">Политика конфиденциальности</span>
-              <a href="/terms-of-service" className="text-slate-400 text-[13px] hover:text-cyan-300 transition-colors duration-200 text-left">
+              <a href="/terms-of-service" className="text-slate-400 text-[13px] hover:text-brand-300 transition-colors duration-200 text-left">
                 Условия обслуживания
               </a>
-              <button onClick={() => setIsDetailsModalOpen(true)} className="text-slate-400 text-[13px] hover:text-cyan-300 transition-colors duration-200 text-left">
+              <button onClick={() => setIsDetailsModalOpen(true)} className="text-slate-400 text-[13px] hover:text-brand-300 transition-colors duration-200 text-left">
                 Реквизиты компании
               </button>
             </div>

@@ -42,7 +42,7 @@ export default function AboutUs() {
 
       <Header />
 
-      <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-purple-50 pt-24 lg:pt-[124px] pb-16">
+      <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-brand-50 pt-24 lg:pt-[124px] pb-16">
         <div className="container mx-auto px-4 max-w-6xl">
           
           {/* Hero Image Section */}
@@ -58,7 +58,7 @@ export default function AboutUs() {
           <div className="text-center mb-12">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Сервисное обслуживание печатной техники: 
-              <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent block mt-2">
+              <span className="bg-gradient-to-r from-signal-500 to-brand-600 bg-clip-text text-transparent block mt-2">
                 ваш надежный партнер в Москве
               </span>
             </h1>
@@ -84,7 +84,7 @@ export default function AboutUs() {
           </section>
 
           {/* Why Choose Us */}
-          <section className="mb-12 bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-8 shadow-lg border border-pink-100">
+          <section className="mb-12 bg-gradient-to-br from-brand-50 to-brand-50 rounded-2xl p-8 shadow-lg border border-brand-100">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Почему 9 из 10 клиентов выбирают нас повторно?
             </h2>
@@ -171,7 +171,7 @@ export default function AboutUs() {
           {/* New Directions: PC + Live webcams */}
           <section className="mb-12">
             <div className="text-center mb-8">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-purple-100 border border-purple-200/60 text-purple-700 text-[13px] font-semibold mb-4">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-brand-100 border border-brand-200/60 text-brand-700 text-[13px] font-semibold mb-4">
                 Новые направления
               </span>
               <h2 className="text-3xl font-bold text-gray-900">
@@ -188,10 +188,10 @@ export default function AboutUs() {
               <Link
                 to="/komputery-i-komplektuyushchie"
                 data-testid="about-direction-computers"
-                className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-purple-200 block"
+                className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-brand-200 block"
               >
                 <div className="flex items-start gap-5">
-                  <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center shadow-[0_8px_20px_-8px_rgba(168,85,247,0.6)] group-hover:scale-110 transition-transform duration-300">
+                  <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-signal-500 to-brand-600 flex items-center justify-center shadow-[0_8px_20px_-8px_rgba(13,30,45,0.6)] group-hover:scale-110 transition-transform duration-300">
                     <Monitor className="w-7 h-7 text-white" />
                   </div>
                   <div className="flex-1">
@@ -205,29 +205,29 @@ export default function AboutUs() {
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {['Intel', 'AMD', 'ASUS', 'Gigabyte', 'Lenovo', 'Dell'].map((b) => (
-                        <span key={b} className="px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-700 text-[12px] font-semibold border border-purple-100">
+                        <span key={b} className="px-2.5 py-0.5 rounded-full bg-brand-50 text-brand-700 text-[12px] font-semibold border border-brand-100">
                           {b}
                         </span>
                       ))}
                     </div>
-                    <span className="inline-flex items-center gap-1.5 text-purple-700 font-semibold text-[14px] group-hover:gap-2.5 transition-all">
+                    <span className="inline-flex items-center gap-1.5 text-brand-700 font-semibold text-[14px] group-hover:gap-2.5 transition-all">
                       Перейти в каталог
                       <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
                     </span>
                   </div>
                 </div>
                 <div className="absolute top-4 right-4 flex gap-1.5 opacity-30 group-hover:opacity-60 transition-opacity">
-                  <Cpu size={16} className="text-purple-400" />
+                  <Cpu size={16} className="text-brand-400" />
                 </div>
               </Link>
 
               {/* Live webcams card */}
               <div
                 data-testid="about-direction-webcams"
-                className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-pink-200"
+                className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-brand-200"
               >
                 <div className="flex items-start gap-5">
-                  <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center shadow-[0_8px_20px_-8px_rgba(236,72,153,0.6)] group-hover:scale-110 transition-transform duration-300">
+                  <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-600 to-signal-500 flex items-center justify-center shadow-[0_8px_20px_-8px_rgba(13,30,45,0.6)] group-hover:scale-110 transition-transform duration-300">
                     <Video className="w-7 h-7 text-white" />
                   </div>
                   <div className="flex-1">
@@ -246,7 +246,7 @@ export default function AboutUs() {
                         { Icon: ShieldCheck, text: 'Монтаж «под ключ» с гарантией' },
                       ].map(({ Icon, text }) => (
                         <li key={text} className="flex items-center gap-2 text-[14px] text-gray-700">
-                          <Icon size={14} className="text-pink-500 flex-shrink-0" />
+                          <Icon size={14} className="text-signal-500 flex-shrink-0" />
                           {text}
                         </li>
                       ))}
@@ -254,7 +254,7 @@ export default function AboutUs() {
                     <button
                       onClick={scrollToRepairForm}
                       data-testid="about-webcams-cta"
-                      className="inline-flex items-center gap-1.5 text-pink-600 font-semibold text-[14px] hover:text-pink-700 hover:gap-2.5 transition-all"
+                      className="inline-flex items-center gap-1.5 text-signal-600 font-semibold text-[14px] hover:text-signal-700 hover:gap-2.5 transition-all"
                     >
                       Получить расчёт
                       <ArrowRight size={16} />
@@ -262,14 +262,14 @@ export default function AboutUs() {
                   </div>
                 </div>
                 <div className="absolute top-4 right-4 flex gap-1.5 opacity-30 group-hover:opacity-60 transition-opacity">
-                  <Video size={16} className="text-pink-400" />
+                  <Video size={16} className="text-signal-400" />
                 </div>
               </div>
             </div>
           </section>
 
           {/* Special Offer */}
-          <section className="mb-12 bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl p-8 shadow-lg text-white">
+          <section className="mb-12 bg-gradient-to-r from-signal-500 to-brand-600 rounded-2xl p-8 shadow-lg text-white">
             <h2 className="text-3xl font-bold mb-4">
               Специальное предложение для бизнеса
             </h2>
@@ -303,7 +303,7 @@ export default function AboutUs() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button 
                 onClick={scrollToRepairForm}
-                className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-gradient-to-r from-signal-500 to-brand-600 hover:from-signal-600 hover:to-brand-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Оставить заявку
               </button>

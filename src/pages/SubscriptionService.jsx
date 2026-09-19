@@ -85,10 +85,10 @@ export default function SubscriptionService() {
 
       <Header />
 
-      <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-purple-50 pt-24 pb-16">
+      <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-brand-50 pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-6xl">
           {/* Hero */}
-          <section className="mb-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-3xl p-8 lg:p-12 shadow-2xl text-white">
+          <section className="mb-12 bg-gradient-to-br from-signal-500 to-brand-600 rounded-3xl p-8 lg:p-12 shadow-2xl text-white">
             <div className="flex items-center gap-3 mb-4">
               <Shield className="w-8 h-8" />
               <span className="uppercase tracking-wider text-sm font-semibold opacity-90">
@@ -277,8 +277,8 @@ export default function SubscriptionService() {
           {/* What subscription gives */}
           <section className="mb-12 bg-white rounded-2xl p-8 shadow-lg">
             <div className="flex items-start gap-4 mb-4">
-              <div className="bg-purple-100 p-3 rounded-xl">
-                <Calendar className="w-7 h-7 text-purple-600" />
+              <div className="bg-brand-100 p-3 rounded-xl">
+                <Calendar className="w-7 h-7 text-brand-600" />
               </div>
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
                 Что даёт абонентская модель
@@ -301,7 +301,7 @@ export default function SubscriptionService() {
           </section>
 
           {/* TIMELINE: parts wait comparison */}
-          <section className="mb-12 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 shadow-lg border border-purple-100">
+          <section className="mb-12 bg-gradient-to-br from-brand-50 to-brand-50 rounded-2xl p-8 shadow-lg border border-brand-100">
             <div className="text-center mb-8">
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
                 10 дней без принтера или 1 час до восстановления?
@@ -404,10 +404,10 @@ export default function SubscriptionService() {
           </section>
 
           {/* Why important for office */}
-          <section className="mb-12 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg border border-blue-100">
+          <section className="mb-12 bg-gradient-to-br from-brand-50 to-indigo-50 rounded-2xl p-8 shadow-lg border border-brand-100">
             <div className="flex items-start gap-4 mb-4">
-              <div className="bg-blue-100 p-3 rounded-xl">
-                <Building2 className="w-7 h-7 text-blue-600" />
+              <div className="bg-brand-100 p-3 rounded-xl">
+                <Building2 className="w-7 h-7 text-brand-600" />
               </div>
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
                 Почему это особенно важно для офиса
@@ -432,8 +432,8 @@ export default function SubscriptionService() {
           {/* Right service */}
           <section className="mb-12 bg-white rounded-2xl p-8 shadow-lg">
             <div className="flex items-start gap-4 mb-4">
-              <div className="bg-pink-100 p-3 rounded-xl">
-                <Wrench className="w-7 h-7 text-pink-600" />
+              <div className="bg-brand-100 p-3 rounded-xl">
+                <Wrench className="w-7 h-7 text-signal-600" />
               </div>
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
                 Как выглядит правильный сервис
@@ -457,8 +457,8 @@ export default function SubscriptionService() {
           {/* CASE STUDY */}
           <section className="mb-12 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 lg:p-10 shadow-2xl text-white">
             <div className="flex items-center gap-3 mb-6">
-              <Activity className="w-8 h-8 text-pink-400" />
-              <span className="uppercase tracking-wider text-sm font-semibold text-pink-400">
+              <Activity className="w-8 h-8 text-signal-400" />
+              <span className="uppercase tracking-wider text-sm font-semibold text-signal-400">
                 Кейс из практики
               </span>
             </div>
@@ -476,11 +476,11 @@ export default function SubscriptionService() {
             </p>
             <div className="grid sm:grid-cols-3 gap-4">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                <div className="text-3xl font-bold text-pink-400">−45%</div>
+                <div className="text-3xl font-bold text-signal-400">−45%</div>
                 <div className="text-sm opacity-90">аварийных вызовов</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                <div className="text-3xl font-bold text-purple-300">×2</div>
+                <div className="text-3xl font-bold text-brand-300">×2</div>
                 <div className="text-sm opacity-90">скорость замены узлов</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
@@ -515,7 +515,7 @@ export default function SubscriptionService() {
           </section>
 
           {/* Conclusion */}
-          <section className="mb-12 bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-8 shadow-lg border border-pink-100">
+          <section className="mb-12 bg-gradient-to-br from-brand-50 to-brand-50 rounded-2xl p-8 shadow-lg border border-brand-100">
             <p className="text-lg text-gray-800 leading-relaxed mb-4">
               Абонентское обслуживание это переход от режима «пожарной
               команды» к режиму уверенного контроля. Техника не капризничает,
@@ -530,7 +530,7 @@ export default function SubscriptionService() {
           </section>
 
           {/* CTA */}
-          <section className="bg-gradient-to-br from-pink-500 to-purple-600 rounded-2xl p-8 lg:p-10 text-white text-center shadow-2xl">
+          <section className="bg-gradient-to-br from-signal-500 to-brand-600 rounded-2xl p-8 lg:p-10 text-white text-center shadow-2xl">
             <Clock className="w-12 h-12 mx-auto mb-4 opacity-90" />
             <h2 className="text-2xl lg:text-3xl font-bold mb-4">
               Хотите, чтобы принтеры работали, а не устраивали спектакли?
@@ -542,7 +542,7 @@ export default function SubscriptionService() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button
                 onClick={scrollToRepairForm}
-                className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-white text-brand-600 hover:bg-gray-100 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Оставить заявку
               </button>

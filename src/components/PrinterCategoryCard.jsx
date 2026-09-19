@@ -15,7 +15,7 @@ const PrinterCategoryCard = ({ category, onClick }) => {
         </div>
 
         {/* Заголовок */}
-        <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors">
+        <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-brand-600 transition-colors">
           {category.name}
         </h3>
 
@@ -29,7 +29,7 @@ const PrinterCategoryCard = ({ category, onClick }) => {
           <div className="grid gap-2">
             {category.features.map((feature, index) => (
               <div key={index} className="flex items-center text-sm text-gray-700">
-                <span className="w-2 h-2 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full mr-3"></span>
+                <span className="w-2 h-2 bg-gradient-to-r from-signal-500 to-brand-600 rounded-full mr-3"></span>
                 {feature}
               </div>
             ))}
@@ -43,7 +43,7 @@ const PrinterCategoryCard = ({ category, onClick }) => {
             {category.brands.map((brand, index) => (
               <Badge 
                 key={index} 
-                className="bg-gradient-to-r from-pink-100 to-purple-100 text-pink-700 hover:from-pink-200 hover:to-purple-200 text-xs"
+                className="bg-gradient-to-r from-brand-100 to-brand-100 text-signal-700 hover:from-brand-200 hover:to-brand-200 text-xs"
               >
                 {brand}
               </Badge>
@@ -52,7 +52,7 @@ const PrinterCategoryCard = ({ category, onClick }) => {
         </div>
 
         {/* Кнопка */}
-        <button className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold py-3 px-4 rounded-lg hover:from-pink-600 hover:to-purple-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
+        <button className="w-full bg-gradient-to-r from-signal-500 to-brand-600 text-white font-semibold py-3 px-4 rounded-lg hover:from-signal-600 hover:to-brand-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
           Выбрать принтер →
         </button>
       </CardContent>

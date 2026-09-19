@@ -57,11 +57,11 @@ const renderInline = (text) => {
         const isExternal = /^https?:\/\//.test(url);
         parts.push(
           isExternal ? (
-            <a key={parts.length} href={url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-cyan-600 underline underline-offset-2">
+            <a key={parts.length} href={url} target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:text-brand-600 underline underline-offset-2">
               {txt}
             </a>
           ) : (
-            <Link key={parts.length} to={url} className="text-blue-600 hover:text-cyan-600 underline underline-offset-2">
+            <Link key={parts.length} to={url} className="text-brand-600 hover:text-brand-600 underline underline-offset-2">
               {txt}
             </Link>
           )
@@ -89,9 +89,9 @@ const renderParagraph = (p, idx) => {
     return (
       <blockquote
         key={idx}
-        className="my-8 pl-6 pr-4 py-5 border-l-4 border-blue-500 bg-gradient-to-r from-blue-50 to-cyan-50/40 rounded-r-2xl"
+        className="my-8 pl-6 pr-4 py-5 border-l-4 border-brand-500 bg-gradient-to-r from-brand-50 to-brand-50/40 rounded-r-2xl"
       >
-        <Quote className="w-5 h-5 text-blue-500 mb-2 -ml-1" />
+        <Quote className="w-5 h-5 text-brand-500 mb-2 -ml-1" />
         <p className="text-slate-800 text-[17px] leading-[1.7] italic font-medium">
           {renderInline(p.text)}
         </p>
@@ -103,7 +103,7 @@ const renderParagraph = (p, idx) => {
       <ul key={idx} className="mb-6 space-y-2.5">
         {p.items.map((item, i) => (
           <li key={i} className="flex items-start gap-3 text-slate-700 text-[17px] leading-[1.7]">
-            <span className="mt-2 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0" />
+            <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" />
             <span>{renderInline(item)}</span>
           </li>
         ))}
@@ -247,7 +247,7 @@ const AnalyticsArticle = () => {
       : null;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50/40">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-brand-50/40">
       <Helmet>
         <html lang="ru" />
         <title>{`${article.title} | Комплекс Принт — Аналитика`}</title>
@@ -299,7 +299,7 @@ const AnalyticsArticle = () => {
           <article className="max-w-3xl mx-auto mt-6">
             {/* Мета-инфо */}
             <div className="flex flex-wrap items-center gap-2 mb-5">
-              <Badge className="bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200/60 font-semibold px-3 py-1">
+              <Badge className="bg-brand-50 text-brand-700 hover:bg-brand-100 border border-brand-200/60 font-semibold px-3 py-1">
                 Аналитика
               </Badge>
               <span className="inline-flex items-center gap-1.5 text-slate-500 text-[14px]">
@@ -365,7 +365,7 @@ const AnalyticsArticle = () => {
                   href={article.dzenUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-4 p-5 rounded-2xl border border-slate-200 bg-white hover:border-blue-200 hover:shadow-md transition-all"
+                  className="group flex items-center gap-4 p-5 rounded-2xl border border-slate-200 bg-white hover:border-brand-200 hover:shadow-md transition-all"
                 >
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-100 to-yellow-100 flex items-center justify-center flex-shrink-0">
                     <ExternalLink className="w-5 h-5 text-orange-600" />
@@ -374,7 +374,7 @@ const AnalyticsArticle = () => {
                     <div className="text-[13px] font-semibold text-slate-500 uppercase tracking-wider mb-0.5">
                       Оригинал
                     </div>
-                    <div className="text-slate-900 font-semibold group-hover:text-blue-700 transition-colors">
+                    <div className="text-slate-900 font-semibold group-hover:text-brand-700 transition-colors">
                       Прочитать эту статью на Дзене
                     </div>
                   </div>
@@ -384,16 +384,16 @@ const AnalyticsArticle = () => {
               <button
                 onClick={openRepairModal}
                 data-testid="article-cta-request"
-                className="group flex items-center gap-4 p-5 rounded-2xl border border-blue-200 bg-gradient-to-br from-blue-50 to-cyan-50/50 hover:border-blue-300 hover:shadow-md transition-all text-left"
+                className="group flex items-center gap-4 p-5 rounded-2xl border border-brand-200 bg-gradient-to-br from-brand-50 to-brand-50/50 hover:border-brand-300 hover:shadow-md transition-all text-left"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0 shadow-md">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-500 to-brand-500 flex items-center justify-center flex-shrink-0 shadow-md">
                   <MessageCircle className="w-5 h-5 text-white" />
                 </div>
                 <div className="flex-1">
-                  <div className="text-[13px] font-semibold text-blue-700 uppercase tracking-wider mb-0.5">
+                  <div className="text-[13px] font-semibold text-brand-700 uppercase tracking-wider mb-0.5">
                     Заявка
                   </div>
-                  <div className="text-slate-900 font-semibold group-hover:text-blue-700 transition-colors">
+                  <div className="text-slate-900 font-semibold group-hover:text-brand-700 transition-colors">
                     Ваш принтер? Диагностика бесплатно
                   </div>
                 </div>
@@ -404,7 +404,7 @@ const AnalyticsArticle = () => {
             <div className="mt-10">
               <Link
                 to="/analytics"
-                className="inline-flex items-center gap-1.5 text-slate-500 hover:text-blue-600 font-medium text-[15px] transition-colors"
+                className="inline-flex items-center gap-1.5 text-slate-500 hover:text-brand-600 font-medium text-[15px] transition-colors"
               >
                 <ArrowLeft className="w-4 h-4" />
                 Все материалы аналитики
@@ -435,13 +435,13 @@ const AnalyticsArticle = () => {
                           <div className="text-[13px] text-slate-500 mb-2">
                             {formatDate(a.date)} · {a.readingTime} мин
                           </div>
-                          <h4 className="text-lg font-bold text-slate-900 leading-snug mb-2 group-hover:text-blue-700 transition-colors line-clamp-2">
+                          <h4 className="text-lg font-bold text-slate-900 leading-snug mb-2 group-hover:text-brand-700 transition-colors line-clamp-2">
                             {a.title}
                           </h4>
                           <p className="text-slate-600 text-[14px] leading-relaxed line-clamp-2">
                             {a.description}
                           </p>
-                          <div className="mt-3 inline-flex items-center gap-1.5 text-blue-600 font-semibold text-[14px]">
+                          <div className="mt-3 inline-flex items-center gap-1.5 text-brand-600 font-semibold text-[14px]">
                             Читать
                             <ArrowRight className="w-4 h-4" />
                           </div>

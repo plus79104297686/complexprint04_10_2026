@@ -33,8 +33,8 @@ const SeoTextSection = () => {
       price: 'от 1 500 ₽ / месяц',
       description:
         'Регулярная профилактика, приоритетный выезд, бесплатные запчасти и расходники. Экономия до 60% по сравнению с разовыми вызовами.',
-      color: 'from-blue-600 to-cyan-500',
-      bgColor: 'from-blue-50 to-cyan-50/60',
+      color: 'from-brand-600 to-brand-500',
+      bgColor: 'from-brand-50 to-brand-50/60',
       link: '/abonentskoe-obsluzhivanie',
     },
     {
@@ -43,8 +43,8 @@ const SeoTextSection = () => {
       price: 'от 3 000 ₽ / выезд',
       description:
         'Диагностика, ремонт, гарантия на выполненные работы. Выезд мастера в день обращения.',
-      color: 'from-cyan-500 to-blue-600',
-      bgColor: 'from-cyan-50 to-blue-50/60',
+      color: 'from-brand-500 to-brand-600',
+      bgColor: 'from-brand-50 to-brand-50/60',
       link: '/razovyy-remont',
     },
     {
@@ -53,8 +53,8 @@ const SeoTextSection = () => {
       price: 'от 0,55 ₽ / отпечаток',
       description:
         'Полный контроль печатной инфраструктуры: учёт по пользователям и отделам, безопасная печать, предиктивное обслуживание.',
-      color: 'from-indigo-600 to-blue-700',
-      bgColor: 'from-indigo-50 to-blue-50/60',
+      color: 'from-indigo-600 to-brand-700',
+      bgColor: 'from-indigo-50 to-brand-50/60',
       link: '/mps-autsorsing-pechati',
     },
     {
@@ -89,7 +89,7 @@ const SeoTextSection = () => {
         'VersaLink B7025 / B7030',
       ],
       link: '/remont-printerov-xerox',
-      accent: 'from-sky-500 to-blue-600',
+      accent: 'from-sky-500 to-brand-600',
     },
     {
       name: 'Ricoh',
@@ -103,7 +103,7 @@ const SeoTextSection = () => {
         'IM C2000 / C3000 / C3500',
       ],
       link: '/remont-printerov-ricoh',
-      accent: 'from-red-600 to-pink-600',
+      accent: 'from-red-600 to-signal-600',
     },
     {
       name: 'HP',
@@ -117,7 +117,7 @@ const SeoTextSection = () => {
         'Color LaserJet Enterprise M554 / M578',
       ],
       link: '/remont-printerov-hp',
-      accent: 'from-blue-600 to-indigo-600',
+      accent: 'from-brand-600 to-indigo-600',
     },
     {
       name: 'Canon',
@@ -145,7 +145,7 @@ const SeoTextSection = () => {
         'bizhub C3350 / C3850',
       ],
       link: '/remont-printerov-konica-minolta',
-      accent: 'from-blue-500 to-cyan-500',
+      accent: 'from-brand-500 to-brand-500',
     },
   ];
 
@@ -200,14 +200,14 @@ const SeoTextSection = () => {
     >
       {/* Фоновые декоративные элементы */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-32 -left-32 w-96 h-96 bg-gradient-to-br from-blue-400/10 to-cyan-400/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-32 -right-32 w-96 h-96 bg-gradient-to-tr from-indigo-400/10 to-blue-400/10 rounded-full blur-3xl" />
+        <div className="absolute top-32 -left-32 w-96 h-96 bg-gradient-to-br from-brand-400/10 to-brand-400/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-32 -right-32 w-96 h-96 bg-gradient-to-tr from-indigo-400/10 to-brand-400/10 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Заголовок */}
         <div className="text-center mb-14 max-w-4xl mx-auto">
-          <Badge className="mb-4 bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200/60 font-semibold px-4 py-1">
+          <Badge className="mb-4 bg-brand-50 text-brand-700 hover:bg-brand-100 border border-brand-200/60 font-semibold px-4 py-1">
             <Sparkles className="w-3.5 h-3.5 mr-1.5" />О компании и услугах
           </Badge>
           <h2
@@ -215,7 +215,7 @@ const SeoTextSection = () => {
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-tight leading-tight"
           >
             Профессиональный ремонт и обслуживание{' '}
-            <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-brand-600 to-brand-500 bg-clip-text text-transparent">
               принтеров и МФУ в Москве
             </span>
           </h2>
@@ -231,9 +231,9 @@ const SeoTextSection = () => {
 
         {/* Почему стоит доверить обслуживание профессионалам */}
         <div className="max-w-5xl mx-auto mb-16">
-          <div className="bg-gradient-to-br from-blue-50 via-cyan-50/50 to-white rounded-3xl border border-blue-100/70 shadow-[0_8px_30px_-15px_rgba(37,99,235,0.15)] p-6 md:p-10">
+          <div className="bg-gradient-to-br from-brand-50 via-brand-50/50 to-white rounded-3xl border border-brand-100/70 shadow-[0_8px_30px_-15px_rgba(13,30,45,0.15)] p-6 md:p-10">
             <div className="flex items-start gap-4 mb-4">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-2xl flex items-center justify-center shadow-[0_8px_24px_-8px_rgba(37,99,235,0.4)] flex-shrink-0">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-brand-600 to-brand-500 rounded-2xl flex items-center justify-center shadow-[0_8px_24px_-8px_rgba(13,30,45,0.4)] flex-shrink-0">
                 <ShieldCheck className="w-6 h-6 md:w-7 md:h-7 text-white" />
               </div>
               <div>
@@ -274,18 +274,18 @@ const SeoTextSection = () => {
                 >
                   <CardContent className="p-6 flex flex-col h-full">
                     <div
-                      className={`w-12 h-12 rounded-xl bg-gradient-to-br ${f.color} flex items-center justify-center mb-4 shadow-[0_8px_20px_-8px_rgba(37,99,235,0.4)]`}
+                      className={`w-12 h-12 rounded-xl bg-gradient-to-br ${f.color} flex items-center justify-center mb-4 shadow-[0_8px_20px_-8px_rgba(13,30,45,0.4)]`}
                     >
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-slate-900 mb-1">{f.title}</h4>
-                    <div className="text-blue-700 font-semibold text-[15px] mb-3">{f.price}</div>
+                    <div className="text-brand-700 font-semibold text-[15px] mb-3">{f.price}</div>
                     <p className="text-slate-600 text-[14.5px] leading-relaxed flex-1">
                       {f.description}
                     </p>
                     <Link
                       to={f.link}
-                      className="inline-flex items-center gap-1.5 mt-4 text-blue-600 hover:text-cyan-600 font-semibold text-[14px] transition-colors"
+                      className="inline-flex items-center gap-1.5 mt-4 text-brand-600 hover:text-brand-600 font-semibold text-[14px] transition-colors"
                     >
                       Подробнее
                       <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -300,7 +300,7 @@ const SeoTextSection = () => {
         {/* Какие принтеры и МФУ мы ремонтируем */}
         <div className="mb-20">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <Badge className="mb-4 bg-cyan-50 text-cyan-700 hover:bg-cyan-100 border border-cyan-200/60 font-semibold px-4 py-1">
+            <Badge className="mb-4 bg-brand-50 text-brand-700 hover:bg-brand-100 border border-brand-200/60 font-semibold px-4 py-1">
               <Printer className="w-3.5 h-3.5 mr-1.5" /> Обслуживаемые бренды
             </Badge>
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-3">
@@ -336,14 +336,14 @@ const SeoTextSection = () => {
                   <ul className="space-y-2 mb-5">
                     {brand.models.map((m) => (
                       <li key={m} className="flex items-start gap-2 text-slate-700 text-[14.5px]">
-                        <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                        <CheckCircle2 className="w-4 h-4 text-brand-600 mt-0.5 flex-shrink-0" />
                         <span>{m}</span>
                       </li>
                     ))}
                   </ul>
                   <Link
                     to={brand.link}
-                    className="inline-flex items-center gap-1.5 text-blue-600 hover:text-cyan-600 font-semibold text-[14.5px] transition-colors"
+                    className="inline-flex items-center gap-1.5 text-brand-600 hover:text-brand-600 font-semibold text-[14.5px] transition-colors"
                   >
                     Ремонт {brand.name}
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -356,9 +356,9 @@ const SeoTextSection = () => {
 
         {/* Аренда принтеров и МФУ */}
         <div className="max-w-5xl mx-auto mb-20">
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-blue-700 to-cyan-600 text-white p-8 md:p-12 shadow-[0_20px_60px_-20px_rgba(37,99,235,0.5)]">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-600 via-brand-700 to-brand-600 text-white p-8 md:p-12 shadow-[0_20px_60px_-20px_rgba(13,30,45,0.5)]">
             <div className="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
-            <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-cyan-300/20 rounded-full blur-3xl" />
+            <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-brand-300/20 rounded-full blur-3xl" />
             <div className="relative flex flex-col lg:flex-row items-start lg:items-center gap-8">
               <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center flex-shrink-0 border border-white/20">
                 <KeyRound className="w-8 h-8 md:w-10 md:h-10 text-white" />
@@ -367,7 +367,7 @@ const SeoTextSection = () => {
                 <h3 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">
                   Аренда принтеров и МФУ в Москве
                 </h3>
-                <p className="text-blue-50 text-[16px] leading-relaxed mb-5">
+                <p className="text-brand-50 text-[16px] leading-relaxed mb-5">
                   Не хотите вкладываться в покупку техники? Воспользуйтесь услугой аренды МФУ. В
                   наличии надёжные устройства <strong className="text-white">Kyocera ECOSYS
                   M2035dn</strong> — идеальный выбор для офиса до 20 человек. В стоимость аренды
@@ -375,7 +375,7 @@ const SeoTextSection = () => {
                   работе устройство без капитальных затрат.
                 </p>
                 <Link to="/arenda-kyocera-m2035dn">
-                  <Button className="bg-white text-blue-700 hover:bg-blue-50 font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all">
+                  <Button className="bg-white text-brand-700 hover:bg-brand-50 font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all">
                     Подробнее об аренде
                     <ArrowRight className="w-4 h-4 ml-1.5" />
                   </Button>
@@ -389,7 +389,7 @@ const SeoTextSection = () => {
         <div className="max-w-5xl mx-auto mb-20">
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2 mb-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center shadow-md">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-600 to-brand-500 flex items-center justify-center shadow-md">
                 <MapPin className="w-5 h-5 text-white" />
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-slate-900">Где мы работаем</h3>
@@ -398,13 +398,13 @@ const SeoTextSection = () => {
               Выезд мастера осуществляется во все районы Москвы, а также в ближайшее Подмосковье.
               Время реакции —{' '}
               <strong className="text-slate-900 inline-flex items-center gap-1">
-                <Clock className="w-4 h-4 text-blue-600" /> от 2 часов в пределах МКАД
+                <Clock className="w-4 h-4 text-brand-600" /> от 2 часов в пределах МКАД
               </strong>
               .
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-slate-50 to-blue-50/40 border border-slate-100 rounded-2xl p-6 md:p-8">
+          <div className="bg-gradient-to-br from-slate-50 to-brand-50/40 border border-slate-100 rounded-2xl p-6 md:p-8">
             <div className="mb-6">
               <div className="text-[13px] font-semibold text-slate-500 uppercase tracking-wider mb-3">
                 Районы Москвы
@@ -413,7 +413,7 @@ const SeoTextSection = () => {
                 {districts.map((d) => (
                   <span
                     key={d}
-                    className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white text-blue-700 text-[14px] font-semibold border border-blue-100 shadow-sm hover:shadow-md hover:border-blue-200 transition-all"
+                    className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white text-brand-700 text-[14px] font-semibold border border-brand-100 shadow-sm hover:shadow-md hover:border-brand-200 transition-all"
                   >
                     {d}
                   </span>
@@ -428,9 +428,9 @@ const SeoTextSection = () => {
                 {suburbs.map((s) => (
                   <span
                     key={s}
-                    className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white text-slate-700 text-[14px] font-semibold border border-slate-200 shadow-sm hover:shadow-md hover:border-cyan-200 hover:text-cyan-700 transition-all"
+                    className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white text-slate-700 text-[14px] font-semibold border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-200 hover:text-brand-700 transition-all"
                   >
-                    <MapPin className="w-3.5 h-3.5 mr-1 text-cyan-600" />
+                    <MapPin className="w-3.5 h-3.5 mr-1 text-brand-600" />
                     {s}
                   </span>
                 ))}
@@ -450,7 +450,7 @@ const SeoTextSection = () => {
             </Badge>
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900">
               Почему выбирают{' '}
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand-600 to-brand-500 bg-clip-text text-transparent">
                 «Комплекс Принт»
               </span>
             </h3>
@@ -462,10 +462,10 @@ const SeoTextSection = () => {
               return (
                 <div
                   key={i}
-                  className="group flex items-start gap-4 p-5 rounded-2xl bg-white border border-slate-100 hover:border-blue-200 hover:shadow-[0_12px_30px_-15px_rgba(37,99,235,0.25)] hover:-translate-y-0.5 transition-all duration-300"
+                  className="group flex items-start gap-4 p-5 rounded-2xl bg-white border border-slate-100 hover:border-brand-200 hover:shadow-[0_12px_30px_-15px_rgba(13,30,45,0.25)] hover:-translate-y-0.5 transition-all duration-300"
                 >
-                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-50 to-cyan-50 border border-blue-100 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                    <Icon className="w-5 h-5 text-blue-600" />
+                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-50 to-brand-50 border border-brand-100 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <Icon className="w-5 h-5 text-brand-600" />
                   </div>
                   <p className="text-slate-700 text-[15px] leading-relaxed pt-1">{a.text}</p>
                 </div>
@@ -476,17 +476,17 @@ const SeoTextSection = () => {
 
         {/* Финальный CTA */}
         <div className="max-w-4xl mx-auto">
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white p-8 md:p-12 shadow-[0_20px_60px_-20px_rgba(15,23,42,0.6)]">
-            <div className="absolute -top-32 -right-32 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl" />
-            <div className="absolute -bottom-32 -left-32 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl" />
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-brand-900 to-slate-900 text-white p-8 md:p-12 shadow-[0_20px_60px_-20px_rgba(15,23,42,0.6)]">
+            <div className="absolute -top-32 -right-32 w-72 h-72 bg-brand-500/20 rounded-full blur-3xl" />
+            <div className="absolute -bottom-32 -left-32 w-72 h-72 bg-brand-500/20 rounded-full blur-3xl" />
             <div className="relative text-center">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 mb-5 shadow-lg">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-500 to-brand-400 mb-5 shadow-lg">
                 <Building2 className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-2xl md:text-3xl font-bold mb-4 leading-snug">
                 Нужен срочный ремонт принтера или хотите перейти на абонентское обслуживание?
               </h3>
-              <p className="text-blue-100 text-[16px] md:text-[17px] leading-relaxed mb-8 max-w-2xl mx-auto">
+              <p className="text-brand-100 text-[16px] md:text-[17px] leading-relaxed mb-8 max-w-2xl mx-auto">
                 Позвоните нам или оставьте заявку на сайте — мы рассчитаем оптимальный тариф под
                 задачи вашего бизнеса.
               </p>
@@ -494,7 +494,7 @@ const SeoTextSection = () => {
                 <Button
                   onClick={openRepairModal}
                   data-testid="seo-cta-request"
-                  className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white font-semibold px-8 py-3.5 rounded-full shadow-[0_10px_30px_-8px_rgba(59,130,246,0.7)] hover:shadow-[0_14px_36px_-8px_rgba(59,130,246,0.8)] transition-all"
+                  className="w-full sm:w-auto bg-gradient-to-r from-brand-500 to-brand-400 hover:from-brand-600 hover:to-brand-500 text-white font-semibold px-8 py-3.5 rounded-full shadow-[0_10px_30px_-8px_rgba(13,30,45,0.7)] hover:shadow-[0_14px_36px_-8px_rgba(13,30,45,0.8)] transition-all"
                 >
                   Оставить заявку
                   <ArrowRight className="w-4 h-4 ml-1.5" />

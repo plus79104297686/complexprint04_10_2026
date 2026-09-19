@@ -135,10 +135,10 @@ export default function OneTimeRepair() {
 
       <Header />
 
-      <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-purple-50 pt-24 pb-16">
+      <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-brand-50 pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-6xl">
           {/* Hero */}
-          <section className="mb-12 bg-gradient-to-br from-gray-900 via-purple-900 to-pink-700 rounded-3xl p-8 lg:p-12 shadow-2xl text-white">
+          <section className="mb-12 bg-gradient-to-br from-gray-900 via-brand-900 to-signal-700 rounded-3xl p-8 lg:p-12 shadow-2xl text-white">
             <div className="flex items-center gap-3 mb-4">
               <Wrench className="w-8 h-8" />
               <span className="uppercase tracking-wider text-sm font-semibold opacity-90">
@@ -159,7 +159,7 @@ export default function OneTimeRepair() {
             <div className="flex flex-col sm:flex-row gap-3">
               <button
                 onClick={scrollToRepairForm}
-                className="bg-white text-purple-700 hover:bg-gray-100 px-7 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-white text-brand-700 hover:bg-gray-100 px-7 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Оставить заявку
               </button>
@@ -184,10 +184,10 @@ export default function OneTimeRepair() {
           </section>
 
           {/* Why corporate clients choose us */}
-          <section className="mb-12 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 shadow-lg border border-purple-100">
+          <section className="mb-12 bg-gradient-to-br from-brand-50 to-brand-50 rounded-2xl p-8 shadow-lg border border-brand-100">
             <div className="flex items-start gap-4 mb-4">
-              <div className="bg-purple-100 p-3 rounded-xl">
-                <Building2 className="w-7 h-7 text-purple-600" />
+              <div className="bg-brand-100 p-3 rounded-xl">
+                <Building2 className="w-7 h-7 text-brand-600" />
               </div>
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
                 Почему нас выбирают корпоративные клиенты
@@ -226,11 +226,11 @@ export default function OneTimeRepair() {
                 return (
                   <div
                     key={i}
-                    className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-pink-500"
+                    className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-signal-500"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="bg-gradient-to-br from-pink-100 to-purple-100 p-3 rounded-xl flex-shrink-0">
-                        <Icon className="w-6 h-6 text-pink-600" />
+                      <div className="bg-gradient-to-br from-brand-100 to-brand-100 p-3 rounded-xl flex-shrink-0">
+                        <Icon className="w-6 h-6 text-signal-600" />
                       </div>
                       <div>
                         <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -295,7 +295,7 @@ export default function OneTimeRepair() {
                     key={i}
                     className="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20 text-center"
                   >
-                    <Icon className="w-8 h-8 mx-auto mb-3 text-pink-400" />
+                    <Icon className="w-8 h-8 mx-auto mb-3 text-signal-400" />
                     <div className="text-2xl lg:text-3xl font-bold mb-2 text-white">
                       {s.value}
                     </div>
@@ -317,15 +317,15 @@ export default function OneTimeRepair() {
               </p>
             </div>
             <div className="relative">
-              <div className="hidden lg:block absolute top-10 left-[10%] right-[10%] h-1 bg-gradient-to-r from-pink-200 via-purple-200 to-pink-200 rounded-full" />
+              <div className="hidden lg:block absolute top-10 left-[10%] right-[10%] h-1 bg-gradient-to-r from-brand-200 via-brand-200 to-brand-200 rounded-full" />
               <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 relative">
                 {process.map((p, i) => {
                   const Icon = p.icon;
                   return (
                     <div key={i} className="text-center">
-                      <div className="relative inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full text-white shadow-lg mb-4">
+                      <div className="relative inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-signal-500 to-brand-600 rounded-full text-white shadow-lg mb-4">
                         <Icon className="w-8 h-8" />
-                        <span className="absolute -top-2 -right-2 bg-white text-purple-600 w-7 h-7 rounded-full flex items-center justify-center text-sm font-bold border-2 border-purple-600">
+                        <span className="absolute -top-2 -right-2 bg-white text-brand-600 w-7 h-7 rounded-full flex items-center justify-center text-sm font-bold border-2 border-brand-600">
                           {i + 1}
                         </span>
                       </div>
@@ -341,10 +341,10 @@ export default function OneTimeRepair() {
           </section>
 
           {/* Format for banks */}
-          <section className="mb-12 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg border border-blue-100">
+          <section className="mb-12 bg-gradient-to-br from-brand-50 to-indigo-50 rounded-2xl p-8 shadow-lg border border-brand-100">
             <div className="flex items-start gap-4 mb-4">
-              <div className="bg-blue-100 p-3 rounded-xl">
-                <Lock className="w-7 h-7 text-blue-600" />
+              <div className="bg-brand-100 p-3 rounded-xl">
+                <Lock className="w-7 h-7 text-brand-600" />
               </div>
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
                 Формат работы, который подходит банкам
@@ -368,8 +368,8 @@ export default function OneTimeRepair() {
           {/* When one-time repair is right */}
           <section className="mb-12 bg-white rounded-2xl p-8 shadow-lg">
             <div className="flex items-start gap-4 mb-4">
-              <div className="bg-pink-100 p-3 rounded-xl">
-                <Target className="w-7 h-7 text-pink-600" />
+              <div className="bg-brand-100 p-3 rounded-xl">
+                <Target className="w-7 h-7 text-signal-600" />
               </div>
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
                 Когда разовый ремонт правильное решение
@@ -390,7 +390,7 @@ export default function OneTimeRepair() {
           </section>
 
           {/* Our principle */}
-          <section className="mb-12 bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-8 shadow-lg border border-pink-100">
+          <section className="mb-12 bg-gradient-to-br from-brand-50 to-brand-50 rounded-2xl p-8 shadow-lg border border-brand-100">
             <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
               Наш принцип работы
             </h2>
@@ -409,7 +409,7 @@ export default function OneTimeRepair() {
           </section>
 
           {/* Strong CTA */}
-          <section className="bg-gradient-to-br from-pink-500 to-purple-600 rounded-2xl p-8 lg:p-10 text-white text-center shadow-2xl">
+          <section className="bg-gradient-to-br from-signal-500 to-brand-600 rounded-2xl p-8 lg:p-10 text-white text-center shadow-2xl">
             <Zap className="w-12 h-12 mx-auto mb-4 opacity-90" />
             <h2 className="text-2xl lg:text-4xl font-bold mb-4">
               Если техника остановилась не ждите согласований
@@ -422,7 +422,7 @@ export default function OneTimeRepair() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button
                 onClick={scrollToRepairForm}
-                className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-white text-brand-600 hover:bg-gray-100 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Оставить заявку
               </button>

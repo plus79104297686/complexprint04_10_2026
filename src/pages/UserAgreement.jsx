@@ -8,13 +8,13 @@ const UserAgreement = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-white py-12">
+    <div className="min-h-screen bg-gradient-to-br from-brand-50 via-brand-50 to-white py-12">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="mb-8">
           <Button
             onClick={() => navigate('/')}
             variant="ghost"
-            className="flex items-center text-pink-600 hover:text-pink-700 hover:bg-pink-50"
+            className="flex items-center text-signal-600 hover:text-signal-700 hover:bg-brand-50"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Вернуться на главную
@@ -22,7 +22,7 @@ const UserAgreement = () => {
         </div>
         
         <Card className="shadow-2xl">
-          <CardHeader className="bg-gradient-to-r from-pink-500 to-purple-600 text-white">
+          <CardHeader className="bg-gradient-to-r from-signal-500 to-brand-600 text-white">
             <CardTitle className="text-3xl text-center">Пользовательское соглашение</CardTitle>
           </CardHeader>
           

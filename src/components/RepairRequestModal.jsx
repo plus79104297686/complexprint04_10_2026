@@ -45,14 +45,14 @@ export const RepairRequestModalProvider = ({ children }) => {
           data-testid="repair-request-modal"
           className="max-w-2xl w-[calc(100vw-2rem)] max-h-[90vh] overflow-y-auto p-0"
         >
-          <div className="bg-gradient-to-br from-pink-50 via-purple-50 to-white p-6 sm:p-8 rounded-t-lg">
+          <div className="bg-gradient-to-br from-brand-50 via-brand-50 to-white p-6 sm:p-8 rounded-t-lg">
             <DialogHeader className="space-y-3 text-left">
-              <Badge className="w-fit bg-pink-100 text-pink-700 hover:bg-pink-200">
+              <Badge className="w-fit bg-brand-100 text-signal-700 hover:bg-brand-200">
                 Получить помощь сейчас
               </Badge>
               <DialogTitle className="text-2xl sm:text-3xl font-bold text-gray-900">
                 Заявка на ремонт{' '}
-                <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-signal-500 to-brand-600 bg-clip-text text-transparent">
                   оборудования
                 </span>
               </DialogTitle>

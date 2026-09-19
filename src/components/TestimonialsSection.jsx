@@ -90,7 +90,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section id="reviews" className="py-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
+    <section id="reviews" className="py-20 bg-gradient-to-br from-brand-50 via-white to-brand-50">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -121,7 +121,7 @@ const TestimonialsSection = () => {
             <div className="text-gray-600">Средний рейтинг</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">99%</div>
+            <div className="text-4xl font-bold bg-gradient-to-r from-signal-500 to-brand-600 bg-clip-text text-transparent">99%</div>
             <div className="text-gray-600">Рекомендуют нас</div>
           </div>
         </div>

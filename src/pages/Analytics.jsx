@@ -59,7 +59,7 @@ const Analytics = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50/40">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-brand-50/40">
       <Helmet>
         <html lang="ru" />
         <title>Наша аналитика — статьи о ремонте и рынке принтеров | Комплекс Принт</title>
@@ -97,13 +97,13 @@ const Analytics = () => {
 
           {/* Hero */}
           <div className="text-center max-w-3xl mx-auto mt-8 mb-14">
-            <Badge className="mb-4 bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200/60 font-semibold px-4 py-1">
+            <Badge className="mb-4 bg-brand-50 text-brand-700 hover:bg-brand-100 border border-brand-200/60 font-semibold px-4 py-1">
               <Sparkles className="w-3.5 h-3.5 mr-1.5" />
               Материалы от инженеров
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-5 leading-tight">
               Наша{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand-600 to-brand-500 bg-clip-text text-transparent">
                 аналитика
               </span>
             </h1>
@@ -143,7 +143,7 @@ const Analytics = () => {
 
                 <CardContent className="p-6 flex-1 flex flex-col">
                   <Link to={`/analytics/${a.slug}`} className="block">
-                    <h2 className="text-xl font-bold text-slate-900 mb-3 leading-snug group-hover:text-blue-700 transition-colors">
+                    <h2 className="text-xl font-bold text-slate-900 mb-3 leading-snug group-hover:text-brand-700 transition-colors">
                       {a.title}
                     </h2>
                   </Link>
@@ -154,7 +154,7 @@ const Analytics = () => {
                   <div className="mt-5 flex items-center justify-between pt-4 border-t border-slate-100">
                     <Link
                       to={`/analytics/${a.slug}`}
-                      className="inline-flex items-center gap-1.5 text-blue-600 hover:text-cyan-600 font-semibold text-[14.5px] transition-colors"
+                      className="inline-flex items-center gap-1.5 text-brand-600 hover:text-brand-600 font-semibold text-[14.5px] transition-colors"
                     >
                       Читать
                       <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -180,8 +180,8 @@ const Analytics = () => {
 
           {/* Информационный блок в конце */}
           <div className="mt-20 max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-blue-50 via-cyan-50/50 to-white rounded-3xl border border-blue-100/70 shadow-[0_8px_30px_-15px_rgba(37,99,235,0.15)] p-8 md:p-10 text-center">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 mb-5 shadow-lg">
+            <div className="bg-gradient-to-br from-brand-50 via-brand-50/50 to-white rounded-3xl border border-brand-100/70 shadow-[0_8px_30px_-15px_rgba(13,30,45,0.15)] p-8 md:p-10 text-center">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-600 to-brand-500 mb-5 shadow-lg">
                 <BookOpen className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">
@@ -191,7 +191,7 @@ const Analytics = () => {
                 Наши статьи — это истории с реальных выездов и разборы рынка глазами
                 инженеров, которые ремонтируют технику каждый день. Хотите обсудить
                 конкретный кейс или предложить тему?{" "}
-                <Link to="/contacts" className="text-blue-600 hover:text-cyan-600 font-semibold">
+                <Link to="/contacts" className="text-brand-600 hover:text-brand-600 font-semibold">
                   Напишите нам →
                 </Link>
               </p>

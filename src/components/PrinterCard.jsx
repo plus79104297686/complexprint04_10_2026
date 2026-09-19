@@ -72,7 +72,7 @@ ${printer.colorSpeed ? `- Скорость цветной печати: ${printe
             </div>
           )}
           <div className="absolute top-3 right-3">
-            <Badge className="bg-white/90 backdrop-blur-sm text-purple-700 shadow-lg">
+            <Badge className="bg-white/90 backdrop-blur-sm text-brand-700 shadow-lg">
               {printer.brand}
             </Badge>
           </div>
@@ -83,7 +83,7 @@ ${printer.colorSpeed ? `- Скорость цветной печати: ${printe
               <div className="bg-white/90 rounded-full p-3 transform scale-75 group-hover:scale-100 transition-transform duration-300">
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
-                  className="h-6 w-6 text-purple-600" 
+                  className="h-6 w-6 text-brand-600" 
                   fill="none" 
                   viewBox="0 0 24 24" 
                   stroke="currentColor"
@@ -98,7 +98,7 @@ ${printer.colorSpeed ? `- Скорость цветной печати: ${printe
       <CardContent className="p-6 flex flex-col flex-1">
         {/* Заголовок */}
         <div className="mb-4">
-          <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
+          <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-brand-600 transition-colors">
             {printer.model}
           </h3>
           <span className="text-sm text-gray-500">{printer.category}</span>
@@ -137,13 +137,13 @@ ${printer.colorSpeed ? `- Скорость цветной печати: ${printe
 
         {/* Цена и кнопка */}
         <div className="mt-auto">
-          <div className="text-lg font-bold text-purple-600 mb-4">
+          <div className="text-lg font-bold text-brand-600 mb-4">
             {printer.price}
           </div>
           
           <button
             onClick={handleBuyClick}
-            className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold py-3 px-4 rounded-lg hover:from-pink-600 hover:to-purple-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="w-full bg-gradient-to-r from-signal-500 to-brand-600 text-white font-semibold py-3 px-4 rounded-lg hover:from-signal-600 hover:to-brand-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             🛒 Купить
           </button>
@@ -178,7 +178,7 @@ ${printer.colorSpeed ? `- Скорость цветной печати: ${printe
           {/* Информация о принтере */}
           <div className="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-lg">
             <div className="flex items-center gap-2">
-              <Badge className="bg-purple-600 text-white">
+              <Badge className="bg-brand-600 text-white">
                 {printer.brand}
               </Badge>
               <span className="text-sm font-semibold text-gray-800">{printer.model}</span>

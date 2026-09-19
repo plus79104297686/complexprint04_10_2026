@@ -19,7 +19,7 @@ const TermsOfService = () => {
             <div className="mb-8">
               <button
                 onClick={() => navigate('/')}
-                className="inline-flex items-center text-purple-600 hover:text-purple-800 font-medium mb-4"
+                className="inline-flex items-center text-brand-600 hover:text-brand-800 font-medium mb-4"
               >
                 ← Вернуться на главную
               </button>
@@ -30,7 +30,7 @@ const TermsOfService = () => {
 
             {/* Заголовок */}
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-purple-100 text-purple-700 hover:bg-purple-200">
+              <Badge className="mb-4 bg-brand-100 text-brand-700 hover:bg-brand-200">
                 Правовая информация
               </Badge>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -48,7 +48,7 @@ const TermsOfService = () => {
               <Card className="shadow-lg">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-signal-500 to-brand-600 rounded-full flex items-center justify-center mr-4">
                       <span className="text-white text-xl font-bold">1</span>
                     </div>
                     <h2 className="text-3xl font-bold text-gray-900">Порядок приема оборудования в ремонт</h2>
@@ -56,28 +56,28 @@ const TermsOfService = () => {
                   
                   <div className="space-y-4">
                     <div className="flex items-start">
-                      <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></div>
+                      <div className="w-2 h-2 bg-brand-600 rounded-full mt-2 mr-3"></div>
                       <div>
                         <p className="text-gray-700"><strong>Диагностика:</strong> Диагностика является обязательным первым шагом.</p>
                       </div>
                     </div>
                     
                     <div className="flex items-start">
-                      <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></div>
+                      <div className="w-2 h-2 bg-brand-600 rounded-full mt-2 mr-3"></div>
                       <div>
                         <p className="text-gray-700"><strong>Стоимость диагностики:</strong> Диагностика бесплатна при условии последующего ремонта в нашем сервисе.</p>
                       </div>
                     </div>
                     
                     <div className="flex items-start">
-                      <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></div>
+                      <div className="w-2 h-2 bg-brand-600 rounded-full mt-2 mr-3"></div>
                       <div>
                         <p className="text-gray-700"><strong>Необходимые данные:</strong> Клиент должен предоставить модель устройства, серийный номер и четкое описание неисправности.</p>
                       </div>
                     </div>
                     
                     <div className="flex items-start">
-                      <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></div>
+                      <div className="w-2 h-2 bg-brand-600 rounded-full mt-2 mr-3"></div>
                       <div>
                         <p className="text-gray-700"><strong>Комплектность:</strong> Оборудование должно сдаваться в полной комплектации (с картриджами, блоком питания).</p>
                       </div>
@@ -90,7 +90,7 @@ const TermsOfService = () => {
               <Card className="shadow-lg">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-signal-500 to-brand-600 rounded-full flex items-center justify-center mr-4">
                       <span className="text-white text-xl font-bold">2</span>
                     </div>
                     <h2 className="text-3xl font-bold text-gray-900">Гарантия</h2>
@@ -136,7 +136,7 @@ const TermsOfService = () => {
               <Card className="shadow-lg">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-signal-500 to-brand-600 rounded-full flex items-center justify-center mr-4">
                       <span className="text-white text-xl font-bold">3</span>
                     </div>
                     <h2 className="text-3xl font-bold text-gray-900">Сроки ремонта</h2>
@@ -147,20 +147,20 @@ const TermsOfService = () => {
                     
                     <ul className="space-y-2 ml-4">
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></div>
+                        <div className="w-2 h-2 bg-brand-600 rounded-full mt-2 mr-3"></div>
                         <span className="text-gray-700">Сложности поломки.</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></div>
+                        <div className="w-2 h-2 bg-brand-600 rounded-full mt-2 mr-3"></div>
                         <span className="text-gray-700">Наличия запчастей на складе.</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></div>
+                        <div className="w-2 h-2 bg-brand-600 rounded-full mt-2 mr-3"></div>
                         <span className="text-gray-700">Загруженности сервиса.</span>
                       </li>
                     </ul>
                     
-                    <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mt-4">
+                    <div className="bg-brand-50 border-l-4 border-brand-500 p-4 rounded mt-4">
                       <p className="text-gray-800 font-semibold">⚡ 90% ремонтов выполнено в течение часа.</p>
                     </div>
                   </div>
@@ -171,7 +171,7 @@ const TermsOfService = () => {
               <Card className="shadow-lg">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-signal-500 to-brand-600 rounded-full flex items-center justify-center mr-4">
                       <span className="text-white text-xl font-bold">4</span>
                     </div>
                     <h2 className="text-3xl font-bold text-gray-900">Стоимость и оплата</h2>
@@ -179,14 +179,14 @@ const TermsOfService = () => {
                   
                   <div className="space-y-4">
                     <div className="flex items-start">
-                      <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></div>
+                      <div className="w-2 h-2 bg-brand-600 rounded-full mt-2 mr-3"></div>
                       <div>
                         <p className="text-gray-700"><strong>Смета на ремонт:</strong> После диагностики предоставляем клиенту детализированную смету (стоимость запчастей + работа). Ремонт начинается только после согласования сметы с клиентом.</p>
                       </div>
                     </div>
                     
                     <div className="flex items-start">
-                      <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></div>
+                      <div className="w-2 h-2 bg-brand-600 rounded-full mt-2 mr-3"></div>
                       <div>
                         <p className="text-gray-700"><strong>Изменение стоимости:</strong> Если в процессе ремонта выявляются новые неисправности, стоимость пересматривается и также согласовывается с клиентом.</p>
                       </div>
@@ -199,7 +199,7 @@ const TermsOfService = () => {
               <Card className="shadow-lg">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-signal-500 to-brand-600 rounded-full flex items-center justify-center mr-4">
                       <span className="text-white text-xl font-bold">5</span>
                     </div>
                     <h2 className="text-3xl font-bold text-gray-900">Ответственность сторон</h2>
@@ -223,7 +223,7 @@ const TermsOfService = () => {
               <Card className="shadow-lg">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-signal-500 to-brand-600 rounded-full flex items-center justify-center mr-4">
                       <span className="text-white text-xl font-bold">6</span>
                     </div>
                     <h2 className="text-3xl font-bold text-gray-900">Отказ от ремонта</h2>
@@ -231,14 +231,14 @@ const TermsOfService = () => {
                   
                   <div className="space-y-4">
                     <div className="flex items-start">
-                      <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></div>
+                      <div className="w-2 h-2 bg-brand-600 rounded-full mt-2 mr-3"></div>
                       <div>
                         <p className="text-gray-700"><strong>Условия:</strong> Если клиент отказывается от ремонта после диагностики, он оплачивает стоимость диагностики и забирает устройство.</p>
                       </div>
                     </div>
                     
                     <div className="flex items-start">
-                      <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></div>
+                      <div className="w-2 h-2 bg-brand-600 rounded-full mt-2 mr-3"></div>
                       <div>
                         <p className="text-gray-700"><strong>Разборка:</strong> Если устройство было разобрано для диагностики, оно возвращается в собранном виде, если иное не оговорено отдельно.</p>
                       </div>
@@ -251,7 +251,7 @@ const TermsOfService = () => {
               <Card className="shadow-lg">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-signal-500 to-brand-600 rounded-full flex items-center justify-center mr-4">
                       <span className="text-white text-xl font-bold">7</span>
                     </div>
                     <h2 className="text-3xl font-bold text-gray-900">Хранение невостребованной техники</h2>
@@ -264,7 +264,7 @@ const TermsOfService = () => {
               </Card>
 
               {/* Призыв к действию */}
-              <div className="bg-gradient-to-r from-pink-500 to-purple-600 rounded-3xl p-8 lg:p-12 text-white text-center mt-12">
+              <div className="bg-gradient-to-r from-signal-500 to-brand-600 rounded-3xl p-8 lg:p-12 text-white text-center mt-12">
                 <h3 className="text-3xl font-bold mb-4">Есть вопросы по условиям?</h3>
                 <p className="text-xl opacity-90 mb-6 max-w-3xl mx-auto">
                   Наша команда всегда готова проконсультировать вас по любым вопросам, связанным с ремонтом и обслуживанием вашего оборудования.
@@ -272,7 +272,7 @@ const TermsOfService = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <button
                     onClick={() => navigate('/')}
-                    className="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+                    className="bg-white text-brand-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
                     Оставить заявку
                   </button>

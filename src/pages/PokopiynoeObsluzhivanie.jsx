@@ -352,7 +352,7 @@ export default function PokopiynoeObsluzhivanie() {
               </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-md border border-emerald-100 text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-teal-100 to-cyan-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-teal-100 to-brand-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-8 h-8 text-teal-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -366,8 +366,8 @@ export default function PokopiynoeObsluzhivanie() {
               </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-md border border-emerald-100 text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-cyan-100 to-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-cyan-600" />
+                <div className="w-16 h-16 bg-gradient-to-br from-brand-100 to-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-brand-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Сертифицированный инженер
@@ -413,7 +413,7 @@ export default function PokopiynoeObsluzhivanie() {
                   color: "green",
                 },
                 {
-                  icon: <BarChart3 className="w-7 h-7 text-cyan-600" />,
+                  icon: <BarChart3 className="w-7 h-7 text-brand-600" />,
                   title: "Прозрачный учёт",
                   desc: "Ежемесячная детализированная отчётность по количеству отпечатков с каждого устройства. Видите, кто, сколько и когда печатал.",
                   color: "cyan",
@@ -511,8 +511,8 @@ export default function PokopiynoeObsluzhivanie() {
           {/* Who it's for */}
           <section className="mb-12 bg-white rounded-2xl p-8 shadow-lg">
             <div className="flex items-start gap-4 mb-6">
-              <div className="bg-blue-100 p-3 rounded-xl">
-                <Users className="w-7 h-7 text-blue-600" />
+              <div className="bg-brand-100 p-3 rounded-xl">
+                <Users className="w-7 h-7 text-brand-600" />
               </div>
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
                 Кому подойдёт покопийное обслуживание
@@ -522,7 +522,7 @@ export default function PokopiynoeObsluzhivanie() {
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 {
-                  icon: <Building2 className="w-6 h-6 text-blue-600" />,
+                  icon: <Building2 className="w-6 h-6 text-brand-600" />,
                   title: "Офисы с переменной нагрузкой",
                   desc: "Если в одни месяцы вы печатаете 500 страниц, а в другие 3000, покопийный формат избавит от переплаты за простой. Вы платите ровно столько, сколько напечатали.",
                 },
@@ -537,7 +537,7 @@ export default function PokopiynoeObsluzhivanie() {
                   desc: "Не нужно следить за уровнем тонера, искать поставщиков, сравнивать цены на картриджи. Мы берём на себя всю рутину закупок и обслуживания.",
                 },
                 {
-                  icon: <HardDrive className="w-6 h-6 text-cyan-600" />,
+                  icon: <HardDrive className="w-6 h-6 text-brand-600" />,
                   title: "Бюджетные и государственные учреждения",
                   desc: "Прозрачная отчётность по каждому отпечатку, детализированные счета и полный контроль расходов всё, что требуется для строгой отчётности.",
                 },
@@ -677,7 +677,7 @@ export default function PokopiynoeObsluzhivanie() {
                     <th className="py-4 px-4 text-red-600 font-bold">Разовый ремонт</th>
                     <th className="py-4 px-4 text-indigo-600 font-bold">Абонемент</th>
                     <th className="py-4 px-4 text-emerald-600 font-bold">Покопийное</th>
-                    <th className="py-4 px-4 text-blue-600 font-bold">MPS</th>
+                    <th className="py-4 px-4 text-brand-600 font-bold">MPS</th>
                   </tr>
                 </thead>
                 <tbody className="text-sm">

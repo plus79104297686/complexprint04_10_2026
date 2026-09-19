@@ -25,21 +25,21 @@ const AboutSection = () => {
   const processIcons = [FileText, Search, Wrench, CheckCircle];
 
   return (
-    <section id="about" className="py-20 lg:py-24 bg-gradient-to-br from-slate-50 via-blue-50/20 to-white relative overflow-hidden">
+    <section id="about" className="py-20 lg:py-24 bg-gradient-to-br from-slate-50 via-brand-50/20 to-white relative overflow-hidden">
       {/* Фоновые элементы */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-10 -left-20 w-80 h-80 bg-gradient-to-br from-blue-400/10 to-cyan-400/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-10 -right-20 w-80 h-80 bg-gradient-to-tr from-cyan-400/10 to-blue-400/10 rounded-full blur-3xl" />
+        <div className="absolute top-10 -left-20 w-80 h-80 bg-gradient-to-br from-brand-400/10 to-brand-400/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-10 -right-20 w-80 h-80 bg-gradient-to-tr from-brand-400/10 to-brand-400/10 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200/60 font-semibold px-4 py-1">
+          <Badge className="mb-4 bg-brand-50 text-brand-700 hover:bg-brand-100 border border-brand-200/60 font-semibold px-4 py-1">
             О ComplexPrint
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
             Нам доверяют
-            <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent block lg:inline lg:ml-3">
+            <span className="bg-gradient-to-r from-brand-600 to-brand-500 bg-clip-text text-transparent block lg:inline lg:ml-3">
               лидеры отрасли
             </span>
           </h2>
@@ -54,7 +54,7 @@ const AboutSection = () => {
             const IconComponent = stat.icon;
             return (
               <div key={index} className="text-center group">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-[0_8px_24px_-8px_rgba(37,99,235,0.4)]">
+                <div className="w-16 h-16 bg-gradient-to-br from-brand-600 to-brand-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-[0_8px_24px_-8px_rgba(13,30,45,0.4)]">
                   <IconComponent className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-3xl font-bold text-slate-900 mb-1">{stat.value}</div>
@@ -73,11 +73,11 @@ const AboutSection = () => {
               return (
                 <Card key={step.id} className="relative overflow-hidden border-slate-100 hover:shadow-[0_20px_60px_-15px_rgba(2,6,23,0.12)] transition-all duration-300 hover:-translate-y-2 group">
                   <CardContent className="p-6 text-center">
-                    <div className="absolute -top-2 -right-2 w-9 h-9 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full flex items-center justify-center shadow-[0_4px_12px_-4px_rgba(37,99,235,0.4)]">
+                    <div className="absolute -top-2 -right-2 w-9 h-9 bg-gradient-to-br from-brand-600 to-brand-500 rounded-full flex items-center justify-center shadow-[0_4px_12px_-4px_rgba(13,30,45,0.4)]">
                       <span className="text-white font-bold text-[13px]">{step.id}</span>
                     </div>
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300 border border-blue-100/50">
-                      <IconComponent className="w-8 h-8 text-blue-600" />
+                    <div className="w-16 h-16 bg-gradient-to-br from-brand-50 to-brand-50 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300 border border-brand-100/50">
+                      <IconComponent className="w-8 h-8 text-brand-600" />
                     </div>
                     <h4 className="text-xl font-bold text-slate-900 mb-3">{step.title}</h4>
                     <p className="text-slate-600 text-[15px] leading-relaxed">{step.description}</p>
@@ -95,20 +95,20 @@ const AboutSection = () => {
             className="block bg-white rounded-3xl p-8 lg:p-12 text-center shadow-[0_12px_40px_-12px_rgba(2,6,23,0.08)] hover:shadow-[0_20px_60px_-15px_rgba(2,6,23,0.12)] transition-all duration-300 hover:-translate-y-2 border border-slate-100 group"
           >
             <div className="flex items-center justify-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mr-4 shadow-[0_8px_24px_-8px_rgba(37,99,235,0.4)] group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-500 to-brand-400 rounded-full flex items-center justify-center mr-4 shadow-[0_8px_24px_-8px_rgba(13,30,45,0.4)] group-hover:scale-110 transition-transform duration-300">
                 <Printer className="w-8 h-8 text-white" />
               </div>
               <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center shadow-[0_8px_24px_-8px_rgba(245,158,11,0.4)] group-hover:scale-110 transition-transform duration-300">
                 <AlertTriangle className="w-8 h-8 text-white" />
               </div>
             </div>
-            <h3 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">
+            <h3 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4 group-hover:text-brand-600 transition-colors">
               Не печатает принтер? Гид по ошибкам...
             </h3>
             <p className="text-[17px] text-slate-600 mb-4 max-w-3xl mx-auto leading-relaxed">
               Подробные инструкции по устранению самых распространённых ошибок HP, Canon и Kyocera
             </p>
-            <span className="inline-flex items-center text-blue-600 font-semibold text-[16px] group-hover:text-cyan-600 transition-colors">
+            <span className="inline-flex items-center text-brand-600 font-semibold text-[16px] group-hover:text-brand-600 transition-colors">
               Открыть полный гид
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
             </span>
@@ -119,29 +119,29 @@ const AboutSection = () => {
         <div className="mb-8">
           <a 
             href="/print-defects-guide"
-            className="block bg-gradient-to-br from-blue-50/80 to-cyan-50/80 rounded-3xl p-8 lg:p-12 text-center shadow-[0_12px_40px_-12px_rgba(2,6,23,0.08)] hover:shadow-[0_20px_60px_-15px_rgba(2,6,23,0.12)] transition-all duration-300 hover:-translate-y-2 border border-blue-100/50 group"
+            className="block bg-gradient-to-br from-brand-50/80 to-brand-50/80 rounded-3xl p-8 lg:p-12 text-center shadow-[0_12px_40px_-12px_rgba(2,6,23,0.08)] hover:shadow-[0_20px_60px_-15px_rgba(2,6,23,0.12)] transition-all duration-300 hover:-translate-y-2 border border-brand-100/50 group"
           >
             <div className="flex items-center justify-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mr-4 shadow-[0_8px_24px_-8px_rgba(37,99,235,0.4)] group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-500 to-brand-400 rounded-full flex items-center justify-center mr-4 shadow-[0_8px_24px_-8px_rgba(13,30,45,0.4)] group-hover:scale-110 transition-transform duration-300">
                 <Camera className="w-8 h-8 text-white" />
               </div>
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full flex items-center justify-center shadow-[0_8px_24px_-8px_rgba(37,99,235,0.4)] group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-600 to-brand-500 rounded-full flex items-center justify-center shadow-[0_8px_24px_-8px_rgba(13,30,45,0.4)] group-hover:scale-110 transition-transform duration-300">
                 <ZoomIn className="w-8 h-8 text-white" />
               </div>
             </div>
-            <h3 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">
+            <h3 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4 group-hover:text-brand-600 transition-colors">
               Справочник дефектов печати
             </h3>
             <p className="text-[17px] text-slate-600 mb-4 max-w-3xl mx-auto leading-relaxed">
               Визуальный каталог с фотографиями: почему принтер печатает полосами, что делать если осыпается тонер, вертикальные полосы на печати
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-4">
-              <Badge className="bg-blue-500 text-white hover:bg-blue-600 px-3 py-1 font-medium">Полосы</Badge>
-              <Badge className="bg-cyan-500 text-white hover:bg-cyan-600 px-3 py-1 font-medium">Пятна</Badge>
+              <Badge className="bg-brand-500 text-white hover:bg-brand-600 px-3 py-1 font-medium">Полосы</Badge>
+              <Badge className="bg-brand-500 text-white hover:bg-brand-600 px-3 py-1 font-medium">Пятна</Badge>
               <Badge className="bg-sky-500 text-white hover:bg-sky-600 px-3 py-1 font-medium">Осыпание тонера</Badge>
               <Badge className="bg-emerald-500 text-white hover:bg-emerald-600 px-3 py-1 font-medium">Грязная печать</Badge>
             </div>
-            <span className="inline-flex items-center text-blue-600 font-semibold text-[16px] group-hover:text-cyan-600 transition-colors">
+            <span className="inline-flex items-center text-brand-600 font-semibold text-[16px] group-hover:text-brand-600 transition-colors">
               Открыть справочник с фото
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
             </span>
@@ -149,7 +149,7 @@ const AboutSection = () => {
         </div>
 
         {/* Experience Highlight */}
-        <div className="mt-8 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-3xl p-8 lg:p-12 text-white text-center shadow-[0_12px_40px_-12px_rgba(37,99,235,0.4)]">
+        <div className="mt-8 bg-gradient-to-r from-brand-600 to-brand-500 rounded-3xl p-8 lg:p-12 text-white text-center shadow-[0_12px_40px_-12px_rgba(13,30,45,0.4)]">
           <div className="flex items-center justify-center mb-4">
             <Shield className="w-10 h-10 text-white/90" />
           </div>

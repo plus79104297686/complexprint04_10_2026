@@ -94,7 +94,7 @@ export default function RicohRepair() {
           </p>
 
           {/* Callout */}
-          <section className="mb-10 rounded-2xl border border-pink-200 bg-gradient-to-br from-pink-50 to-purple-50 p-6">
+          <section className="mb-10 rounded-2xl border border-brand-200 bg-gradient-to-br from-brand-50 to-brand-50 p-6">
             <h2 className="text-2xl font-semibold mb-3">Частые проблемы Ricoh — быстрое решение</h2>
             <ul className="list-disc list-inside space-y-2 text-gray-800">
               <li><strong>Замятия</strong> — обслуживание тракта, замена роликов/датчиков подачи.</li>
@@ -114,10 +114,10 @@ export default function RicohRepair() {
             </ul>
           </section>
 
-          <section className="bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl p-6 text-white">
+          <section className="bg-gradient-to-r from-signal-500 to-brand-600 rounded-2xl p-6 text-white">
             <h3 className="text-xl font-semibold mb-2">Нужна помощь сейчас?</h3>
             <div className="flex flex-col sm:flex-row gap-3">
-              <button onClick={goRepairForm} className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors duration-200">
+              <button onClick={goRepairForm} className="bg-white text-brand-600 px-6 py-3 rounded-lg font-semibold hover:bg-brand-50 transition-colors duration-200">
                 Заказать ремонт
               </button>
               <a href="tel:+79911857289" className="bg-white/20 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/30 transition-colors duration-200 text-center">

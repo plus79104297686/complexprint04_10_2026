@@ -2,13 +2,14 @@ import React, { Suspense, lazy } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import ServicesSection from "./components/ServicesSection";
+import CorporateHero from "./components/corporate/CorporateHero";
+import TaskSelector from "./components/corporate/TaskSelector";
 import { Toaster } from "./components/ui/toaster";
 import { Helmet } from "react-helmet-async";
 import ScrollToTop from "./components/ScrollToTop";
 import CookieConsent from "./components/CookieConsent";
 import LazyLoad from "./components/LazyLoad";
+import MobileContactBar from "./components/MobileContactBar";
 import { RepairRequestModalProvider } from "./components/RepairRequestModal";
 import {
   getOrganizationSchema,
@@ -22,10 +23,13 @@ import {
 } from "./utils/schemas";
 
 // ── Below-the-fold компоненты главной — грузим только при скролле к ним ─────
+const CorporateAdvantages = lazy(() => import("./components/corporate/CorporateAdvantages"));
+const WorkflowScheme = lazy(() => import("./components/corporate/WorkflowScheme"));
+const TrustBlock = lazy(() => import("./components/corporate/TrustBlock"));
 const SeoTextSection = lazy(() => import("./components/SeoTextSection"));
 const EquipmentSection = lazy(() => import("./components/EquipmentSection"));
-const AboutSection = lazy(() => import("./components/AboutSection"));
-const RepairRequestForm = lazy(() => import("./components/RepairRequestForm"));
+const CorporateRequestForm = lazy(() => import("./components/corporate/CorporateRequestForm"));
+const PrivateClientPath = lazy(() => import("./components/corporate/PrivateClientPath"));
 const Footer = lazy(() => import("./components/Footer"));
 const PromoPopup = lazy(() => import("./components/PromoPopup"));
 
@@ -62,9 +66,9 @@ const Video = lazy(() => import("./pages/Video"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const RouteLoader = () => (
-  <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-purple-50">
-    <div className="flex items-center gap-3 text-purple-600">
-      <div className="w-8 h-8 rounded-full border-4 border-purple-200 border-t-purple-600 animate-spin" />
+  <div className="min-h-screen flex items-center justify-center bg-brand-50">
+    <div className="flex items-center gap-3 text-brand-700">
+      <div className="w-8 h-8 rounded-full border-4 border-brand-200 border-t-brand-700 animate-spin" />
       <span className="text-sm font-medium">Загрузка…</span>
     </div>
   </div>
@@ -98,27 +102,36 @@ const Home = () => {
         <script type="application/ld+json">{JSON.stringify(homeJsonLd)}</script>
       </Helmet>
       <Header />
-      <main>
-        <HeroSection />
-        <ServicesSection />
+      <main className="pb-20 lg:pb-0">
+        <CorporateHero />
+        <TaskSelector />
 
-        <LazyLoad placeholder={<SectionPlaceholder height="800px" />} minHeight="800px">
-          <SeoTextSection />
+        <LazyLoad placeholder={<SectionPlaceholder height="600px" />} minHeight="600px">
+          <CorporateAdvantages />
         </LazyLoad>
-
+        <LazyLoad placeholder={<SectionPlaceholder height="500px" />} minHeight="500px">
+          <WorkflowScheme />
+        </LazyLoad>
+        <LazyLoad placeholder={<SectionPlaceholder height="600px" />} minHeight="600px">
+          <TrustBlock />
+        </LazyLoad>
         <LazyLoad placeholder={<SectionPlaceholder height="500px" />} minHeight="500px">
           <EquipmentSection />
         </LazyLoad>
-        <LazyLoad placeholder={<SectionPlaceholder height="400px" />} minHeight="400px">
-          <AboutSection />
-        </LazyLoad>
         <LazyLoad placeholder={<SectionPlaceholder height="600px" />} minHeight="600px">
-          <RepairRequestForm />
+          <CorporateRequestForm />
+        </LazyLoad>
+        <LazyLoad placeholder={<SectionPlaceholder height="300px" />} minHeight="300px">
+          <PrivateClientPath />
+        </LazyLoad>
+        <LazyLoad placeholder={<SectionPlaceholder height="800px" />} minHeight="800px">
+          <SeoTextSection />
         </LazyLoad>
       </main>
       <LazyLoad placeholder={<SectionPlaceholder height="300px" />} minHeight="300px">
         <Footer />
       </LazyLoad>
+      <MobileContactBar />
       {PROMO_POPUP_ENABLED && (
         <Suspense fallback={null}>
           <PromoPopup />

@@ -83,7 +83,7 @@ const PrinterErrorGuide = () => {
             <div className="mb-8">
               <button
                 onClick={() => navigate('/')}
-                className="inline-flex items-center text-purple-600 hover:text-purple-800 font-medium mb-4"
+                className="inline-flex items-center text-brand-600 hover:text-brand-800 font-medium mb-4"
               >
                 ← Вернуться на главную
               </button>
@@ -94,12 +94,12 @@ const PrinterErrorGuide = () => {
 
             {/* Заголовок */}
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-purple-100 text-purple-700 hover:bg-purple-200">
+              <Badge className="mb-4 bg-brand-100 text-brand-700 hover:bg-brand-200">
                 База знаний
               </Badge>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Не печатает принтер?
-                <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent block lg:inline lg:ml-4">
+                <span className="bg-gradient-to-r from-signal-500 to-brand-600 bg-clip-text text-transparent block lg:inline lg:ml-4">
                   Гид по ошибкам
                 </span>
               </h1>
@@ -113,7 +113,7 @@ const PrinterErrorGuide = () => {
               {/* HP LaserJet */}
               <div className="mb-16 bg-white rounded-2xl shadow-lg p-8">
                 <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                  <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mr-4">
                     <span className="text-white text-2xl font-bold">HP</span>
                   </div>
                   <h2 className="text-3xl font-bold text-gray-900">HP LaserJet</h2>
@@ -131,7 +131,7 @@ const PrinterErrorGuide = () => {
                   <div className="overflow-x-auto">
                     <table className="w-full border-collapse">
                       <thead>
-                        <tr className="bg-blue-50">
+                        <tr className="bg-brand-50">
                           <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Ошибка</th>
                           <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Возможная причина</th>
                           <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Решение</th>
@@ -180,7 +180,7 @@ const PrinterErrorGuide = () => {
                   <div className="overflow-x-auto">
                     <table className="w-full border-collapse">
                       <thead>
-                        <tr className="bg-blue-50">
+                        <tr className="bg-brand-50">
                           <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Ошибка</th>
                           <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Возможная причина</th>
                           <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Решение</th>
@@ -215,7 +215,7 @@ const PrinterErrorGuide = () => {
                   <div className="overflow-x-auto">
                     <table className="w-full border-collapse">
                       <thead>
-                        <tr className="bg-blue-50">
+                        <tr className="bg-brand-50">
                           <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Ошибка</th>
                           <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Что означает</th>
                           <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Решение</th>
@@ -243,7 +243,7 @@ const PrinterErrorGuide = () => {
                 </div>
 
                 {/* Универсальный алгоритм */}
-                <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 mb-8">
+                <div className="bg-gradient-to-r from-brand-50 to-brand-50 rounded-xl p-6 mb-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Универсальный алгоритм решения 90% проблем</h3>
                   <ol className="space-y-3 text-gray-700">
                     <li><strong>1. Выключи и включи (Power Cycle).</strong> Полностью выключите принтер кнопкой, подождите 30 секунд, включите. Это перезагружает внутренний контроллер.</li>
@@ -302,7 +302,7 @@ const PrinterErrorGuide = () => {
                       <p className="text-gray-700 mt-2"><strong>Решение:</strong> Переустановить картридж. Очистить контакты чипа на картридже и в принтере. Использовать оригинальный или качественный совместимый картридж.</p>
                     </div>
 
-                    <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="border-l-4 border-brand-500 pl-4">
                       <h4 className="font-bold text-gray-900"><code className="bg-gray-100 px-2 py-1 rounded">B200</code> - Ошибка датчика регистрации</h4>
                       <p className="text-gray-700 mt-2"><strong>Причина:</strong> Бумага не была обнаружена в ожидаемом месте в нужное время.</p>
                       <p className="text-gray-700 mt-2"><strong>Решение:</strong> Убедиться, что нет замятия. Проверить ролики подачи на износ и загрязнение. Неисправен датчик регистрации.</p>
@@ -326,7 +326,7 @@ const PrinterErrorGuide = () => {
               {/* Kyocera */}
               <div className="mb-16 bg-white rounded-2xl shadow-lg p-8">
                 <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center mr-4">
+                  <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center mr-4">
                     <span className="text-white text-2xl font-bold">K</span>
                   </div>
                   <h2 className="text-3xl font-bold text-gray-900">Kyocera</h2>
@@ -336,7 +336,7 @@ const PrinterErrorGuide = () => {
                   Аппаратные ошибки Kyocera (и Kyocera Mita) известны своей точностью — они часто указывают на конкретный узел.
                 </p>
 
-                <div className="bg-cyan-50 border-l-4 border-cyan-400 p-4 mb-8">
+                <div className="bg-brand-50 border-l-4 border-brand-400 p-4 mb-8">
                   <h4 className="font-bold text-gray-900 mb-2">Общий вид ошибок Kyocera</h4>
                   <p className="text-gray-700">Ошибки обычно имеют формат <strong><code>CXXXX</code></strong> (например, C7300). Буква <strong><code>C</code></strong> означает "Controller Error", но на практике это общий префикс для большинства аппаратных сбоев.</p>
                 </div>
@@ -346,7 +346,7 @@ const PrinterErrorGuide = () => {
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Основные ошибки Kyocera</h3>
                   
                   <div className="space-y-4">
-                    <div className="border-l-4 border-cyan-500 pl-4">
+                    <div className="border-l-4 border-brand-500 pl-4">
                       <h4 className="font-bold text-gray-900"><code className="bg-gray-100 px-2 py-1 rounded">C0000 / C0001 / C0002</code> - Ошибка главного мотора</h4>
                       <p className="text-gray-700 mt-2"><strong>Причина:</strong> Мотор не может провернуться или заблокирован.</p>
                       <p className="text-gray-700 mt-2"><strong>Решение:</strong> Выключить/включить принтер. Проверить, не зажевана ли бумага, блокирующая механику. Плотно ли вставлены все картриджи? Неисправен сам мотор, блок питания или плата управления.</p>
@@ -364,7 +364,7 @@ const PrinterErrorGuide = () => {
                       <p className="text-gray-700 mt-2"><strong>Решение:</strong> Выключить/включить. Дать принтеру остыть, если он перегрелся. Проверить, не зажевана ли бумага в термоузле. Основная причина: неисправен термодатчик или нагревательная лампа/пленка. Требуется замена термоузла.</p>
                     </div>
 
-                    <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="border-l-4 border-brand-500 pl-4">
                       <h4 className="font-bold text-gray-900"><code className="bg-gray-100 px-2 py-1 rounded">C7000 / C70xx</code> - Ошибка сканера</h4>
                       <p className="text-gray-700 mt-2"><strong>Причина:</strong> Сканер не может найти начальную позицию (Home Position Error).
                       </p>
@@ -374,7 +374,7 @@ const PrinterErrorGuide = () => {
                 </div>
 
                 {/* Универсальный алгоритм Kyocera */}
-                <div className="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-xl p-6">
+                <div className="bg-gradient-to-r from-brand-50 to-brand-50 rounded-xl p-6">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Универсальный алгоритм действий при аппаратной ошибке Kyocera</h3>
                   <ol className="space-y-3 text-gray-700">
                     <li><strong>1. Запишите точный код ошибки (CXXXX).</strong> Это ключ к диагностике.</li>
@@ -388,7 +388,7 @@ const PrinterErrorGuide = () => {
               </div>
 
               {/* Призыв к действию */}
-              <div className="bg-gradient-to-r from-pink-500 to-purple-600 rounded-3xl p-8 lg:p-12 text-white text-center">
+              <div className="bg-gradient-to-r from-signal-500 to-brand-600 rounded-3xl p-8 lg:p-12 text-white text-center">
                 <h3 className="text-3xl font-bold mb-4">Нужна помощь с ремонтом?</h3>
                 <p className="text-xl opacity-90 mb-6 max-w-3xl mx-auto">
                   Если вы не смогли решить проблему самостоятельно, наши опытные техники всегда готовы помочь! Мы работаем со всеми брендами: HP, Canon, Kyocera, Konica Minolta и другими.
@@ -396,7 +396,7 @@ const PrinterErrorGuide = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <button
                     onClick={() => navigate('/')}
-                    className="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+                    className="bg-white text-brand-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
                     Оставить заявку на ремонт
                   </button>

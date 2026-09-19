@@ -44,10 +44,10 @@ export default function Pricing() {
               <li>Первичная оценка по телефону</li>
               <li>Смета работ до начала ремонта</li>
             </ul>
-            <button onClick={goRepairForm} className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold">Заказать</button>
+            <button onClick={goRepairForm} className="inline-block bg-gradient-to-r from-signal-500 to-brand-600 text-white px-6 py-3 rounded-lg font-semibold">Заказать</button>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 border-2 border-pink-400">
+          <div className="bg-white rounded-2xl shadow-lg p-8 border-2 border-signal-400">
             <h2 className="text-2xl font-bold mb-2">Разовый ремонт</h2>
             <p className="text-3xl font-extrabold mb-4">от 3000₽</p>
             <ul className="text-gray-700 space-y-2 mb-6 list-disc list-inside">
@@ -55,7 +55,7 @@ export default function Pricing() {
               <li>Ремонт в день обращения</li>
               <li>Гарантия 6 месяцев</li>
             </ul>
-            <button onClick={goRepairForm} className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold">Вызвать мастера</button>
+            <button onClick={goRepairForm} className="inline-block bg-gradient-to-r from-signal-500 to-brand-600 text-white px-6 py-3 rounded-lg font-semibold">Вызвать мастера</button>
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
@@ -66,7 +66,7 @@ export default function Pricing() {
               <li>Приоритетный выезд</li>
               <li>Оптимизация затрат</li>
             </ul>
-            <button onClick={goRepairForm} className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold">Оставить заявку</button>
+            <button onClick={goRepairForm} className="inline-block bg-gradient-to-r from-signal-500 to-brand-600 text-white px-6 py-3 rounded-lg font-semibold">Оставить заявку</button>
           </div>
         </div>
 
@@ -76,7 +76,7 @@ export default function Pricing() {
           <div className="overflow-x-auto bg-white rounded-xl shadow-lg">
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="bg-gradient-to-r from-pink-500 to-purple-600 text-white">
+                <tr className="bg-gradient-to-r from-signal-500 to-brand-600 text-white">
                   <th className="px-6 py-4 font-semibold">Услуга</th>
                   <th className="px-6 py-4 font-semibold">Бренды</th>
                   <th className="px-6 py-4 font-semibold">Срок выполнения</th>
@@ -88,61 +88,61 @@ export default function Pricing() {
                   <td className="px-6 py-4 font-medium text-gray-900">Замена термоузла HP</td>
                   <td className="px-6 py-4 text-gray-700">HP LaserJet</td>
                   <td className="px-6 py-4 text-gray-700">2-4 часа</td>
-                  <td className="px-6 py-4 text-right font-semibold text-pink-600">от 5000₽</td>
+                  <td className="px-6 py-4 text-right font-semibold text-signal-600">от 5000₽</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 font-medium text-gray-900">Замена термоузла Canon</td>
                   <td className="px-6 py-4 text-gray-700">Canon i-SENSYS</td>
                   <td className="px-6 py-4 text-gray-700">2-4 часа</td>
-                  <td className="px-6 py-4 text-right font-semibold text-pink-600">от 4500₽</td>
+                  <td className="px-6 py-4 text-right font-semibold text-signal-600">от 4500₽</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 font-medium text-gray-900">Замена термоузла Kyocera</td>
                   <td className="px-6 py-4 text-gray-700">Kyocera ECOSYS</td>
                   <td className="px-6 py-4 text-gray-700">3-5 часов</td>
-                  <td className="px-6 py-4 text-right font-semibold text-pink-600">от 6000₽</td>
+                  <td className="px-6 py-4 text-right font-semibold text-signal-600">от 6000₽</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 font-medium text-gray-900">Чистка и восстановление барабана</td>
                   <td className="px-6 py-4 text-gray-700">Все бренды</td>
                   <td className="px-6 py-4 text-gray-700">1-2 часа</td>
-                  <td className="px-6 py-4 text-right font-semibold text-pink-600">от 3000₽</td>
+                  <td className="px-6 py-4 text-right font-semibold text-signal-600">от 3000₽</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 font-medium text-gray-900">Замена блока проявки</td>
                   <td className="px-6 py-4 text-gray-700">HP, Canon, Kyocera</td>
                   <td className="px-6 py-4 text-gray-700">2-3 часа</td>
-                  <td className="px-6 py-4 text-right font-semibold text-pink-600">от 3500₽</td>
+                  <td className="px-6 py-4 text-right font-semibold text-signal-600">от 3500₽</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 font-medium text-gray-900">Заправка картриджа с чипом</td>
                   <td className="px-6 py-4 text-gray-700">Все бренды</td>
                   <td className="px-6 py-4 text-gray-700">30-60 минут</td>
-                  <td className="px-6 py-4 text-right font-semibold text-pink-600">от 800₽</td>
+                  <td className="px-6 py-4 text-right font-semibold text-signal-600">от 800₽</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 font-medium text-gray-900">Профилактическая чистка принтера</td>
                   <td className="px-6 py-4 text-gray-700">Все бренды</td>
                   <td className="px-6 py-4 text-gray-700">1-2 часа</td>
-                  <td className="px-6 py-4 text-right font-semibold text-pink-600">от 2000₽</td>
+                  <td className="px-6 py-4 text-right font-semibold text-signal-600">от 2000₽</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 font-medium text-gray-900">Замена роликов подачи бумаги</td>
                   <td className="px-6 py-4 text-gray-700">Все бренды</td>
                   <td className="px-6 py-4 text-gray-700">1 час</td>
-                  <td className="px-6 py-4 text-right font-semibold text-pink-600">от 1800₽</td>
+                  <td className="px-6 py-4 text-right font-semibold text-signal-600">от 1800₽</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 font-medium text-gray-900">Настройка сетевой печати</td>
                   <td className="px-6 py-4 text-gray-700">Все бренды</td>
                   <td className="px-6 py-4 text-gray-700">30-60 минут</td>
-                  <td className="px-6 py-4 text-right font-semibold text-pink-600">от 1200₽</td>
+                  <td className="px-6 py-4 text-right font-semibold text-signal-600">от 1200₽</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 font-medium text-gray-900">Замена материнской платы</td>
                   <td className="px-6 py-4 text-gray-700">Все бренды</td>
                   <td className="px-6 py-4 text-gray-700">от 1 дня</td>
-                  <td className="px-6 py-4 text-right font-semibold text-pink-600">от 8000₽</td>
+                  <td className="px-6 py-4 text-right font-semibold text-signal-600">от 8000₽</td>
                 </tr>
               </tbody>
             </table>

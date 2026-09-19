@@ -47,7 +47,7 @@ const Breadcrumbs = ({ items }) => {
                 ) : (
                   <Link
                     to={item.url}
-                    className="flex items-center hover:text-pink-600 transition-colors duration-200"
+                    className="flex items-center hover:text-signal-600 transition-colors duration-200"
                   >
                     {isFirst && <Home className="w-4 h-4 mr-1" aria-hidden="true" />}
                     {item.name}

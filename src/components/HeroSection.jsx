@@ -11,12 +11,12 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/40 to-white pt-24 sm:pt-28 lg:pt-28 xl:pt-32 pb-12 lg:pb-16">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-brand-50/40 to-white pt-24 sm:pt-28 lg:pt-28 xl:pt-32 pb-12 lg:pb-16">
       {/* Background Elements — синий/циан вместо розового/фиолетового */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-blue-400/15 to-cyan-500/15 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-cyan-400/15 to-blue-600/15 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-500/5 to-cyan-400/5 rounded-full blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-brand-400/15 to-brand-500/15 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-brand-400/15 to-brand-600/15 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-brand-500/5 to-brand-400/5 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -25,14 +25,14 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-5">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-[13px] font-semibold">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-50 border border-brand-200/60 text-brand-700 text-[13px] font-semibold">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                 Работаем в Москве и области
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
                 Ремонт принтеров
-                <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent block mt-1">
+                <span className="bg-gradient-to-r from-brand-600 to-brand-500 bg-clip-text text-transparent block mt-1">
                   с выездом в Москве
                 </span>
                 <span className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-slate-600 block mt-2">
@@ -41,7 +41,7 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-[16px] lg:text-[17px] text-slate-600 leading-relaxed max-w-xl">
-                Ремонт принтеров с выездом в Москве • Выезд мастера в течение 1–4 часов • Диагностика бесплатно при ремонте • Ремонт на месте в 80–90% случаев • Гарантия от 3 до 12 месяцев • Оригинальные запчасти HP, Canon, Ricoh, Kyocera • <strong className="text-blue-600">Цены от 3000 ₽</strong> за выезд + ремонт.
+                Ремонт принтеров с выездом в Москве • Выезд мастера в течение 1–4 часов • Диагностика бесплатно при ремонте • Ремонт на месте в 80–90% случаев • Гарантия от 3 до 12 месяцев • Оригинальные запчасти HP, Canon, Ricoh, Kyocera • <strong className="text-brand-600">Цены от 3000 ₽</strong> за выезд + ремонт.
               </p>
             </div>
 
@@ -59,7 +59,7 @@ const HeroSection = () => {
               <div className="w-px h-10 bg-slate-200" />
               <div className="text-center">
                 <div className="flex items-center justify-center gap-1.5 mb-1">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center shadow-sm">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-brand-500 to-brand-400 flex items-center justify-center shadow-sm">
                     <Users size={14} className="text-white" />
                   </div>
                   <span className="text-2xl font-bold text-slate-900">500+</span>
@@ -69,7 +69,7 @@ const HeroSection = () => {
               <div className="w-px h-10 bg-slate-200" />
               <div className="text-center">
                 <div className="flex items-center justify-center gap-1.5 mb-1">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center shadow-sm">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-brand-600 to-brand-500 flex items-center justify-center shadow-sm">
                     <Award size={14} className="text-white" />
                   </div>
                   <span className="text-2xl font-bold text-slate-900">15+</span>
@@ -83,7 +83,7 @@ const HeroSection = () => {
               <Button 
                 onClick={openRepairModal}
                 data-testid="hero-cta-repair-request"
-                className="relative bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white px-8 py-4 rounded-full text-[16px] font-semibold tracking-tight shadow-[0_8px_24px_-8px_rgba(37,99,235,0.6)] hover:shadow-[0_12px_28px_-8px_rgba(37,99,235,0.7)] transition-all duration-300 hover:-translate-y-0.5 group"
+                className="relative bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 text-white px-8 py-4 rounded-full text-[16px] font-semibold tracking-tight shadow-[0_8px_24px_-8px_rgba(13,30,45,0.6)] hover:shadow-[0_12px_28px_-8px_rgba(13,30,45,0.7)] transition-all duration-300 hover:-translate-y-0.5 group"
               >
                 Заказать ремонт сейчас
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
@@ -91,7 +91,7 @@ const HeroSection = () => {
               <Button 
                 onClick={() => scrollToSection('services')}
                 variant="outline"
-                className="border-2 border-blue-200 text-blue-600 hover:bg-blue-50/50 hover:border-blue-300 px-8 py-4 rounded-full text-[16px] font-semibold transition-all duration-300 hover:-translate-y-0.5"
+                className="border-2 border-brand-200 text-brand-600 hover:bg-brand-50/50 hover:border-brand-300 px-8 py-4 rounded-full text-[16px] font-semibold transition-all duration-300 hover:-translate-y-0.5"
               >
                 Узнать больше
               </Button>
@@ -127,7 +127,7 @@ const HeroSection = () => {
               </div>
               
               {/* Badge 24/7 — стиль Header */}
-              <div className="absolute -top-3 -right-3 bg-gradient-to-br from-blue-600 to-cyan-500 text-white p-4 rounded-2xl shadow-[0_8px_24px_-8px_rgba(37,99,235,0.6)]">
+              <div className="absolute -top-3 -right-3 bg-gradient-to-br from-brand-600 to-brand-500 text-white p-4 rounded-2xl shadow-[0_8px_24px_-8px_rgba(13,30,45,0.6)]">
                 <div className="text-center">
                   <div className="text-2xl font-bold">24/7</div>
                   <div className="text-[13px] font-medium opacity-90">Поддержка</div>
@@ -151,7 +151,7 @@ const HeroSection = () => {
             {/* Дополнительный floating element */}
             <div className="absolute -top-2 -left-2 bg-white rounded-xl p-3 shadow-[0_8px_30px_-8px_rgba(2,6,23,0.12)] border border-slate-100">
               <div className="flex items-center gap-2">
-                <div className="w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
+                <div className="w-9 h-9 rounded-full bg-gradient-to-br from-brand-500 to-brand-400 flex items-center justify-center">
                   <Wrench size={16} className="text-white" />
                 </div>
                 <div className="text-[13px] font-semibold text-slate-800">На месте ремонт</div>

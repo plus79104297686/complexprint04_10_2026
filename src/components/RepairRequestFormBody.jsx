@@ -151,7 +151,7 @@ const RepairRequestFormBody = ({ compact = false, onSuccess }) => {
               issue: '', description: '', urgency: 'medium',
             });
           }}
-          className="mt-6 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white"
+          className="mt-6 bg-signal-500 hover:bg-signal-600 text-brand-900 font-semibold"
         >
           Отправить другую заявку
         </Button>
@@ -290,14 +290,14 @@ const RepairRequestFormBody = ({ compact = false, onSuccess }) => {
             data-testid="repair-request-terms"
             checked={isAgreedToTerms}
             onChange={(e) => setIsAgreedToTerms(e.target.checked)}
-            className="mt-1 w-4 h-4 text-pink-500 border-gray-300 rounded focus:ring-pink-500"
+            className="mt-1 w-4 h-4 text-signal-600 border-gray-300 rounded focus:ring-signal-500"
           />
           <label htmlFor="rrf-terms" className="text-sm text-gray-700 leading-relaxed">
             Продолжая, вы соглашаетесь со сбором и обработкой персональных данных и{' '}
             <button
               type="button"
               onClick={() => setIsAgreementOpen(true)}
-              className="text-pink-600 underline hover:text-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-1 rounded"
+              className="text-brand-700 underline hover:text-brand-900 focus:outline-none focus:ring-2 focus:ring-signal-500 focus:ring-offset-1 rounded"
             >
               пользовательским соглашением
             </button>
@@ -308,7 +308,7 @@ const RepairRequestFormBody = ({ compact = false, onSuccess }) => {
           type="submit"
           data-testid="repair-request-submit"
           disabled={isSubmitting || !isAgreedToTerms}
-          className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+          className="w-full bg-signal-500 hover:bg-signal-600 text-brand-900 py-4 text-lg font-semibold rounded-xl transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? (
             <span className="flex items-center justify-center">

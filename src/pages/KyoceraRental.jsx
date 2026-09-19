@@ -63,7 +63,7 @@ const PLANS = [
     oldPrice: '4 500 ₽/мес.',
     price: '3 500',
     unit: '₽/мес.',
-    accent: 'from-blue-600 to-cyan-500',
+    accent: 'from-brand-600 to-brand-500',
     popular: true,
     features: [
       { ok: true, text: 'МФУ Kyocera ECOSYS M2035dn' },
@@ -140,7 +140,7 @@ const KyoceraRental = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-blue-50/30">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-brand-50/30">
       <Helmet>
         <title>Аренда МФУ Kyocera ECOSYS M2035dn в Москве — от 1 500 ₽/мес | ComplexPrint</title>
         <meta
@@ -192,8 +192,8 @@ const KyoceraRental = () => {
         {/* ────── HERO ────── */}
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 -z-10">
-            <div className="absolute -top-40 -right-32 w-[500px] h-[500px] bg-gradient-to-br from-blue-400/20 to-cyan-500/20 rounded-full blur-3xl" />
-            <div className="absolute -bottom-40 -left-32 w-[500px] h-[500px] bg-gradient-to-tr from-cyan-400/20 to-blue-600/20 rounded-full blur-3xl" />
+            <div className="absolute -top-40 -right-32 w-[500px] h-[500px] bg-gradient-to-br from-brand-400/20 to-brand-500/20 rounded-full blur-3xl" />
+            <div className="absolute -bottom-40 -left-32 w-[500px] h-[500px] bg-gradient-to-tr from-brand-400/20 to-brand-600/20 rounded-full blur-3xl" />
           </div>
 
           <div className="container mx-auto px-4 pb-8">
@@ -208,7 +208,7 @@ const KyoceraRental = () => {
 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
                   Аренда МФУ
-                  <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent block mt-1">
+                  <span className="bg-gradient-to-r from-brand-600 to-brand-500 bg-clip-text text-transparent block mt-1">
                     Kyocera ECOSYS M2035dn
                   </span>
                   <span className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-slate-600 block mt-2">
@@ -251,7 +251,7 @@ const KyoceraRental = () => {
                   <Button
                     onClick={requestWithGoal('hero')}
                     data-testid="rental-hero-cta-request"
-                    className="w-full sm:w-auto sm:min-w-[240px] h-14 justify-center bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white px-8 rounded-full text-[16px] font-semibold shadow-[0_8px_24px_-8px_rgba(37,99,235,0.6)] hover:shadow-[0_12px_28px_-8px_rgba(37,99,235,0.7)] transition-all duration-300 hover:-translate-y-0.5 group"
+                    className="w-full sm:w-auto sm:min-w-[240px] h-14 justify-center bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 text-white px-8 rounded-full text-[16px] font-semibold shadow-[0_8px_24px_-8px_rgba(13,30,45,0.6)] hover:shadow-[0_12px_28px_-8px_rgba(13,30,45,0.7)] transition-all duration-300 hover:-translate-y-0.5 group"
                   >
                     Забронировать сейчас
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -259,7 +259,7 @@ const KyoceraRental = () => {
                   <a
                     href="#tariffs"
                     data-testid="rental-hero-scroll-tariffs"
-                    className="w-full sm:w-auto sm:min-w-[240px] h-14 inline-flex items-center justify-center border-2 border-blue-200 text-blue-600 hover:bg-blue-50/50 hover:border-blue-300 px-8 rounded-full text-[16px] font-semibold transition-all duration-300 hover:-translate-y-0.5"
+                    className="w-full sm:w-auto sm:min-w-[240px] h-14 inline-flex items-center justify-center border-2 border-brand-200 text-brand-600 hover:bg-brand-50/50 hover:border-brand-300 px-8 rounded-full text-[16px] font-semibold transition-all duration-300 hover:-translate-y-0.5"
                   >
                     Смотреть тарифы
                   </a>
@@ -268,7 +268,7 @@ const KyoceraRental = () => {
 
               <div className="relative">
                 <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 lg:p-8 shadow-[0_20px_60px_-15px_rgba(2,6,23,0.12)] border border-slate-100">
-                  <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50/40 p-6">
+                  <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-50 to-brand-50/40 p-6">
                     <img
                       src="/images/Kyocera-ECOSYS-M2035dn.webp"
                       alt="МФУ Kyocera ECOSYS M2035dn — аренда в Москве"
@@ -308,7 +308,7 @@ const KyoceraRental = () => {
         <section id="tariffs" className="py-16 lg:py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-[13px] font-semibold mb-4">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-brand-50 border border-brand-200/60 text-brand-700 text-[13px] font-semibold mb-4">
                 3 тарифа на выбор
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
@@ -326,12 +326,12 @@ const KyoceraRental = () => {
                   data-testid={`tariff-card-${plan.id}`}
                   className={`relative bg-white rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1 ${
                     plan.popular
-                      ? 'border-2 border-blue-500 shadow-[0_20px_60px_-15px_rgba(37,99,235,0.35)]'
+                      ? 'border-2 border-brand-500 shadow-[0_20px_60px_-15px_rgba(13,30,45,0.35)]'
                       : 'border border-slate-200 shadow-[0_8px_30px_-8px_rgba(2,6,23,0.08)] hover:shadow-[0_20px_60px_-15px_rgba(2,6,23,0.12)]'
                   }`}
                 >
                   {plan.popular && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-[12px] font-bold px-4 py-1 rounded-full shadow-md">
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-600 to-brand-500 text-white text-[12px] font-bold px-4 py-1 rounded-full shadow-md">
                       ПОПУЛЯРНЫЙ
                     </div>
                   )}
@@ -375,8 +375,8 @@ const KyoceraRental = () => {
                     data-testid={`tariff-cta-${plan.id}`}
                     className={`w-full py-3 rounded-full font-semibold transition-all duration-300 ${
                       plan.popular
-                        ? 'bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white shadow-[0_8px_24px_-8px_rgba(37,99,235,0.6)]'
-                        : 'bg-white border-2 border-slate-200 text-slate-800 hover:border-blue-300 hover:bg-blue-50/50 hover:text-blue-700'
+                        ? 'bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 text-white shadow-[0_8px_24px_-8px_rgba(13,30,45,0.6)]'
+                        : 'bg-white border-2 border-slate-200 text-slate-800 hover:border-brand-300 hover:bg-brand-50/50 hover:text-brand-700'
                     }`}
                   >
                     Оставить заявку
@@ -391,7 +391,7 @@ const KyoceraRental = () => {
         <section className="py-16 lg:py-20 bg-gradient-to-b from-white to-slate-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-cyan-50 border border-cyan-200/60 text-cyan-700 text-[13px] font-semibold mb-4">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-brand-50 border border-brand-200/60 text-brand-700 text-[13px] font-semibold mb-4">
                 Технические характеристики
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
@@ -406,7 +406,7 @@ const KyoceraRental = () => {
                   key={title}
                   className="bg-white rounded-2xl p-6 border border-slate-100 shadow-[0_4px_20px_-8px_rgba(2,6,23,0.08)] hover:shadow-[0_12px_40px_-12px_rgba(2,6,23,0.12)] hover:-translate-y-0.5 transition-all duration-300"
                 >
-                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center mb-4 shadow-sm">
+                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-500 to-brand-400 flex items-center justify-center mb-4 shadow-sm">
                     <Icon size={20} className="text-white" />
                   </div>
                   <h4 className="font-bold text-slate-900 mb-1">{title}</h4>
@@ -421,7 +421,7 @@ const KyoceraRental = () => {
         <section className="py-16 lg:py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-[13px] font-semibold mb-4">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-brand-50 border border-brand-200/60 text-brand-700 text-[13px] font-semibold mb-4">
                 Условия аренды
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
@@ -434,11 +434,11 @@ const KyoceraRental = () => {
               {TERMS.map(({ Icon, title, text }) => (
                 <div
                   key={title}
-                  className="bg-white rounded-2xl p-7 border-l-4 border-blue-500 shadow-[0_4px_20px_-8px_rgba(2,6,23,0.06)] hover:shadow-[0_12px_40px_-12px_rgba(2,6,23,0.12)] transition-all duration-300"
+                  className="bg-white rounded-2xl p-7 border-l-4 border-brand-500 shadow-[0_4px_20px_-8px_rgba(2,6,23,0.06)] hover:shadow-[0_12px_40px_-12px_rgba(2,6,23,0.12)] transition-all duration-300"
                 >
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center">
-                      <Icon size={18} className="text-blue-600" />
+                    <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center">
+                      <Icon size={18} className="text-brand-600" />
                     </div>
                     <h4 className="font-bold text-slate-900 text-[16px]">{title}</h4>
                   </div>
@@ -466,9 +466,9 @@ const KyoceraRental = () => {
               {BENEFITS.map(({ Icon, title, text }) => (
                 <div
                   key={title}
-                  className="group bg-white rounded-2xl p-7 border border-slate-100 shadow-[0_4px_20px_-8px_rgba(2,6,23,0.06)] hover:shadow-[0_20px_50px_-15px_rgba(37,99,235,0.25)] transition-all duration-300"
+                  className="group bg-white rounded-2xl p-7 border border-slate-100 shadow-[0_4px_20px_-8px_rgba(2,6,23,0.06)] hover:shadow-[0_20px_50px_-15px_rgba(13,30,45,0.25)] transition-all duration-300"
                 >
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center mb-4 shadow-[0_8px_20px_-8px_rgba(37,99,235,0.6)] group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-600 to-brand-500 flex items-center justify-center mb-4 shadow-[0_8px_20px_-8px_rgba(13,30,45,0.6)] group-hover:scale-110 transition-transform duration-300">
                     <Icon size={22} className="text-white" />
                   </div>
                   <h4 className="font-bold text-slate-900 text-lg mb-2">{title}</h4>
@@ -482,15 +482,15 @@ const KyoceraRental = () => {
         {/* ────── CTA ────── */}
         <section className="py-16 lg:py-20">
           <div className="container mx-auto px-4">
-            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-700 via-blue-600 to-cyan-500 px-8 py-14 lg:px-16 lg:py-20 text-center shadow-[0_30px_80px_-20px_rgba(37,99,235,0.5)]">
+            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-700 via-brand-600 to-brand-500 px-8 py-14 lg:px-16 lg:py-20 text-center shadow-[0_30px_80px_-20px_rgba(13,30,45,0.5)]">
               <div className="absolute -top-20 -right-20 w-80 h-80 bg-white/10 rounded-full blur-3xl" />
-              <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-cyan-300/20 rounded-full blur-3xl" />
+              <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-brand-300/20 rounded-full blur-3xl" />
 
               <div className="relative z-10 max-w-3xl mx-auto">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">
                   Готовы сэкономить на печати?
                 </h2>
-                <p className="text-blue-50/90 mt-4 text-[17px] leading-relaxed">
+                <p className="text-brand-50/90 mt-4 text-[17px] leading-relaxed">
                   Оставьте заявку — перезвоним в течение 15 минут и подберём оптимальный тариф под ваш офис.
                 </p>
 
@@ -498,7 +498,7 @@ const KyoceraRental = () => {
                   <Button
                     onClick={requestWithGoal('final-cta')}
                     data-testid="rental-final-cta-request"
-                    className="w-full sm:w-auto sm:min-w-[260px] h-14 justify-center bg-white text-blue-700 hover:bg-blue-50 hover:text-blue-800 px-8 rounded-full text-[16px] font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 group"
+                    className="w-full sm:w-auto sm:min-w-[260px] h-14 justify-center bg-white text-brand-700 hover:bg-brand-50 hover:text-brand-800 px-8 rounded-full text-[16px] font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 group"
                   >
                     Оставить заявку
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -513,7 +513,7 @@ const KyoceraRental = () => {
                   </a>
                 </div>
 
-                <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mt-8 text-blue-50/80 text-[14px]">
+                <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mt-8 text-brand-50/80 text-[14px]">
                   <a
                     href="https://wa.me/79911857289"
                     target="_blank"
@@ -523,7 +523,7 @@ const KyoceraRental = () => {
                     <MessageCircle size={16} />
                     WhatsApp
                   </a>
-                  <span className="text-blue-200/40">•</span>
+                  <span className="text-brand-200/40">•</span>
                   <a
                     href="mailto:info@complexprint.ru"
                     className="inline-flex items-center gap-2 hover:text-white transition-colors"
@@ -531,7 +531,7 @@ const KyoceraRental = () => {
                     <Mail size={16} />
                     info@complexprint.ru
                   </a>
-                  <span className="text-blue-200/40">•</span>
+                  <span className="text-brand-200/40">•</span>
                   <Link to="/contacts" className="hover:text-white transition-colors underline-offset-4 hover:underline">
                     Все контакты
                   </Link>

@@ -81,13 +81,13 @@ const UserAgreementModal = ({ isOpen, onClose }) => {
           <Button
             variant="ghost"
             onClick={() => window.open('/user-agreement', '_blank')}
-            className="text-pink-600 hover:text-pink-700 hover:bg-pink-50"
+            className="text-signal-600 hover:text-signal-700 hover:bg-brand-50"
           >
             Открыть в новой вкладке
           </Button>
           <Button
             onClick={onClose}
-            className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white"
+            className="bg-gradient-to-r from-signal-500 to-brand-600 hover:from-signal-600 hover:to-brand-700 text-white"
           >
             Закрыть
           </Button>
