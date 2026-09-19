@@ -44,7 +44,7 @@ export default function Districts() {
         </div>
 
         <div className="mt-12 text-center">
-          <a href="/" className="inline-block bg-gradient-to-r from-signal-500 to-brand-600 text-white px-6 py-3 rounded-lg font-semibold">Оставить заявку на ремонт</a>
+          <a href="/" className="inline-block bg-signal-500 hover:bg-signal-600 text-brand-900 px-6 py-3 rounded-lg font-semibold transition-colors">Оставить заявку на ремонт</a>
         </div>
       </div>
     </div>

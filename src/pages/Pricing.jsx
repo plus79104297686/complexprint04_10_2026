@@ -44,7 +44,7 @@ export default function Pricing() {
               <li>Первичная оценка по телефону</li>
               <li>Смета работ до начала ремонта</li>
             </ul>
-            <button onClick={goRepairForm} className="inline-block bg-gradient-to-r from-signal-500 to-brand-600 text-white px-6 py-3 rounded-lg font-semibold">Заказать</button>
+            <button onClick={goRepairForm} className="inline-block bg-signal-500 hover:bg-signal-600 text-brand-900 px-6 py-3 rounded-lg font-semibold transition-colors">Заказать</button>
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg p-8 border-2 border-signal-400">
@@ -55,7 +55,7 @@ export default function Pricing() {
               <li>Ремонт в день обращения</li>
               <li>Гарантия 6 месяцев</li>
             </ul>
-            <button onClick={goRepairForm} className="inline-block bg-gradient-to-r from-signal-500 to-brand-600 text-white px-6 py-3 rounded-lg font-semibold">Вызвать мастера</button>
+            <button onClick={goRepairForm} className="inline-block bg-signal-500 hover:bg-signal-600 text-brand-900 px-6 py-3 rounded-lg font-semibold transition-colors">Вызвать мастера</button>
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
@@ -66,7 +66,7 @@ export default function Pricing() {
               <li>Приоритетный выезд</li>
               <li>Оптимизация затрат</li>
             </ul>
-            <button onClick={goRepairForm} className="inline-block bg-gradient-to-r from-signal-500 to-brand-600 text-white px-6 py-3 rounded-lg font-semibold">Оставить заявку</button>
+            <button onClick={goRepairForm} className="inline-block bg-signal-500 hover:bg-signal-600 text-brand-900 px-6 py-3 rounded-lg font-semibold transition-colors">Оставить заявку</button>
           </div>
         </div>
 

@@ -116,7 +116,7 @@ const HeroSection = () => {
                 <img
                   src="/images/hp.jpg"
                   alt="Профессиональное печатное оборудование"
-                  fetchpriority="high"
+                  fetchPriority="high"
                   decoding="async"
                   width="800"
                   height="600"

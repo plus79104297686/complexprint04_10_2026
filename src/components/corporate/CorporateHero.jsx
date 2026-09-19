@@ -78,7 +78,7 @@ const CorporateHero = () => {
               <img
                 src="/images/corp-hero.jpg"
                 alt="Инженер ComplexPrint обслуживает офисное МФУ"
-                fetchpriority="high"
+                fetchPriority="high"
                 width="1264"
                 height="848"
                 className="w-full h-auto object-cover"
