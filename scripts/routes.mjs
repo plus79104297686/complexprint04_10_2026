@@ -58,6 +58,30 @@ export const ROUTES = [
   // ─── Аналитика ────────────────────────────────────────────────────────────
   { path: "/analytics", priority: 0.85, changefreq: "weekly" },
   {
+    path: "/analytics/printer-dlya-sklada-moroz-pyl-nakladnye",
+    priority: 0.8,
+    changefreq: "monthly",
+    images: [
+      {
+        loc: "https://complexprint.ru/images/analytics/sklad-cover.jpg",
+        title:
+          "Принтер для склада: −20°C, пыль и накладные, которые не ждут",
+      },
+    ],
+  },
+  {
+    path: "/analytics/zamena-parka-printerov-bez-ostanovki-biznesa-kejs",
+    priority: 0.8,
+    changefreq: "monthly",
+    images: [
+      {
+        loc: "https://complexprint.ru/images/analytics/park-cover.jpg",
+        title:
+          "Замена парка принтеров без остановки бизнеса: кейс из практики",
+      },
+    ],
+  },
+  {
     path: "/analytics/printer-dlya-yuridicheskoj-firmy-nagruzka-dupleks-zashchita",
     priority: 0.8,
     changefreq: "monthly",
