@@ -58,6 +58,18 @@ export const ROUTES = [
   // ─── Аналитика ────────────────────────────────────────────────────────────
   { path: "/analytics", priority: 0.85, changefreq: "weekly" },
   {
+    path: "/analytics/ofis-prosypaetsya-ranshe-sotrudnikov-centralizovannaya-pechat",
+    priority: 0.8,
+    changefreq: "monthly",
+    images: [
+      {
+        loc: "https://complexprint.ru/images/analytics/office-dawn-cover.jpg",
+        title:
+          "Офис просыпается раньше сотрудников: централизованная печать против принтера у каждого стола",
+      },
+    ],
+  },
+  {
     path: "/analytics/printer-dlya-sklada-moroz-pyl-nakladnye",
     priority: 0.8,
     changefreq: "monthly",
