@@ -142,10 +142,10 @@ const KyoceraRental = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-brand-50/30">
       <Helmet>
-        <title>Аренда МФУ Kyocera ECOSYS M2035dn в Москве — от 1 500 ₽/мес | ComplexPrint</title>
+        <title>Аренда МФУ Kyocera ECOSYS M2035dn в Москве | ComplexPrint</title>
         <meta
           name="description"
-          content="Аренда МФУ Kyocera ECOSYS M2035dn в Москве с обслуживанием и без. 3 тарифа: только аппарат от 2 000 ₽/мес, всё включено 3 500 ₽/мес, покопийная аренда от 1 500 ₽/мес + 0,6 ₽/стр. Доставка, установка, картриджи, ремонт. Осталось 40 штук."
+          content="Аренда МФУ Kyocera ECOSYS M2035dn в Москве с обслуживанием и без: 3 тарифа от 1 500 ₽/мес. Доставка, установка, картриджи и ремонт включены."
         />
         <link rel="canonical" href="https://complexprint.ru/arenda-kyocera-m2035dn" />
         <meta name="robots" content="index, follow" />

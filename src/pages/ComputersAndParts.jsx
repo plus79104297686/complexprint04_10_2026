@@ -169,7 +169,7 @@ const ComputersAndParts = () => {
         <title>Компьютеры и комплектующие в Москве — продажа и подбор | ComplexPrint</title>
         <meta
           name="description"
-          content="Продажа компьютеров, комплектующих и периферии в Москве. Системные блоки, моноблоки, процессоры Intel/AMD, материнские платы, SSD, мониторы, видеокарты. Гарантия, доставка по РФ, отсрочка платежа для юрлиц."
+          content="Продажа компьютеров, комплектующих и периферии в Москве: системные блоки, процессоры Intel/AMD, SSD, мониторы. Гарантия, доставка по РФ, отсрочка для юрлиц."
         />
         <link rel="canonical" href="https://complexprint.ru/komputery-i-komplektuyushchie" />
         <meta name="robots" content="index, follow" />

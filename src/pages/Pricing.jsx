@@ -14,7 +14,7 @@ export default function Pricing() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <Helmet>
-        <title>Цены на ремонт принтеров в Москве | ComplexPrint — диагностика, ремонт, абонентка</title>
+        <title>Цены на ремонт принтеров в Москве | ComplexPrint</title>
         <meta name="description" content="Прозрачные цены на ремонт принтеров и МФУ в Москве: диагностика от 1000₽ с выездом, ремонт от 3000₽, абонентское обслуживание от 1500₽/мес. Гарантия 6 месяцев." />
         <link rel="canonical" href="https://complexprint.ru/ceny" />
         <meta property="og:title" content="Цены на ремонт принтеров | ComplexPrint" />

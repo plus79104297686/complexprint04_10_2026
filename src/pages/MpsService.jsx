@@ -69,12 +69,10 @@ export default function MpsService() {
   return (
     <>
       <Helmet>
-        <title>
-          Аутсорсинг печати MPS в Москве | ComplexPrint - Принт-Икс, экономия до 30–50%
-        </title>
+        <title>Аутсорсинг печати MPS в Москве | ComplexPrint</title>
         <meta
           name="description"
-          content="Managed Print Services (MPS) в Москве на базе Принт-Икс аналог MYQ. Автоматический учёт печати, безопасная печать, правила печати, аналитика по отделам. Сократите затраты на печать до 30–50%."
+          content="Аутсорсинг печати MPS в Москве на базе Принт-Икс (аналог MYQ): учёт и безопасная печать, аналитика по отделам, экономия до 30–50%."
         />
         <meta
           name="keywords"

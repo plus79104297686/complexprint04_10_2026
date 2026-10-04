@@ -45,3 +45,10 @@
 - Кейсы/отзывы корпоративных клиентов с подтверждением.
 - Инлайн-подсказки об ошибках в форме (в дополнение к disabled-кнопке) для a11y.
 - При деплое — реальный backend-эндпоинт приёма заявок (сейчас внешний).
+
+## [2026-06] SEO: длина title/description + скрытые дубли (вариант 1+2+3)
+- Статьи (articles.js): добавлены поля seoTitle (≤70) и seoDescription (120–160) для всех 15 статей; AnalyticsArticle.jsx теперь использует их в <title>/<meta description> (fallback на title/description).
+- Статические страницы: укорочены title (<70) и description (25–160) на MPS, Абонентка, Покопийное, Аренда Kyocera, Разовый ремонт, Цены, FAQ, Analytics, Reviews, Компьютеры, PrintDefects/PrinterError, все бренды.
+- Добавлены <Helmet> (title+description+canonical) на 3 страницы без мет: PrinterSelection, TermsOfService, UserAgreement (убраны дубли дефолтного тега index.html).
+- Проверка: scripts/seo-audit.mjs — все title ≤70, description 25–160, дублей нет. Подтверждено в браузере (Helmet обновляет теги; prerender dedupSeoTags оставляет корректный последний тег).
+- NB: supervisor настроен на /app/frontend, но проект лежит в корне /app; dev-сервер запускается из /app (yarn start).

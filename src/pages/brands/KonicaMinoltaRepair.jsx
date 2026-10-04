@@ -37,7 +37,7 @@ export default function KonicaMinoltaRepair() {
     <>
       <Helmet>
         <title>
-          Ремонт принтеров Konica Minolta в Москве | ComplexPrint — профессионально и с гарантией 6 месяцев
+          Ремонт принтеров Konica Minolta в Москве | ComplexPrint
         </title>
         <meta
           name="description"

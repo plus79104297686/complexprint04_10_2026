@@ -34,7 +34,7 @@ export default function AboutUs() {
         <title>О нас — Сервис, компьютеры и видеонаблюдение | ComplexPrint</title>
         <meta
           name="description"
-          content="Complexprint.ru — лидер по обслуживанию печатной техники в России. Также продаём компьютеры и комплектующие (Intel, AMD, ASUS, Gigabyte) и устанавливаем системы видеонаблюдения Live webcams. 15+ лет опыта."
+          content="Complexprint.ru — обслуживание печатной техники в России, продажа компьютеров и комплектующих, системы видеонаблюдения Live webcams. 15+ лет опыта."
         />
         <link rel="canonical" href="https://complexprint.ru/about-us" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>

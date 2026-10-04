@@ -37,7 +37,7 @@ export default function XeroxRepair() {
     <>
       <Helmet>
         <title>
-          Ремонт принтеров Xerox в Москве | ComplexPrint — быстрый выезд и гарантия 6 месяцев
+          Ремонт принтеров Xerox в Москве с выездом | ComplexPrint
         </title>
         <meta
           name="description"

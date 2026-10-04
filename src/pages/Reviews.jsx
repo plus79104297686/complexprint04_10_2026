@@ -111,7 +111,7 @@ const Reviews = () => {
     <div className="min-h-screen bg-gradient-to-br from-brand-50 via-white to-brand-50">
       <Helmet>
         <title>Отзывы клиентов | Комплекс Принт — Ремонт принтеров в Москве</title>
-        <meta name="description" content="Отзывы клиентов о ремонте принтеров в сервисном центре Комплекс Принт. Реальные отзывы от крупных компаний: Криогенмаш, Азиатско-Тихоокеанский Банк, Соколов и других. Рейтинг 4.9 из 5." />
+        <meta name="description" content="Отзывы клиентов о ремонте принтеров в сервисном центре Комплекс Принт. Реальные отзывы крупных компаний. Рейтинг 4.9 из 5." />
         <link rel="canonical" href="https://complexprint.ru/reviews" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="отзывы ремонт принтеров, отзывы Комплекс Принт, сервис принтеров Москва отзывы, ремонт МФУ отзывы" />

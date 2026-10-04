@@ -66,10 +66,10 @@ const PrinterErrorGuide = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <Helmet>
-        <title>Не печатает принтер? Гид по ошибкам HP, Canon, Kyocera | ComplexPrint — инструкции и помощь</title>
+        <title>Не печатает принтер? Гид по ошибкам HP и Kyocera | ComplexPrint</title>
         <meta
           name="description"
-          content="Пошаговые решения популярных проблем: замятие бумаги, полосы на печати, нет захвата, коды ошибок. Когда можно исправить самому, а когда вызывать мастера. Москва и МО."
+          content="Пошаговые решения проблем: замятие бумаги, полосы, нет захвата, коды ошибок. Когда исправить самому, а когда вызвать мастера. Москва и МО."
         />
         <link rel="canonical" href="https://complexprint.ru/printer-error-guide" />
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>

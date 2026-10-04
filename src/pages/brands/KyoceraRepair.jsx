@@ -15,7 +15,7 @@ export default function KyoceraRepair() {
     <>
       <Helmet>
         <title>
-          Ремонт принтеров Kyocera в Москве | ComplexPrint — выезд, оригинальные запчасти, гарантия 6 месяцев
+          Ремонт принтеров Kyocera в Москве с выездом | ComplexPrint
         </title>
         <meta
           name="description"

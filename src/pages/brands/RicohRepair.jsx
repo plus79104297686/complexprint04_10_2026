@@ -37,7 +37,7 @@ export default function RicohRepair() {
     <>
       <Helmet>
         <title>
-          Ремонт принтеров Ricoh в Москве | ComplexPrint — выезд, оригинальные запчасти, гарантия 6 месяцев
+          Ремонт принтеров Ricoh в Москве с выездом | ComplexPrint
         </title>
         <meta
           name="description"

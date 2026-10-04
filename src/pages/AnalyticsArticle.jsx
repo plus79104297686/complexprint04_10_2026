@@ -250,8 +250,8 @@ const AnalyticsArticle = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-brand-50/40">
       <Helmet>
         <html lang="ru" />
-        <title>{`${article.title} | Комплекс Принт — Аналитика`}</title>
-        <meta name="description" content={article.description} />
+        <title>{article.seoTitle || `${article.title} | Комплекс Принт`}</title>
+        <meta name="description" content={article.seoDescription || article.description} />
         <link rel="canonical" href={url} />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="keywords" content={article.tags.join(", ")} />

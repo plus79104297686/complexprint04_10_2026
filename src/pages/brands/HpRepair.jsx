@@ -15,11 +15,11 @@ export default function HpRepair() {
     <>
       <Helmet>
         <title>
-          Ремонт принтеров HP в Москве с выездом | ComplexPrint — оригинальные запчасти, гарантия 6 месяцев
+          Ремонт принтеров HP в Москве с выездом | ComplexPrint
         </title>
         <meta
           name="description"
-          content="Профессиональный ремонт и обслуживание лазерных принтеров HP в Москве и МО. Быстрая диагностика, выезд в день обращения, оригинальные детали, гарантия 6 месяцев."
+          content="Профессиональный ремонт лазерных принтеров HP в Москве и МО. Быстрая диагностика, выезд в день обращения, оригинальные детали, гарантия 6 месяцев."
         />
         <link rel="canonical" href="https://complexprint.ru/remont-printerov-hp" />
         <meta property="og:type" content="website" />

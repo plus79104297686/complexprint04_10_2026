@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import PrinterCategoryCard from '../components/PrinterCategoryCard';
@@ -34,6 +35,12 @@ const PrinterSelection = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <Helmet>
+        <title>Подбор принтера и МФУ для офиса | ComplexPrint</title>
+        <meta name="description" content="Поможем выбрать принтер или МФУ под задачи офиса: категории по нагрузке и типу печати, подбор модели и консультация инженера ComplexPrint." />
+        <link rel="canonical" href="https://complexprint.ru/printer-selection" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <Header />
       
       <main className="pt-20">

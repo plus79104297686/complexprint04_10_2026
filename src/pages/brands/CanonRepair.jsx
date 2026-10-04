@@ -15,7 +15,7 @@ export default function CanonRepair() {
     <>
       <Helmet>
         <title>
-          Ремонт принтеров Canon в Москве | ComplexPrint — выезд, оригинальные запчасти, гарантия 6 месяцев
+          Ремонт принтеров Canon в Москве с выездом | ComplexPrint
         </title>
         <meta
           name="description"

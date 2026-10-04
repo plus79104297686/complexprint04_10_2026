@@ -36,10 +36,10 @@ const PrintDefectsGuide = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <Helmet>
-        <title>Справочник дефектов печати принтеров HP, Canon, Kyocera | ComplexPrint - причины и решения</title>
+        <title>Справочник дефектов печати: HP, Canon, Kyocera | ComplexPrint</title>
         <meta
           name="description"
-          content="Визуальный каталог дефектов печати с фотографиями: почему принтер печатает полосами, что делать если осыпается тонер, ремонт термоузла HP, вертикальные полосы на печати Brother, Kyocera. Причины и способы устранения."
+          content="Визуальный каталог дефектов печати с фото: полосы, осыпание тонера, ремонт термоузла HP, пятна на печати Brother и Kyocera. Причины и способы устранения."
         />
         <meta 
           name="keywords" 

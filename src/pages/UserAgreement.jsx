@@ -3,12 +3,19 @@ import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
 import { Button } from '../components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const UserAgreement = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-brand-50 via-brand-50 to-white py-12">
+      <Helmet>
+        <title>Пользовательское соглашение | ComplexPrint</title>
+        <meta name="description" content="Пользовательское соглашение сайта complexprint.ru: правила использования, обработка данных и условия обращения в сервисный центр ComplexPrint." />
+        <link rel="canonical" href="https://complexprint.ru/user-agreement" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="mb-8">
           <Button
