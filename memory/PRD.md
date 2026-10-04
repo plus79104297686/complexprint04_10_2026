@@ -64,3 +64,4 @@
 - Сгенерированы 9 иллюстраций (Gemini nano banana) в едином редакционном стиле → public/images/analytics/laser-*.jpg (cover, six-steps, drum, optics, developer, fuser, waste-bin, board, final). Все отдаются 200 и рендерятся.
 - Маршрут добавлен в scripts/routes.mjs (sitemap + prerender).
 - Проверено: компиляция, рендер секций (list/table/quote/image/markdown-ссылки), наличие в /analytics.
+- [2026-10-04] В статью про устройство принтера добавлено реальное фото термоузла (public/images/analytics/fuser-real-worn.webp) в блок про изношенный тефлоновый вал.
