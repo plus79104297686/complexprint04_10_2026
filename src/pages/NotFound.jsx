@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { seoMeta } from "../data/seoMeta";
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -13,9 +14,9 @@ const NotFound = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-brand-50 via-white to-brand-50">
       <Helmet>
-        <title>Страница не найдена (404) | Комплекс Принт</title>
+        <title>{seoMeta["/404"].title}</title>
         <meta name="robots" content="noindex, nofollow" />
-        <meta name="description" content="Запрашиваемая страница не найдена. Вернитесь на главную или свяжитесь с нами для ремонта принтеров в Москве." />
+        <meta name="description" content={seoMeta["/404"].description} />
       </Helmet>
 
       <Header />

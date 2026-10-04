@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { seoMeta } from "../data/seoMeta";
 import {
   Monitor,
   Cpu,
@@ -166,11 +167,8 @@ const ComputersAndParts = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-brand-50/30">
       <Helmet>
-        <title>Компьютеры и комплектующие в Москве — продажа и подбор | ComplexPrint</title>
-        <meta
-          name="description"
-          content="Продажа компьютеров, комплектующих и периферии в Москве: системные блоки, процессоры Intel/AMD, SSD, мониторы. Гарантия, доставка по РФ, отсрочка для юрлиц."
-        />
+        <title>{seoMeta["/komputery-i-komplektuyushchie"].title}</title>
+        <meta name="description" content={seoMeta["/komputery-i-komplektuyushchie"].description} />
         <link rel="canonical" href="https://complexprint.ru/komputery-i-komplektuyushchie" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify({

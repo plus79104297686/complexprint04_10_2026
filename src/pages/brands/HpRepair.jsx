@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { seoMeta } from "../../data/seoMeta";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Breadcrumbs from "../../components/Breadcrumbs";
@@ -14,13 +15,8 @@ export default function HpRepair() {
   return (
     <>
       <Helmet>
-        <title>
-          Ремонт принтеров HP в Москве с выездом | ComplexPrint
-        </title>
-        <meta
-          name="description"
-          content="Профессиональный ремонт лазерных принтеров HP в Москве и МО. Быстрая диагностика, выезд в день обращения, оригинальные детали, гарантия 6 месяцев."
-        />
+        <title>{seoMeta["/remont-printerov-hp"].title}</title>
+        <meta name="description" content={seoMeta["/remont-printerov-hp"].description} />
         <link rel="canonical" href="https://complexprint.ru/remont-printerov-hp" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Комплекс Принт" />

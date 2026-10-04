@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { Helmet } from "react-helmet-async";
+import { seoMeta } from "../data/seoMeta";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Breadcrumbs from "../components/Breadcrumbs";
@@ -147,11 +148,8 @@ const Video = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-brand-50/40">
       <Helmet>
-        <title>Видео работ — ремонт принтеров с выезда | Комплекс Принт</title>
-        <meta
-          name="description"
-          content="Видео с наших выездов и ремонтов: диагностика, разборка МФУ и принтеров, замена узлов, лайфхаки от мастеров. Реальная работа сервисного центра Комплекс Принт."
-        />
+        <title>{seoMeta["/video"].title}</title>
+        <meta name="description" content={seoMeta["/video"].description} />
         <link rel="canonical" href={`${SITE_URL}/video`} />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Видео работ — Комплекс Принт" />

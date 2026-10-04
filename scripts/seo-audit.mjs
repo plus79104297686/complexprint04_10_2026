@@ -1,49 +1,93 @@
+/**
+ * SEO-аудит длины и уникальности <title> и <meta name="description">.
+ *
+ * Запускается автоматически в postbuild (после пререндера) — проверяет
+ * итоговый HTML в build/. Можно запускать вручную: `node scripts/seo-audit.mjs`
+ * (если build/ нет — проверяет исходники: src/data/seoMeta.js и articles.js).
+ *
+ * Правила: title ≤ 70 символов; description 25–160; без дублей.
+ * При нарушениях выходит с кодом 1 (ломает сборку).
+ */
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 
-const root = "/app/src";
-const artSrc = fs.readFileSync(path.join(root, "data/articles.js"), "utf8");
-const re = /slug:\s*"([^"]+)",\s*\n\s*seoTitle:\s*"((?:[^"\\]|\\.)*)",\s*\n\s*seoDescription:\s*\n?\s*"((?:[^"\\]|\\.)*)"/g;
-let m; const arts = [];
-while ((m = re.exec(artSrc)) !== null) arts.push({ slug: m[1], t: m[2], d: m[3] });
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(__dirname, "..");
+const BUILD = path.join(ROOT, "build");
 
-console.log("=== ARTICLES: seoTitle/seoDescription (" + arts.length + ") ===");
-let bad = 0;
-for (const a of arts) {
-  const tFlag = a.t.length > 70 ? " !!! TITLE>70" : "";
-  const dFlag = a.d.length < 25 || a.d.length > 160 ? " !!! DESC out" : "";
-  if (tFlag || dFlag) bad++;
-  console.log(`  T(${a.t.length})${tFlag}  D(${a.d.length})${dFlag}  ${a.slug}`);
+const TITLE_MAX = 70;
+const DESC_MIN = 25;
+const DESC_MAX = 160;
+
+const problems = [];
+const titles = {};
+const descs = {};
+
+function check(id, title, description, { noindex = false } = {}) {
+  if (!title) problems.push(`[${id}] нет <title>`);
+  else if (title.length > TITLE_MAX)
+    problems.push(`[${id}] title ${title.length}>${TITLE_MAX}: ${title}`);
+  if (!description) problems.push(`[${id}] нет meta description`);
+  else if (description.length < DESC_MIN || description.length > DESC_MAX)
+    problems.push(`[${id}] description ${description.length} вне ${DESC_MIN}–${DESC_MAX}: ${description}`);
+  // дубли (служебные noindex-страницы, напр. 404, не учитываем)
+  if (!noindex) {
+    if (title) (titles[title] = titles[title] || []).push(id);
+    if (description) (descs[description] = descs[description] || []).push(id);
+  }
 }
-console.log(bad === 0 ? "\n✅ ALL ARTICLES OK" : `\n❌ ${bad} problem(s)`);
 
-// static pages
-const pagesDir = path.join(root, "pages");
-function walk(d){let f=[];for(const n of fs.readdirSync(d)){const p=path.join(d,n);if(fs.statSync(p).isDirectory())f=f.concat(walk(p));else if(n.endsWith(".jsx"))f.push(p);}return f;}
-const files = walk(pagesDir).concat(["/app/public/index.html"]);
-console.log("\n=== STATIC PAGES ===");
-const titleMap={}, descMap={}; let sbad=0;
-for (const file of files){
-  const src = fs.readFileSync(file,"utf8");
-  const tM = src.match(/<title>([\s\S]*?)<\/title>/);
-  const dM = src.match(/<meta\s+name=["']description["']\s+content=\{?["']([\s\S]*?)["']\}?\s*\/?>/);
-  const name = file.replace("/app/src/pages/","").replace("/app/","");
-  let title = tM ? tM[1].trim() : null;
-  let desc = dM ? dM[1].trim() : null;
-  const tdyn = title && (title.includes("{") || title.includes("article."));
-  const ddyn = desc && (desc.includes("{") || desc.includes("article."));
-  const tlen = title && !tdyn ? title.length : null;
-  const dlen = desc && !ddyn ? desc.length : null;
-  const tFlag = tlen && tlen>70 ? " !!! >70" : "";
-  const dFlag = dlen && (dlen<25||dlen>160) ? " !!! out" : "";
-  if (tFlag||dFlag) sbad++;
-  if (!title) { console.log(`  [NO TITLE] ${name}`); sbad++; }
-  console.log(`  T(${tdyn?"dyn":tlen})${tFlag} D(${ddyn?"dyn":dlen})${dFlag}  ${name}`);
-  if (tlen) (titleMap[title]=titleMap[title]||[]).push(name);
-  if (dlen) (descMap[desc]=descMap[desc]||[]).push(name);
+function walk(dir, filter) {
+  let out = [];
+  for (const name of fs.readdirSync(dir)) {
+    const p = path.join(dir, name);
+    const st = fs.statSync(p);
+    if (st.isDirectory()) out = out.concat(walk(p, filter));
+    else if (filter(p)) out.push(p);
+  }
+  return out;
 }
-console.log("\n=== DUP TITLES ===");
-let dup=0; for(const [k,v] of Object.entries(titleMap)) if(v.length>1){dup++;console.log(`  (${v.length}) ${k} -> ${v.join(", ")}`);}
-console.log("=== DUP DESCRIPTIONS ===");
-for(const [k,v] of Object.entries(descMap)) if(v.length>1){dup++;console.log(`  (${v.length}) ${k} -> ${v.join(", ")}`);}
-console.log(`\n${sbad===0?"✅ STATIC OK":"❌ "+sbad+" static problem(s)"}  |  ${dup===0?"✅ NO DUPLICATES":"❌ "+dup+" dup group(s)"}`);
+
+let mode;
+if (fs.existsSync(BUILD)) {
+  mode = "build HTML";
+  const files = walk(BUILD, (p) => p.endsWith("index.html"));
+  for (const file of files) {
+    const html = fs.readFileSync(file, "utf8");
+    const t = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+    const d = html.match(/<meta[^>]*name=["']description["'][^>]*content=["']([\s\S]*?)["'][^>]*>/i);
+    const url = "/" + path.relative(BUILD, file).replace(/index\.html$/, "").replace(/\/$/, "");
+    const noindex = /name=["']robots["'][^>]*noindex/i.test(html);
+    check(url || "/", t ? t[1].trim() : null, d ? d[1].trim() : null, { noindex });
+  }
+} else {
+  mode = "source (build/ не найден)";
+  // seoMeta.js
+  const seoSrc = fs.readFileSync(path.join(ROOT, "src/data/seoMeta.js"), "utf8");
+  const re = /"(\/[^"]*)":\s*\{\s*\n\s*title:\s*\n?\s*"((?:[^"\\]|\\.)*)",\s*\n\s*description:\s*\n?\s*"((?:[^"\\]|\\.)*)"/g;
+  let m;
+  while ((m = re.exec(seoSrc)) !== null)
+    check(m[1], m[2], m[3], { noindex: m[1] === "/404" });
+  // articles.js
+  const artSrc = fs.readFileSync(path.join(ROOT, "src/data/articles.js"), "utf8");
+  const reA = /slug:\s*"([^"]+)",\s*\n\s*seoTitle:\s*"((?:[^"\\]|\\.)*)",\s*\n\s*seoDescription:\s*\n?\s*"((?:[^"\\]|\\.)*)"/g;
+  while ((m = reA.exec(artSrc)) !== null)
+    check("article:" + m[1], m[2], m[3]);
+}
+
+for (const [t, ids] of Object.entries(titles))
+  if (ids.length > 1) problems.push(`Дубль title у ${ids.join(", ")}: ${t}`);
+for (const [d, ids] of Object.entries(descs))
+  if (ids.length > 1) problems.push(`Дубль description у ${ids.join(", ")}: ${d}`);
+
+console.log(`\nSEO-аудит (${mode}):`);
+if (problems.length === 0) {
+  console.log("✅ Все title ≤70, description 25–160, дублей нет.\n");
+  process.exit(0);
+} else {
+  console.log(`❌ Найдено проблем: ${problems.length}`);
+  for (const p of problems) console.log("  • " + p);
+  console.log("");
+  process.exit(1);
+}

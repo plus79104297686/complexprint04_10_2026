@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { seoMeta } from "../data/seoMeta";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { companyInfo } from '../data/mock';
@@ -28,8 +29,8 @@ const Contacts = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-brand-50 via-white to-brand-50">
       <Helmet>
-        <title>Контакты | Комплекс Принт — Ремонт принтеров в Москве</title>
-        <meta name="description" content="Контакты сервисного центра Комплекс Принт. Телефон +79911857289, email info@complexprint.ru. Адрес: Москва, Абрамцевская 11 к1 стр3. Бесплатная диагностика!" />
+        <title>{seoMeta["/contacts"].title}</title>
+        <meta name="description" content={seoMeta["/contacts"].description} />
         <link rel="canonical" href="https://complexprint.ru/contacts" />
         <meta name="robots" content="index, follow" />
       </Helmet>

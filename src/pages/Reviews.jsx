@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { seoMeta } from "../data/seoMeta";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Badge } from '../components/ui/badge';
@@ -110,8 +111,8 @@ const Reviews = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-brand-50 via-white to-brand-50">
       <Helmet>
-        <title>Отзывы клиентов | Комплекс Принт — Ремонт принтеров в Москве</title>
-        <meta name="description" content="Отзывы клиентов о ремонте принтеров в сервисном центре Комплекс Принт. Реальные отзывы крупных компаний. Рейтинг 4.9 из 5." />
+        <title>{seoMeta["/reviews"].title}</title>
+        <meta name="description" content={seoMeta["/reviews"].description} />
         <link rel="canonical" href="https://complexprint.ru/reviews" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="отзывы ремонт принтеров, отзывы Комплекс Принт, сервис принтеров Москва отзывы, ремонт МФУ отзывы" />

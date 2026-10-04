@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { seoMeta } from "../data/seoMeta";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -78,11 +79,8 @@ export default function PokopiynoeObsluzhivanie() {
   return (
     <>
       <Helmet>
-        <title>Покопийное обслуживание принтеров в Москве | ComplexPrint</title>
-        <meta
-          name="description"
-          content="Покопийное обслуживание печатной техники в Москве: платите только за отпечатки. Тонер, картриджи, ремонт и выезд включены. От 0,50 ₽/стр, экономия до 40%."
-        />
+        <title>{seoMeta["/pokopiynoe-obsluzhivanie"].title}</title>
+        <meta name="description" content={seoMeta["/pokopiynoe-obsluzhivanie"].description} />
         <meta
           name="keywords"
           content="покопийное обслуживание, плата за отпечаток, обслуживание принтеров по копиям, аутсорсинг печати, стоимость копии, расходники включены, сервис принтеров Москва"

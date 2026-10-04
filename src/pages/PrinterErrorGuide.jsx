@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Badge } from '../components/ui/badge';
 import { Helmet } from 'react-helmet-async';
-
+import { seoMeta } from "../data/seoMeta";
 const PrinterErrorGuide = () => {
   const navigate = useNavigate();
 
@@ -66,11 +66,8 @@ const PrinterErrorGuide = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <Helmet>
-        <title>Не печатает принтер? Гид по ошибкам HP и Kyocera | ComplexPrint</title>
-        <meta
-          name="description"
-          content="Пошаговые решения проблем: замятие бумаги, полосы, нет захвата, коды ошибок. Когда исправить самому, а когда вызвать мастера. Москва и МО."
-        />
+        <title>{seoMeta["/printer-error-guide"].title}</title>
+        <meta name="description" content={seoMeta["/printer-error-guide"].description} />
         <link rel="canonical" href="https://complexprint.ru/printer-error-guide" />
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
       </Helmet>

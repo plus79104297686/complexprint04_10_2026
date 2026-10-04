@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-
+import { seoMeta } from "../data/seoMeta";
 const districts = [
   { okrug: "ЦАО", areas: ["Арбат", "Басманный", "Замоскворечье", "Красносельский", "Мещанский", "Пресненский", "Таганский", "Тверской", "Хамовники", "Якиманка"] },
   { okrug: "САО", areas: ["Аэропорт", "Беговой", "Бескудниковский", "Войковский", "Головинский", "Дмитровский", "Западное Дегунино", "Коптево", "Левобережный", "Савёловский", "Сокол", "Тимирязевский", "Ховрино"] },
@@ -19,8 +19,8 @@ export default function Districts() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <Helmet>
-        <title>Районы Москвы — выезд мастера | ComplexPrint</title>
-        <meta name="description" content="Ремонт принтеров по всем районам Москвы и ближайшего Подмосковья. Выезд мастера в день обращения: ЦАО, САО, СВАО, ВАО, ЮВАО, ЮАО, ЮЗАО, ЗАО, СЗАО, ЗелАО, ТиНАО." />
+        <title>{seoMeta["/rayony-moskvy"].title}</title>
+        <meta name="description" content={seoMeta["/rayony-moskvy"].description} />
         <link rel="canonical" href="https://complexprint.ru/rayony-moskvy" />
       </Helmet>
 

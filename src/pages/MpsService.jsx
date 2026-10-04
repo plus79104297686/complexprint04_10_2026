@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { seoMeta } from "../data/seoMeta";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -69,11 +70,8 @@ export default function MpsService() {
   return (
     <>
       <Helmet>
-        <title>Аутсорсинг печати MPS в Москве | ComplexPrint</title>
-        <meta
-          name="description"
-          content="Аутсорсинг печати MPS в Москве на базе Принт-Икс (аналог MYQ): учёт и безопасная печать, аналитика по отделам, экономия до 30–50%."
-        />
+        <title>{seoMeta["/mps-autsorsing-pechati"].title}</title>
+        <meta name="description" content={seoMeta["/mps-autsorsing-pechati"].description} />
         <meta
           name="keywords"
           content="MPS аутсорсинг печати, managed print services, система управления печатью, Принт-Икс, Print-X, аналог MYQ, покопийная печать, контроль печати, безопасная печать, оптимизация печати Москва"

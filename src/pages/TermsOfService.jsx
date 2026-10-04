@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { seoMeta } from "../data/seoMeta";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Badge } from '../components/ui/badge';
@@ -12,8 +13,8 @@ const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <Helmet>
-        <title>Условия обслуживания | ComplexPrint</title>
-        <meta name="description" content="Условия оказания услуг по ремонту и обслуживанию печатной техники ComplexPrint: порядок работ, гарантия, оплата и ответственность сторон." />
+        <title>{seoMeta["/terms-of-service"].title}</title>
+        <meta name="description" content={seoMeta["/terms-of-service"].description} />
         <link rel="canonical" href="https://complexprint.ru/terms-of-service" />
         <meta name="robots" content="index, follow" />
       </Helmet>

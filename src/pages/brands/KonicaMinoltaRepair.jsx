@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { seoMeta } from "../../data/seoMeta";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Breadcrumbs from "../../components/Breadcrumbs";
@@ -36,13 +37,8 @@ export default function KonicaMinoltaRepair() {
   return (
     <>
       <Helmet>
-        <title>
-          Ремонт принтеров Konica Minolta в Москве | ComplexPrint
-        </title>
-        <meta
-          name="description"
-          content="Ремонт и обслуживание принтеров и МФУ Konica Minolta в Москве и МО. Быстрая диагностика, выезд мастера, оригинальные детали, гарантия 6 месяцев."
-        />
+        <title>{seoMeta["/remont-printerov-konica-minolta"].title}</title>
+        <meta name="description" content={seoMeta["/remont-printerov-konica-minolta"].description} />
         <link rel="canonical" href="https://complexprint.ru/remont-printerov-konica-minolta" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Комплекс Принт" />

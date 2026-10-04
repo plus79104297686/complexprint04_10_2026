@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { seoMeta } from "../data/seoMeta";
 import { ChevronDown, ChevronUp, Phone, Mail, MapPin } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -100,11 +101,8 @@ const FAQ = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <Helmet>
-        <title>Часто задаваемые вопросы о ремонте принтеров | ComplexPrint FAQ</title>
-        <meta 
-          name="description" 
-          content="Ответы на вопросы о ремонте и обслуживании принтеров в Москве: стоимость, сроки, гарантия, выезд мастера. Как вызвать специалиста и что делать при поломке." 
-        />
+        <title>{seoMeta["/faq"].title}</title>
+        <meta name="description" content={seoMeta["/faq"].description} />
         <link rel="canonical" href="https://complexprint.ru/faq" />
         <meta property="og:title" content="FAQ — Вопросы о ремонте принтеров | ComplexPrint" />
         <meta property="og:description" content="Часто задаваемые вопросы о ремонте принтеров: цены, сроки, гарантии" />

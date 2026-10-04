@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { seoMeta } from "../data/seoMeta";
 import { Link } from 'react-router-dom';
 import {
   Printer,
@@ -142,11 +143,8 @@ const KyoceraRental = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-brand-50/30">
       <Helmet>
-        <title>Аренда МФУ Kyocera ECOSYS M2035dn в Москве | ComplexPrint</title>
-        <meta
-          name="description"
-          content="Аренда МФУ Kyocera ECOSYS M2035dn в Москве с обслуживанием и без: 3 тарифа от 1 500 ₽/мес. Доставка, установка, картриджи и ремонт включены."
-        />
+        <title>{seoMeta["/arenda-kyocera-m2035dn"].title}</title>
+        <meta name="description" content={seoMeta["/arenda-kyocera-m2035dn"].description} />
         <link rel="canonical" href="https://complexprint.ru/arenda-kyocera-m2035dn" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify({

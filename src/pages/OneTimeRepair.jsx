@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { seoMeta } from "../data/seoMeta";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -113,13 +114,8 @@ export default function OneTimeRepair() {
   return (
     <>
       <Helmet>
-        <title>
-          Разовый ремонт принтеров и МФУ для бизнеса в Москве | ComplexPrint
-        </title>
-        <meta
-          name="description"
-          content="Разовый ремонт печатной техники для бизнеса и банков: выезд без согласований, закупка запчастей в день заявки, до 90% ремонтов в день обращения."
-        />
+        <title>{seoMeta["/razovyy-remont"].title}</title>
+        <meta name="description" content={seoMeta["/razovyy-remont"].description} />
         <meta
           name="keywords"
           content="разовый ремонт принтера, ремонт МФУ для бизнеса, ремонт принтеров для банков, срочный выезд мастера принтер, B2B ремонт оргтехники, NDA ремонт принтеров"

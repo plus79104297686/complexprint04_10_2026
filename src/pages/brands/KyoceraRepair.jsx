@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { seoMeta } from "../../data/seoMeta";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Breadcrumbs from "../../components/Breadcrumbs";
@@ -14,13 +15,8 @@ export default function KyoceraRepair() {
   return (
     <>
       <Helmet>
-        <title>
-          Ремонт принтеров Kyocera в Москве с выездом | ComplexPrint
-        </title>
-        <meta
-          name="description"
-          content="Профессиональный ремонт и обслуживание принтеров Kyocera в Москве и МО. Быстрая диагностика, выезд мастера, оригинальные детали, гарантия 6 месяцев."
-        />
+        <title>{seoMeta["/remont-printerov-kyocera"].title}</title>
+        <meta name="description" content={seoMeta["/remont-printerov-kyocera"].description} />
         <link rel="canonical" href="https://complexprint.ru/remont-printerov-kyocera" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Комплекс Принт" />

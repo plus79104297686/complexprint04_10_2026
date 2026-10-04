@@ -52,3 +52,9 @@
 - Добавлены <Helmet> (title+description+canonical) на 3 страницы без мет: PrinterSelection, TermsOfService, UserAgreement (убраны дубли дефолтного тега index.html).
 - Проверка: scripts/seo-audit.mjs — все title ≤70, description 25–160, дублей нет. Подтверждено в браузере (Helmet обновляет теги; prerender dedupSeoTags оставляет корректный последний тег).
 - NB: supervisor настроен на /app/frontend, но проект лежит в корне /app; dev-сервер запускается из /app (yarn start).
+
+## [2026-06] SEO: единый конфиг + автопроверка в сборке
+- Единый источник правды: src/data/seoMeta.js (title+description по маршрутам). Статьи — в articles.js (seoTitle/seoDescription).
+- Все 26 статических страниц переведены на конфиг: <title>{seoMeta["<path>"].title}</title>, <meta description content={...description}>.
+- scripts/seo-audit.mjs переписан: проверяет собранный build/ HTML (fallback — исходники), правила title ≤70 / description 25–160 / без дублей, exit 1 при нарушении.
+- Подключён в package.json → postbuild (после prerender и sitemap). Полная сборка проверена: аудит зелёный, build exit 0.

@@ -5,6 +5,7 @@ import { Badge } from '../components/ui/badge';
 import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { Helmet } from 'react-helmet-async';
+import { seoMeta } from "../data/seoMeta";
 import { printDefects, problemTypes, manifestationTypes } from '../data/printDefects';
 import { useRepairRequestModal } from '../components/RepairRequestModal';
 
@@ -36,11 +37,8 @@ const PrintDefectsGuide = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <Helmet>
-        <title>Справочник дефектов печати: HP, Canon, Kyocera | ComplexPrint</title>
-        <meta
-          name="description"
-          content="Визуальный каталог дефектов печати с фото: полосы, осыпание тонера, ремонт термоузла HP, пятна на печати Brother и Kyocera. Причины и способы устранения."
-        />
+        <title>{seoMeta["/print-defects-guide"].title}</title>
+        <meta name="description" content={seoMeta["/print-defects-guide"].description} />
         <meta 
           name="keywords" 
           content="почему принтер печатает полосами, что делать если осыпается тонер, ремонт термоузла HP, вертикальные полосы на печати Brother, дефекты печати принтера, проблемы с печатью, полосы на печати, пятна на печати, осыпается тонер, грязная печать"

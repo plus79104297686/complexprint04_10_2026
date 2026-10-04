@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { seoMeta } from "../data/seoMeta";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -62,11 +63,8 @@ const Analytics = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-brand-50/40">
       <Helmet>
         <html lang="ru" />
-        <title>Наша аналитика — статьи о ремонте и рынке принтеров | Комплекс Принт</title>
-        <meta
-          name="description"
-          content="Аналитические статьи инженеров Комплекс Принт: рынок принтеров России, разбор технологий, экономика печати и реальные кейсы из мастерской."
-        />
+        <title>{seoMeta["/analytics"].title}</title>
+        <meta name="description" content={seoMeta["/analytics"].description} />
         <link rel="canonical" href={`${SITE_URL}/analytics`} />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta property="og:site_name" content="Комплекс Принт" />

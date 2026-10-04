@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { seoMeta } from "../data/seoMeta";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -31,11 +32,8 @@ export default function AboutUs() {
   return (
     <>
       <Helmet>
-        <title>О нас — Сервис, компьютеры и видеонаблюдение | ComplexPrint</title>
-        <meta
-          name="description"
-          content="Complexprint.ru — обслуживание печатной техники в России, продажа компьютеров и комплектующих, системы видеонаблюдения Live webcams. 15+ лет опыта."
-        />
+        <title>{seoMeta["/about-us"].title}</title>
+        <meta name="description" content={seoMeta["/about-us"].description} />
         <link rel="canonical" href="https://complexprint.ru/about-us" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>

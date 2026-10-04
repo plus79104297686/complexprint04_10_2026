@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { seoMeta } from "../data/seoMeta";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -62,11 +63,8 @@ export default function SubscriptionService() {
   return (
     <>
       <Helmet>
-        <title>Абонентское обслуживание принтеров и МФУ в Москве | ComplexPrint</title>
-        <meta
-          name="description"
-          content="Абонентское обслуживание принтеров и МФУ в Москве: профилактика, диагностика и замена узлов по графику. Меньше аварийных вызовов, предсказуемый бюджет."
-        />
+        <title>{seoMeta["/abonentskoe-obsluzhivanie"].title}</title>
+        <meta name="description" content={seoMeta["/abonentskoe-obsluzhivanie"].description} />
         <meta
           name="keywords"
           content="абонентское обслуживание принтеров, обслуживание МФУ по договору, профилактика печатной техники, аутсорсинг печати, сервисный договор принтер, ТО принтеров Москва"
