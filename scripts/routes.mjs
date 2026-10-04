@@ -58,6 +58,18 @@ export const ROUTES = [
   // ─── Аналитика ────────────────────────────────────────────────────────────
   { path: "/analytics", priority: 0.85, changefreq: "weekly" },
   {
+    path: "/analytics/kak-ustroen-lazernyj-printer-prostymi-slovami",
+    priority: 0.8,
+    changefreq: "monthly",
+    images: [
+      {
+        loc: "https://complexprint.ru/images/analytics/laser-inside-cover.jpg",
+        title:
+          "Как устроен лазерный принтер: фотобарабан, проявитель, термоузел простыми словами",
+      },
+    ],
+  },
+  {
     path: "/analytics/zapravka-kartridzhej-ili-novyj-sovmestimij-kartridzh",
     priority: 0.8,
     changefreq: "monthly",

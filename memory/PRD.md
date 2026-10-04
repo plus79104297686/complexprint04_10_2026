@@ -58,3 +58,9 @@
 - Все 26 статических страниц переведены на конфиг: <title>{seoMeta["<path>"].title}</title>, <meta description content={...description}>.
 - scripts/seo-audit.mjs переписан: проверяет собранный build/ HTML (fallback — исходники), правила title ≤70 / description 25–160 / без дублей, exit 1 при нарушении.
 - Подключён в package.json → postbuild (после prerender и sitemap). Полная сборка проверена: аудит зелёный, build exit 0.
+
+## [2026-10-04] Новая статья «Как устроен лазерный принтер простыми словами»
+- Добавлена в src/data/articles.js (первой), slug: kak-ustroen-lazernyj-printer-prostymi-slovami, с seoTitle(56)/seoDescription(153).
+- Сгенерированы 9 иллюстраций (Gemini nano banana) в едином редакционном стиле → public/images/analytics/laser-*.jpg (cover, six-steps, drum, optics, developer, fuser, waste-bin, board, final). Все отдаются 200 и рендерятся.
+- Маршрут добавлен в scripts/routes.mjs (sitemap + prerender).
+- Проверено: компиляция, рендер секций (list/table/quote/image/markdown-ссылки), наличие в /analytics.
