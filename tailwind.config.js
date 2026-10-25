@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'montserrat': ['"IBM Plex Sans"', 'Montserrat', 'sans-serif'],
-        'sans': ['"IBM Plex Sans"', 'system-ui', 'sans-serif'],
+        'sans': ['"IBM Plex Sans"', 'system-ui', '"Segoe UI"', 'Arial', 'sans-serif'],
         'plex': ['"IBM Plex Sans"', 'sans-serif'],
         'mono': ['"IBM Plex Mono"', 'ui-monospace', 'monospace'],
       },
